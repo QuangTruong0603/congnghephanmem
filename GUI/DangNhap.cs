@@ -52,8 +52,25 @@ namespace GUI
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0);
-            Application.Exit();
+         Environment.Exit(0);
+          Application.Exit();
+        }
+
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_dangky_Click(object sender, EventArgs e)
+        {
+            Register rg = new Register();
+            rg.Show();
+            Visible = false;
         }
     }
 }

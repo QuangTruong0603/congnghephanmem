@@ -31,13 +31,13 @@
             this.txt_dangnhap = new System.Windows.Forms.Label();
             this.txt_matkhau = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ch_showpass = new MaterialSkin.Controls.MaterialCheckbox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_dangky = new MetroSet_UI.Controls.MetroSetButton();
             this.btn_dangnhap = new MetroSet_UI.Controls.MetroSetButton();
             this.txt_password = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_username = new MaterialSkin.Controls.MaterialTextBox();
             this.img_logo = new System.Windows.Forms.PictureBox();
-            this.ch_showpass = new MaterialSkin.Controls.MaterialCheckbox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_logo)).BeginInit();
@@ -76,6 +76,23 @@
             this.panel1.Size = new System.Drawing.Size(621, 339);
             this.panel1.TabIndex = 6;
             // 
+            // ch_showpass
+            // 
+            this.ch_showpass.AutoSize = true;
+            this.ch_showpass.Depth = 0;
+            this.ch_showpass.Location = new System.Drawing.Point(19, 263);
+            this.ch_showpass.Margin = new System.Windows.Forms.Padding(0);
+            this.ch_showpass.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ch_showpass.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ch_showpass.Name = "ch_showpass";
+            this.ch_showpass.ReadOnly = false;
+            this.ch_showpass.Ripple = true;
+            this.ch_showpass.Size = new System.Drawing.Size(138, 37);
+            this.ch_showpass.TabIndex = 7;
+            this.ch_showpass.Text = "Hiện mật khẩu";
+            this.ch_showpass.UseVisualStyleBackColor = true;
+            this.ch_showpass.CheckedChanged += new System.EventHandler(this.ch_showpass_CheckedChanged);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -111,6 +128,7 @@
             this.btn_dangky.Text = "Đăng ký";
             this.btn_dangky.ThemeAuthor = "Narwin";
             this.btn_dangky.ThemeName = "MetroLite";
+            this.btn_dangky.Click += new System.EventHandler(this.btn_dangky_Click);
             // 
             // btn_dangnhap
             // 
@@ -137,6 +155,7 @@
             this.btn_dangnhap.Text = "Đăng nhập";
             this.btn_dangnhap.ThemeAuthor = "Narwin";
             this.btn_dangnhap.ThemeName = "MetroLite";
+            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // txt_password
             // 
@@ -156,6 +175,7 @@
             this.txt_password.TabIndex = 6;
             this.txt_password.Text = "";
             this.txt_password.TrailingIcon = null;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // txt_username
             // 
@@ -186,23 +206,6 @@
             this.img_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_logo.TabIndex = 1;
             this.img_logo.TabStop = false;
-            // 
-            // ch_showpass
-            // 
-            this.ch_showpass.AutoSize = true;
-            this.ch_showpass.Depth = 0;
-            this.ch_showpass.Location = new System.Drawing.Point(19, 263);
-            this.ch_showpass.Margin = new System.Windows.Forms.Padding(0);
-            this.ch_showpass.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.ch_showpass.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ch_showpass.Name = "ch_showpass";
-            this.ch_showpass.ReadOnly = false;
-            this.ch_showpass.Ripple = true;
-            this.ch_showpass.Size = new System.Drawing.Size(138, 37);
-            this.ch_showpass.TabIndex = 7;
-            this.ch_showpass.Text = "Hiện mật khẩu";
-            this.ch_showpass.UseVisualStyleBackColor = true;
-            this.ch_showpass.CheckedChanged += new System.EventHandler(this.ch_showpass_CheckedChanged);
             // 
             // Login
             // 
