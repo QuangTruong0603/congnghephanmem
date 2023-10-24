@@ -1,0 +1,9 @@
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\bin\Debug\DAL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\bin\Debug\DAL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\bin\Debug\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\bin\Debug\DTO.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\obj\Debug\DAL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,6 @@
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DTO\bin\Release\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DTO\bin\Release\DTO.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DTO\obj\Release\DTO.csproj.AssemblyReference.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DTO\obj\Release\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\DTO\obj\Release\DTO.pdb
