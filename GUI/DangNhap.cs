@@ -9,12 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace GUI
 {
     public partial class Login : MaterialForm
     {
-
+        
      
         public Login()
         {
@@ -29,8 +30,8 @@ namespace GUI
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
-            txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+            //txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+            //txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
         }
 
         private void materialLabel1_Click(object sender, EventArgs e)
@@ -71,6 +72,29 @@ namespace GUI
             Register rg = new Register();
             rg.Show();
             Visible = false;
+        }
+
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+            string username = txt_username.Text.ToString();
+            string password = txt_password.Text;
+            BLL_Login_Staff bLL_Login_Staff = new BLL_Login_Staff();
+            //if(bLL_Login_Staff.checkLogin(username, password))
+            //{
+            //    MessageBox.Show("Đăng nhập thành công");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Đăng nhập thất bại");
+            //}
+            MessageBox.Show(username.Equals("cho").ToString());
+            MessageBox.Show(password.Length.ToString()); 
+            MessageBox.Show(bLL_Login_Staff.checkLogin(username, password));
+        }
+
+        private void txt_username_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

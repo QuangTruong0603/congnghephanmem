@@ -9,3 +9,14 @@ D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\BLL\obj\Debug\BLL.csproj
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\BLL\obj\Debug\BLL.dll
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\BLL\obj\Debug\BLL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\bin\Debug\BLL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\bin\Debug\BLL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\bin\Debug\DAL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\bin\Debug\DTO.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\bin\Debug\DAL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\bin\Debug\DTO.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.pdb
