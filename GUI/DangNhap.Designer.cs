@@ -32,8 +32,11 @@
             this.txt_matkhau = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ch_showpass = new MaterialSkin.Controls.MaterialCheckbox();
+<<<<<<< HEAD
             this.txt_password = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_username = new MaterialSkin.Controls.MaterialTextBox();
+=======
+>>>>>>> eaf9a2f83b905c3f4288fda7574f339a47176dc0
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_dangky = new MetroSet_UI.Controls.MetroSetButton();
             this.btn_dangnhap = new MetroSet_UI.Controls.MetroSetButton();
@@ -93,6 +96,7 @@
             this.ch_showpass.UseVisualStyleBackColor = true;
             this.ch_showpass.CheckedChanged += new System.EventHandler(this.ch_showpass_CheckedChanged);
             // 
+<<<<<<< HEAD
             // txt_password
             // 
             this.txt_password.AnimateReadOnly = false;
@@ -131,6 +135,8 @@
             this.txt_username.TrailingIcon = null;
             this.txt_username.TextChanged += new System.EventHandler(this.txt_username_TextChanged);
             // 
+=======
+>>>>>>> eaf9a2f83b905c3f4288fda7574f339a47176dc0
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -166,6 +172,7 @@
             this.btn_dangky.Text = "Đăng ký";
             this.btn_dangky.ThemeAuthor = "Narwin";
             this.btn_dangky.ThemeName = "MetroLite";
+            this.btn_dangky.Click += new System.EventHandler(this.btn_dangky_Click);
             // 
             // btn_dangnhap
             // 
@@ -193,6 +200,47 @@
             this.btn_dangnhap.ThemeAuthor = "Narwin";
             this.btn_dangnhap.ThemeName = "MetroLite";
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
+<<<<<<< HEAD
+=======
+            // 
+            // txt_password
+            // 
+            this.txt_password.AnimateReadOnly = false;
+            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_password.Depth = 0;
+            this.txt_password.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_password.Hint = "Nhập mật khẩu";
+            this.txt_password.LeadingIcon = global::GUI.Properties.Resources.padlock;
+            this.txt_password.Location = new System.Drawing.Point(19, 199);
+            this.txt_password.MaxLength = 50;
+            this.txt_password.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_password.Multiline = false;
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Password = true;
+            this.txt_password.Size = new System.Drawing.Size(571, 50);
+            this.txt_password.TabIndex = 6;
+            this.txt_password.Text = "";
+            this.txt_password.TrailingIcon = null;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
+            // 
+            // txt_username
+            // 
+            this.txt_username.AnimateReadOnly = false;
+            this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_username.Depth = 0;
+            this.txt_username.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_username.Hint = "Nhập tên đăng nhập";
+            this.txt_username.LeadingIcon = global::GUI.Properties.Resources.user;
+            this.txt_username.Location = new System.Drawing.Point(19, 71);
+            this.txt_username.MaxLength = 50;
+            this.txt_username.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_username.Multiline = false;
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(571, 50);
+            this.txt_username.TabIndex = 5;
+            this.txt_username.Text = "";
+            this.txt_username.TrailingIcon = null;
+>>>>>>> eaf9a2f83b905c3f4288fda7574f339a47176dc0
             // 
             // img_logo
             // 
