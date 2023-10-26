@@ -9,11 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace GUI
 {
     public partial class XacNhanDangKy : MaterialForm
     {
+
+        private DAL_Staff dalStaff = new DAL_Staff();
         public XacNhanDangKy(String email, String username, String password, String otp, String time)
         {
             InitializeComponent();
@@ -81,7 +84,19 @@ namespace GUI
                     }
                     else
                     {
-                        
+                        bool addNewStaff = dalStaff.addStaff(sendUsername.Text.ToString(), sendPassword.Text.ToString(), sendEmail.Text.ToString());
+
+                        if(addNewStaff == true)
+                        {
+                            MessageBox.Show("Đăng ký tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Login lg = new Login();
+                            lg.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Đăng ký tài khoản thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
 
@@ -98,6 +113,9 @@ namespace GUI
             Application.Exit();
         }
 
-      
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

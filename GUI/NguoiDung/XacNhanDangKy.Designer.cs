@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.warning = new MetroSet_UI.Controls.MetroSetLabel();
             this.btn_confirm = new MetroSet_UI.Controls.MetroSetButton();
             this.txt_title = new System.Windows.Forms.Label();
             this.txt_otp = new MaterialSkin.Controls.MaterialTextBox();
@@ -37,7 +38,6 @@
             this.sendEmail = new System.Windows.Forms.Label();
             this.sendOtp = new System.Windows.Forms.Label();
             this.sendTime = new System.Windows.Forms.Label();
-            this.warning = new MetroSet_UI.Controls.MetroSetLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(459, 299);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // warning
+            // 
+            this.warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warning.IsDerivedStyle = true;
+            this.warning.Location = new System.Drawing.Point(82, 170);
+            this.warning.Name = "warning";
+            this.warning.Size = new System.Drawing.Size(323, 34);
+            this.warning.Style = MetroSet_UI.Enums.Style.Light;
+            this.warning.StyleManager = null;
+            this.warning.TabIndex = 7;
+            this.warning.Text = "Mã xác nhận có hiệu lực trong 3 phút";
+            this.warning.ThemeAuthor = "Narwin";
+            this.warning.ThemeName = "MetroLite";
             // 
             // btn_confirm
             // 
@@ -146,6 +161,7 @@
             this.sendOtp.Size = new System.Drawing.Size(44, 16);
             this.sendOtp.TabIndex = 5;
             this.sendOtp.Text = "label4";
+            this.sendOtp.Visible = false;
             // 
             // sendTime
             // 
@@ -156,20 +172,6 @@
             this.sendTime.TabIndex = 6;
             this.sendTime.Text = "label5";
             this.sendTime.Visible = false;
-            // 
-            // warning
-            // 
-            this.warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.warning.IsDerivedStyle = true;
-            this.warning.Location = new System.Drawing.Point(82, 170);
-            this.warning.Name = "warning";
-            this.warning.Size = new System.Drawing.Size(323, 34);
-            this.warning.Style = MetroSet_UI.Enums.Style.Light;
-            this.warning.StyleManager = null;
-            this.warning.TabIndex = 7;
-            this.warning.Text = "Mã xác nhận có hiệu lực trong 3 phút";
-            this.warning.ThemeAuthor = "Narwin";
-            this.warning.ThemeName = "MetroLite";
             // 
             // XacNhanDangKy
             // 

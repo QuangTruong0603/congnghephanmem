@@ -111,10 +111,13 @@ namespace BLL
                     }
 
 
+                    if (dalStaff.checkUserByEmail(email) != 0)
+                    {
+                        return "Email đã tồn tại";
+                    }
 
 
-
-                    if(dalStaff.checkUserByUsername(username) != 0) 
+                    if (dalStaff.checkUserByUsername(username) != 0) 
                     {
                         return "Tên tài khoản đã tồn tại";
                     }

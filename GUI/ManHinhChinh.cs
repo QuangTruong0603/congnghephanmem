@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,8 @@ namespace GUI
 
         private void ManHinhChinh_Load(object sender, EventArgs e)
         {
-            staffname.Text = Properties.Settings.Default.name;
+            staffname.Text = Account.name;
+            label2.Text = Account.timeLogin;
         }
 
         private void ManHinhChinh_FormClosing(object sender, FormClosingEventArgs e)

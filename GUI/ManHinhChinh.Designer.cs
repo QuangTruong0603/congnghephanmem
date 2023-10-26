@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.staffname = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // staffname
@@ -40,11 +41,21 @@
             this.staffname.TabIndex = 0;
             this.staffname.Text = "label1";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(358, 236);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "label1";
+            // 
             // ManHinhChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.staffname);
             this.Name = "ManHinhChinh";
             this.Text = "ManHinhChinh";
@@ -58,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Label staffname;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -91,8 +91,8 @@ namespace GUI
                 if (confirmResult == DialogResult.Yes)
                 {
                     String otp = random();
-                   // bool smail = sendMail.sendEmail(email, otp);
-                    bool smail = true;
+                    bool smail = sendMail.sendEmail(email, otp);
+                   // bool smail = true;
                     if (smail == true)
                     {
                         DateTime currentDateTime = DateTime.Now;

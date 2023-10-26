@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DAL;
+using DTO;
 
 namespace GUI
 {
@@ -92,11 +93,16 @@ namespace GUI
                 DateTime currentDateTime = DateTime.Now;
                 string formattedDateTime = currentDateTime.ToString("dddd, dd MMMM yyyy HH:mm:ss");
                 
-                Properties.Settings.Default.username = username;
-                Properties.Settings.Default.name = staffname;
-                Properties.Settings.Default.roleid = roleid;
-                Properties.Settings.Default.timelogin = formattedDateTime;
-                Properties.Settings.Default.Save();
+                //Properties.Settings.Default.username = username;
+                //Properties.Settings.Default.name = staffname;
+                //Properties.Settings.Default.roleid = roleid;
+                //Properties.Settings.Default.timelogin = formattedDateTime;
+                //Properties.Settings.Default.Save();
+
+                Account.username = username;
+                Account.name = staffname;
+                Account.roleid = roleid;
+                Account.timeLogin = formattedDateTime;
 
                 ManHinhChinh main = new ManHinhChinh();
                 main.Show();
