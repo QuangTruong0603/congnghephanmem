@@ -10,3 +10,9 @@ D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\DTO
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\DTO\obj\Debug\DTO.dll
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\DTO\obj\Debug\DTO.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\DTO\bin\Debug\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\DTO\bin\Debug\DTO.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\DTO\obj\Debug\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\DTO\obj\Debug\DTO.pdb

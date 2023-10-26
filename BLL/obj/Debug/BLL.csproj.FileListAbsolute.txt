@@ -20,3 +20,14 @@ D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.dll
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\BLL\obj\Debug\BLL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\obj\Debug\BLL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\obj\Debug\BLL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\bin\Debug\BLL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\bin\Debug\BLL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\bin\Debug\DAL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\bin\Debug\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\bin\Debug\DAL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\bin\Debug\DTO.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\BLL\obj\Debug\BLL.csproj.CopyComplete

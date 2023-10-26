@@ -1,67 +1,25 @@
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\GUI.exe.config
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\GUI.exe
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\GUI.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\MaterialSkin.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\MetroFramework.Design.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\MetroFramework.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\MetroFramework.Fonts.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\MetroSet UI.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.Properties.Resources.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.csproj.CopyComplete
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.exe
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\BLL.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\DTO.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\BLL.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\bin\Debug\DTO.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\7-Eleven\GUI\obj\Debug\GUI.Login.resources
-<<<<<<< HEAD
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\GUI.exe.config
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\GUI.exe
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\GUI.pdb
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\BLL.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\DTO.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\MaterialSkin.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\MetroFramework.Design.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\MetroFramework.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\MetroFramework.Fonts.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\MetroSet UI.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\DAL.dll
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\BLL.pdb
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\DTO.pdb
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\bin\Debug\DAL.pdb
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.Login.resources
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.Properties.Resources.resources
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.csproj.CopyComplete
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.exe
-D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven\congnghephanmem\GUI\obj\Debug\GUI.pdb
-=======
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\GUI.exe.config
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\GUI.exe
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\GUI.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\BLL.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\DTO.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\MaterialSkin.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\MetroFramework.Design.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\MetroFramework.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\MetroFramework.Fonts.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\MetroSet UI.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\BLL.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\bin\Debug\DTO.pdb
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.Register.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.Login.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.Properties.Resources.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.csproj.CopyComplete
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.exe
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code\congnghephanmem\GUI\obj\Debug\GUI.pdb
->>>>>>> eaf9a2f83b905c3f4288fda7574f339a47176dc0
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\GUI.exe.config
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\GUI.exe
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\GUI.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\BLL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\DAL.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\DTO.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\MaterialSkin.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\MetroFramework.Design.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\MetroFramework.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\MetroFramework.Fonts.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\MetroSet UI.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\BLL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\DAL.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\DTO.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.Register.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.Login.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.exe
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.pdb
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ManHinhChinh.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.XacNhanDangKy.resources
