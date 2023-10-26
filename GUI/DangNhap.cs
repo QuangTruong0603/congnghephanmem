@@ -10,12 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DAL;
 
 namespace GUI
 {
     public partial class Login : MaterialForm
     {
-        
+
+        private BLL_Login_Staff bLL_Login_Staff = new BLL_Login_Staff();
      
         public Login()
         {
@@ -30,8 +32,8 @@ namespace GUI
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            //txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
-            //txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+           txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+           txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
         }
 
         private void materialLabel1_Click(object sender, EventArgs e)
@@ -72,34 +74,42 @@ namespace GUI
             Register rg = new Register();
             rg.Show();
             Visible = false;
-        }
+        }    
 
-        private void btn_dangnhap_Click(object sender, EventArgs e)
-        {
-            string username = txt_username.Text.ToString();
-            string password = txt_password.Text;
-            BLL_Login_Staff bLL_Login_Staff = new BLL_Login_Staff();
-            //if(bLL_Login_Staff.checkLogin(username, password))
-            //{
-            //    MessageBox.Show("Đăng nhập thành công");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Đăng nhập thất bại");
-            //}
-            MessageBox.Show(username.Equals("cho").ToString());
-            MessageBox.Show(password.Length.ToString()); 
-            MessageBox.Show(bLL_Login_Staff.checkLogin(username, password));
-        }
-
-        private void txt_username_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_dangnhap_Click_1(object sender, EventArgs e)
         {
+           
+            String username = txt_username.Text.ToString();
+            String password = txt_password.Text.ToString();
 
+            String result = bLL_Login_Staff.checkLogin(username, password);
+
+            if(result == "Thành công")
+            {
+                int roleid = bLL_Login_Staff.getRole(username);
+                string staffname = bLL_Login_Staff.getName(username);
+                DateTime currentDateTime = DateTime.Now;
+                string formattedDateTime = currentDateTime.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+                
+                Properties.Settings.Default.username = username;
+                Properties.Settings.Default.name = staffname;
+                Properties.Settings.Default.roleid = roleid;
+                Properties.Settings.Default.timelogin = formattedDateTime;
+                Properties.Settings.Default.Save();
+
+                ManHinhChinh main = new ManHinhChinh();
+                main.Show();
+                this.Hide();
+
+
+            }
+            else
+            {
+                MessageBox.Show(result, "Lỗi", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+           
+          
         }
     }
 }

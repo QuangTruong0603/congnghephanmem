@@ -130,10 +130,9 @@
             this.txt_username.TabIndex = 5;
             this.txt_username.Text = "";
             this.txt_username.TrailingIcon = null;
-            this.txt_username.TextChanged += new System.EventHandler(this.txt_username_TextChanged);
-            // 
+            
             // panel2
-            // 
+            
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.Controls.Add(this.btn_dangky);
             this.panel2.Controls.Add(this.btn_dangnhap);

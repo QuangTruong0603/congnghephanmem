@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class Connection
+    public class Connection
     {
-        private String ConnectionString = "ABC";
+        private String ConnectionString = "Data Source=MSI;Initial Catalog=databasev1;Integrated Security=True";
         private SqlConnection conn = null;
 
 

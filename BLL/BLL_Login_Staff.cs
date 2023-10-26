@@ -8,13 +8,44 @@ namespace BLL
 {
     public class BLL_Login_Staff
     {
-        DAL_Staff staff = new DAL_Staff();
-        
-        public String checkLogin(string username, string password)
+
+        private DAL_Staff dalstaff = new DAL_Staff();
+
+        public BLL_Login_Staff() { }
+
+
+        public String checkLogin(String username, String password)
         {
-            return staff.checkLogin(username, password);
+            if(username == "" || password == "")
+            {
+                return "Vui lòng nhập đầy đủ tên tài khoản và mật khẩu";
+            }
+            else
+            {
+
+                Boolean check = dalstaff.checkLogin(username, password);
+
+                if(check)
+                {
+                    return "Thành công";
+                }
+                else
+                {
+                    return "Tên tài khoản hoặc mật khẩu không chính xác";
+                }
+            }
         }
-        
+
+        public int getRole(String username)
+        {
+            return dalstaff.GetRole(username);
+        }
+
+        public String getName(String username)
+        {
+            return dalstaff.GetNameStaff(username);
+        }
+
     }
    
 

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class Class1
+    public class AccountLogin
     {
+        public AccountLogin() { }
+
+        
     }
 }
