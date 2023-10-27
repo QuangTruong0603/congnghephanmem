@@ -917,3 +917,15 @@ Exec GetStaffByEmail 'loctran7129@gmail.com'
 select * from Staff
 
 update Staff set staff_enable = 1 where username = 'admin'
+
+
+
+Create Procedure UpdatePassword(@staffemail varchar(100),@newpassword varchar (100))
+as
+begin
+	Update Staff set password = @newpassword where staff_email = @staffemail
+end
+
+drop procedure UpdatePassword
+
+exec UpdatePassword 'staff1@email.com','abc'

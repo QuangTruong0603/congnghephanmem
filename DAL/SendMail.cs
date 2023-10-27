@@ -13,14 +13,14 @@ namespace DAL
         private String mail = "huuloctran129@gmail.com";
         public SendMail() { }
 
-        public Boolean sendEmail(String to, String otp)
+        public Boolean sendEmail(String to, String otp, String sub)
         {
             to = to.Trim();
 
             MailMessage mailMessage = new MailMessage();
             mailMessage.To.Add(to);
             mailMessage.From = new MailAddress(mail);
-            mailMessage.Subject = "Mã xác nhận tạo tài khoản";
+            mailMessage.Subject = sub;
             mailMessage.Body = "Mã xác nhận: " + otp;
 
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");

@@ -23,3 +23,5 @@ D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\G
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.pdb
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ManHinhChinh.resources
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.XacNhanDangKy.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.NguoiDung.ForgotPassword.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.NguoiDung.NewPassword.resources

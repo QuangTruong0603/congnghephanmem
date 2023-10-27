@@ -38,7 +38,9 @@
             this.sendEmail = new System.Windows.Forms.Label();
             this.sendOtp = new System.Windows.Forms.Label();
             this.sendTime = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,7 +113,8 @@
             this.txt_otp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_otp.Depth = 0;
             this.txt_otp.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_otp.LeadingIcon = null;
+            this.txt_otp.Hint = "Mã xác nhận";
+            this.txt_otp.LeadingIcon = global::GUI.Properties.Resources.password;
             this.txt_otp.Location = new System.Drawing.Point(109, 107);
             this.txt_otp.MaxLength = 6;
             this.txt_otp.MouseState = MaterialSkin.MouseState.OUT;
@@ -173,11 +176,22 @@
             this.sendTime.Text = "label5";
             this.sendTime.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(51, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // XacNhanDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sendTime);
             this.Controls.Add(this.sendOtp);
             this.Controls.Add(this.sendEmail);
@@ -191,6 +205,7 @@
             this.Load += new System.EventHandler(this.XacNhanDangKy_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +222,6 @@
         private System.Windows.Forms.Label sendOtp;
         private System.Windows.Forms.Label sendTime;
         private MetroSet_UI.Controls.MetroSetLabel warning;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using BLL;
 using DAL;
 using DTO;
+using GUI.NguoiDung;
 
 namespace GUI
 {
@@ -33,8 +34,9 @@ namespace GUI
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-           txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
-           txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+                txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+                txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
+               forgotPassword.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 13);
         }
 
         private void materialLabel1_Click(object sender, EventArgs e)
@@ -112,10 +114,29 @@ namespace GUI
             }
             else
             {
-                MessageBox.Show(result, "Lỗi", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,result, "Lỗi", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
            
           
+        }
+
+        private void forgotPassword_Click(object sender, EventArgs e)
+        {
+
+            ForgotPassword fg = new ForgotPassword();
+            fg.Show();
+
+            this.Hide();
+        }
+
+        private void forgotPassword_MouseHover(object sender, EventArgs e)
+        {
+            forgotPassword.ForeColor = Color.Red;
+        }
+
+        private void forgotPassword_MouseLeave(object sender, EventArgs e)
+        {
+            forgotPassword.ForeColor = Color.Black;
         }
     }
 }

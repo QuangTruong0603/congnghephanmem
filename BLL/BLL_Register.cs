@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DTO;
 
 namespace BLL
 {
@@ -135,5 +136,34 @@ namespace BLL
         {
             return dalStaff.addStaff(username, password, email);
         }
+
+
+        public String checkForgotPassword(String email)
+        {
+            if(email == "")
+            {
+                return "Vui lòng nhập email";
+            }
+
+            if(checkFormatEmail(email) == false)
+            {
+                return "Định dạnh email không đúng";
+            }
+
+            if(dalStaff.checkUserByEmail(email) == 0)
+            {
+                return "Tài khoản không tồn tại";
+            }
+
+            return "OK";
+        }
+
+
+        public DTO_Staff getInformationOfStaff(String email)
+        {
+            return dalStaff.getInformationOfStaff(email);
+        }
+
+
     }
 }

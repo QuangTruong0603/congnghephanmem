@@ -84,14 +84,14 @@ namespace GUI
 
             if(result == "OK")
             {
-                var confirmResult = MessageBox.Show("Xác nhận tạo tài khoản ?",
+                var confirmResult = MetroFramework.MetroMessageBox.Show(this,"Xác nhận tạo tài khoản ?",
                                   "Xác nhận",
                                   MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
                 if (confirmResult == DialogResult.Yes)
                 {
                     String otp = random();
-                    bool smail = sendMail.sendEmail(email, otp);
+                    bool smail = sendMail.sendEmail(email, otp,"Mã xác nhận tạo tài khoản");
                    // bool smail = true;
                     if (smail == true)
                     {
@@ -103,7 +103,7 @@ namespace GUI
                     }
                     else
                     {
-                        MessageBox.Show("Gửi mã xác nhận thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MetroFramework.MetroMessageBox.Show(this, "Gửi mã xác nhận thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
                 }
@@ -114,7 +114,7 @@ namespace GUI
             }
             else
             {
-                MessageBox.Show(result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this, result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
 

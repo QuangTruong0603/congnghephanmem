@@ -31,6 +31,7 @@
             this.txt_dangnhap = new System.Windows.Forms.Label();
             this.txt_matkhau = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.forgotPassword = new System.Windows.Forms.Label();
             this.ch_showpass = new MaterialSkin.Controls.MaterialCheckbox();
             this.txt_password = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_username = new MaterialSkin.Controls.MaterialTextBox();
@@ -66,6 +67,7 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.Controls.Add(this.forgotPassword);
             this.panel1.Controls.Add(this.ch_showpass);
             this.panel1.Controls.Add(this.txt_password);
             this.panel1.Controls.Add(this.txt_username);
@@ -75,6 +77,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(621, 339);
             this.panel1.TabIndex = 6;
+            // 
+            // forgotPassword
+            // 
+            this.forgotPassword.AutoSize = true;
+            this.forgotPassword.Location = new System.Drawing.Point(419, 272);
+            this.forgotPassword.Name = "forgotPassword";
+            this.forgotPassword.Size = new System.Drawing.Size(103, 16);
+            this.forgotPassword.TabIndex = 8;
+            this.forgotPassword.Text = "Quên mật khẩu?";
+            this.forgotPassword.Click += new System.EventHandler(this.forgotPassword_Click);
+            this.forgotPassword.MouseLeave += new System.EventHandler(this.forgotPassword_MouseLeave);
+            this.forgotPassword.MouseHover += new System.EventHandler(this.forgotPassword_MouseHover);
             // 
             // ch_showpass
             // 
@@ -130,9 +144,9 @@
             this.txt_username.TabIndex = 5;
             this.txt_username.Text = "";
             this.txt_username.TrailingIcon = null;
-            
+            // 
             // panel2
-            
+            // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.Controls.Add(this.btn_dangky);
             this.panel2.Controls.Add(this.btn_dangnhap);
@@ -240,6 +254,7 @@
         private MaterialSkin.Controls.MaterialTextBox txt_username;
         private MaterialSkin.Controls.MaterialTextBox txt_password;
         private MaterialSkin.Controls.MaterialCheckbox ch_showpass;
+        private System.Windows.Forms.Label forgotPassword;
     }
 }
 
