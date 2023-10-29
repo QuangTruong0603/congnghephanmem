@@ -21,5 +21,15 @@ namespace BLL
         {
             return dAL_Productcs.getProductManage();
         }
+
+        public Boolean DisableProduct(String sku)
+        {
+            return dAL_Productcs.DisableProduct(sku);
+        }
+
+        public DataTable findProduct(String barcode)
+        {
+            return dAL_Productcs.findOneProduct(barcode);
+        }
     }
 }

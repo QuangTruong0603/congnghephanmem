@@ -188,9 +188,9 @@ VALUES
 
 INSERT INTO Product (product_name, product_barcode, product_price,product_status,unit_id, cate_id, inven_id,product_image)
 VALUES 
-('Trà xanh C2 hương chanh 360ml', '8934564600128', 10000,1, 1, 1,1, 'tra-xanh-c2-huong-chanh-360ml.jpg'),
-('Nước tăng lực Sting hương dâu 330ml', '3128554', 12000,1, 1, 2,2, 'nuoc-tang-luc-sting-huong-dau-330ml.jpg'),
-('Trà ô long Tea Plus 320ml', '8934588873119', 10000, 1, 1, 1, 3,'tra-o-long-tea-plus-320ml.jpg')
+(N'Trà xanh C2 hương chanh 360ml', '8934564600128', 10000,1, 1, 1,1, 'tra-xanh-c2-huong-chanh-360ml.jpg'),
+(N'Nước tăng lực Sting hương dâu 330ml', '3128554', 12000,1, 1, 2,2, 'nuoc-tang-luc-sting-huong-dau-330ml.jpg'),
+(N'Trà ô long Tea Plus 320ml', '8934588873119', 10000, 1, 1, 1, 3,'tra-o-long-tea-plus-320ml.jpg')
 
 select * from unit
 select * from Category

@@ -951,11 +951,14 @@ select * from Product
 select * from Discount
 
 
+--Product
+
+
 Create Procedure ManageProduct
 as
 begin
-	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Ảnh' from Product, Category, Inventory
-	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id 
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1
 end
 
 drop procedure ManageProduct
@@ -967,3 +970,30 @@ delete from Product
 delete from Category
 
 delete from Discount
+
+select * from Product
+
+update Product set product_status = 1 where product_barcode = '3128554'
+
+go
+
+Create Procedure DisableProduct (@product_barcode varchar(100))
+as
+begin
+	update Product set product_status = 0 where product_barcode = @product_barcode
+end
+
+go
+
+Create Procedure FindProduct (@product_barcode varchar(100))
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1 and Product.product_barcode = @product_barcode
+end
+
+drop procedure FindProduct
+
+exec FindProduct '3128554'
+
+

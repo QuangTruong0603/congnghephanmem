@@ -12,8 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
-
-
+using System.IO;
 
 namespace GUI.SanPham
 {
@@ -41,11 +40,9 @@ namespace GUI.SanPham
 
             dataSanPham.DataSource = bLL_Product.getProductManage();
 
-            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn.HeaderText = "Ảnh"; 
-            dataSanPham.Columns.Add(imageColumn); 
+            dataSanPham.AllowUserToAddRows = false;
 
-
+            dataSanPham.RowTemplate.Height = 120;
 
 
         }
@@ -63,6 +60,25 @@ namespace GUI.SanPham
             btn_edit.BackColor = Color.Orange;
             btn_edit.FlatStyle = FlatStyle.Flat;
             btn_edit.FlatAppearance.BorderSize = 0;
+
+            btn_refresh.BackColor = Color.LightPink;
+            btn_refresh.FlatStyle = FlatStyle.Flat;
+            btn_refresh.FlatAppearance.BorderSize = 0;
+
+
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.btn_add, "Thêm sản phẩm");
+
+            System.Windows.Forms.ToolTip ToolTip2 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.btn_delete, "Xóa sản phẩm");
+
+            System.Windows.Forms.ToolTip ToolTip3 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.btn_edit, "Chỉnh sửa sản phẩm");
+
+            System.Windows.Forms.ToolTip ToolTip4 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.btn_refresh, "Refresh");
+
+
 
         }
 
@@ -97,6 +113,85 @@ namespace GUI.SanPham
             {
                 textb_search.Text = "Nhập mã sản phẩm để tìm kiếm";
             }
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+
+            int row = dataSanPham.CurrentCell.RowIndex;
+
+
+
+            String name = dataSanPham.Rows[row].Cells[2].Value.ToString();
+
+            var confirmResult = MetroFramework.MetroMessageBox.Show(this,"Xóa " + name +" ?",
+                                     "Xác nhận xóa ?",
+                                     MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (confirmResult == DialogResult.Yes)
+            {
+                String sku = dataSanPham.Rows[row].Cells[1].Value.ToString();
+
+
+                bool res = bLL_Product.DisableProduct(sku);
+
+                if (res == true)
+                {
+                   // dataSanPham.DataSource = bLL_Product.getProductManage();
+                    dataSanPham.Rows.RemoveAt(row);
+                    MetroFramework.MetroMessageBox.Show(this, "Đã xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
+                }
+                else
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Đã xảy ra lỗi ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+  
+           
+
+        }
+
+        private void textb_search_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            
+
+            if (e.KeyCode == Keys.Enter)
+            {
+
+                String key = textb_search.Text.ToString();
+
+                if(key != "")
+                {
+                    DataTable dt = new DataTable();
+
+                    dt = bLL_Product.findProduct(key);
+
+                    if(dt.Rows.Count != 0)
+                    {
+                        dataSanPham.DataSource = dt;
+                    }
+                    else{
+                        MetroFramework.MetroMessageBox.Show(this, "Không tìm thấy sản phẩm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    DataTable dt = new DataTable();
+                    dt = bLL_Product.getProductManage();
+                    dataSanPham.DataSource= dt;
+                }
+
+               
+            }
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = bLL_Product.getProductManage();
+            dataSanPham.DataSource = dt;    
         }
     }
 }
