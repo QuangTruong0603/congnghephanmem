@@ -254,6 +254,16 @@ BEGIN
     INSERT INTO Product (product_name, product_barcode, product_price, unit_id, cate_id, inven_id)
     VALUES (@product_name, @product_barcode, @product_price, @unit_id, @cate_id, @inven_id)
 END
+
+
+select * from Product
+
+select * from Category
+
+Select * from Unit
+
+delete from Category
+
 --Xóa
 go
 CREATE PROCEDURE Delete_Product
@@ -929,3 +939,31 @@ end
 drop procedure UpdatePassword
 
 exec UpdatePassword 'staff1@email.com','abc'
+
+
+
+select * from Category
+
+select * from Unit
+
+select * from Product
+
+select * from Discount
+
+
+Create Procedure ManageProduct
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Ảnh' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id 
+end
+
+drop procedure ManageProduct
+
+exec ManageProduct
+
+delete from Product
+
+delete from Category
+
+delete from Discount

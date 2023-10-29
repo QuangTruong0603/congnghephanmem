@@ -70,5 +70,15 @@ namespace GUI.Properties {
                 this["timelogin"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI;Initial Catalog=databasev1;Integrated Security=True")]
+        public string databasev1ConnectionString {
+            get {
+                return ((string)(this["databasev1ConnectionString"]));
+            }
+        }
     }
 }

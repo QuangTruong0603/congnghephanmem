@@ -215,10 +215,11 @@ GO
 CREATE TABLE [Product]
 (
     [product_id] [bigint] NOT NULL IDENTITY(1,1),
-    [product_name] [nvarchar] (50) NOT NULL,
+    [product_name] [nvarchar] (150) NOT NULL,
     [product_barcode] [varchar] (20) NOT NULL,
     [product_price] [int] NOT NULL,
 	[product_status] [int] NOT NULL,
+	[product_image] [varchar](100) NULL,
     [unit_id] [int] NOT NULL,
     [cate_id] [int] NOT NULL,
     [inven_id] [bigint] NOT NULL,
@@ -324,10 +325,11 @@ GO
 CREATE TABLE [Category]
 (
     [cate_id] [int] NOT NULL IDENTITY(1,1),
-    [cate_name] [nvarchar] (50) NOT NULL,
+    [cate_name] [nvarchar] (100) NOT NULL,
     CONSTRAINT PK_Category PRIMARY KEY (cate_id)    
 )
 GO
+
 
 
 -- Table Discount --------------------------
@@ -441,3 +443,7 @@ ADD
 	CONSTRAINT FK_orderdetail_product FOREIGN KEY (product_id) References [Product] (product_id),
 	CONSTRAINT FK_orderdetail_order FOREIGN KEY (order_id) REFERENCES [OrderOnline] (order_id)
 GO
+
+
+
+select * from Product
