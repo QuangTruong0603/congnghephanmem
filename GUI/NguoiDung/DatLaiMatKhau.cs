@@ -51,7 +51,7 @@ namespace GUI.NguoiDung
 
         private void materialTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsNumber(e.KeyChar);
+            e.Handled = !char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != 8;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -142,6 +142,11 @@ namespace GUI.NguoiDung
                     }
                 }
             }
+
+        }
+
+        private void otp_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

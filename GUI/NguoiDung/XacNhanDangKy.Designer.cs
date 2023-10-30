@@ -124,6 +124,7 @@
             this.txt_otp.TabIndex = 1;
             this.txt_otp.Text = "";
             this.txt_otp.TrailingIcon = null;
+            this.txt_otp.TextChanged += new System.EventHandler(this.txt_otp_TextChanged);
             this.txt_otp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_otp_KeyPress);
             // 
             // sendUsername

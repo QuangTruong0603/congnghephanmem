@@ -226,6 +226,18 @@
     <Compile Include="SanPham\QuanLySanPham.Designer.cs">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="SanPham\SuaSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPham\SuaSanPham.Designer.cs">
+      <DependentUpon>SuaSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham\ThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPham\ThemSanPham.Designer.cs">
+      <DependentUpon>ThemSanPham.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="NguoiDung\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +269,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SanPham\QuanLySanPham.resx">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham\SuaSanPham.resx">
+      <DependentUpon>SuaSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham\ThemSanPham.resx">
+      <DependentUpon>ThemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="databasev1DataSet.xsc">
       <DependentUpon>databasev1DataSet.xsd</DependentUpon>

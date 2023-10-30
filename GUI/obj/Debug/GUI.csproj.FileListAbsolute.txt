@@ -91,3 +91,5 @@ D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\B
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.exe.licenses
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.SanPham.ThemSanPham.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.SanPham.SuaSanPham.resources

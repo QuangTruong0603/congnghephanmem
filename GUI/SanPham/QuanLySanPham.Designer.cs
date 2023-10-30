@@ -37,8 +37,8 @@
             this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.staffTableAdapter = new GUI.databasev1DataSetTableAdapters.StaffTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataSanPham = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.btn_refresh = new System.Windows.Forms.Button();
+            this.dataSanPham = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -87,6 +87,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1347, 522);
             this.panel1.TabIndex = 11;
+            // 
+            // btn_refresh
+            // 
+            this.btn_refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_refresh.Image = global::GUI.Properties.Resources.refresh_page_option;
+            this.btn_refresh.Location = new System.Drawing.Point(532, 3);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(112, 60);
+            this.btn_refresh.TabIndex = 12;
+            this.btn_refresh.UseVisualStyleBackColor = false;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // dataSanPham
             // 
@@ -149,17 +160,6 @@
             this.dataSanPham.TabIndex = 11;
             this.dataSanPham.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // btn_refresh
-            // 
-            this.btn_refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_refresh.Image = global::GUI.Properties.Resources.refresh_page_option;
-            this.btn_refresh.Location = new System.Drawing.Point(532, 3);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(112, 60);
-            this.btn_refresh.TabIndex = 12;
-            this.btn_refresh.UseVisualStyleBackColor = false;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
-            // 
             // btn_add
             // 
             this.btn_add.BackColor = System.Drawing.Color.LimeGreen;
@@ -169,6 +169,7 @@
             this.btn_add.Size = new System.Drawing.Size(112, 60);
             this.btn_add.TabIndex = 8;
             this.btn_add.UseVisualStyleBackColor = false;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_edit
             // 
@@ -179,6 +180,7 @@
             this.btn_edit.Size = new System.Drawing.Size(112, 60);
             this.btn_edit.TabIndex = 10;
             this.btn_edit.UseVisualStyleBackColor = false;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_delete
             // 

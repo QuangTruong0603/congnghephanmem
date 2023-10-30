@@ -212,3 +212,18 @@ As
 Go
 
 
+Create Trigger addInvenIdProduct
+on Product After Insert
+As
+	Begin
+		Declare @date Date
+		SELECT @date =  CAST( GETDATE() AS Date )
+		Insert into Inventory (inven_quantity, inven_latest_date, inven_update_quantity) values (0, @date, 0)
+		Declare @invenid int
+		select @invenid = Inventory.inven_id from Inventory where Inventory.inven_id = (select top 1 Inventory.inven_id from Inventory ORDER BY Inventory.inven_id DESC)
+		Declare @barcode varchar(100)
+		select  @barcode  = inserted.[product_barcode] from inserted
+		Update Product set inven_id = @invenid where Product.product_barcode = @barcode
+	End
+Go
+

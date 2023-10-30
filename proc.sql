@@ -243,22 +243,32 @@ go
 --Product
 --Thêm
 CREATE PROCEDURE Insert_Product 
-	@product_name NVARCHAR(50),
+	@product_name NVARCHAR(150),
 	@product_barcode VARCHAR(20),
 	@product_price INT,
+	@product_image varchar(100),
+	@product_status int,
 	@unit_id INT,
 	@cate_id INT,
 	@inven_id BIGINT
 AS
 BEGIN
-    INSERT INTO Product (product_name, product_barcode, product_price, unit_id, cate_id, inven_id)
-    VALUES (@product_name, @product_barcode, @product_price, @unit_id, @cate_id, @inven_id)
+    INSERT INTO Product (product_name, product_barcode, product_price, unit_id, cate_id, inven_id,product_image,product_status)
+    VALUES (@product_name, @product_barcode, @product_price, @unit_id, @cate_id, @inven_id,@product_image,@product_status)
 END
+
+drop procedure Insert_Product
 
 
 select * from Product
 
 select * from Category
+
+select * from Inventory
+
+delete from Product where product_barcode = '3124567'
+
+delete from Inventory where inven_id = 6
 
 Select * from Unit
 
@@ -953,6 +963,18 @@ select * from Discount
 
 --Product
 
+Create Procedure GetInfoProduct (@product_barcode varchar(100))
+as
+begin
+	select * from Product where Product.product_barcode = @product_barcode
+end
+
+exec GetInfoProduct '3128554'
+
+
+
+select * from Product
+
 
 Create Procedure ManageProduct
 as
@@ -995,5 +1017,57 @@ end
 drop procedure FindProduct
 
 exec FindProduct '3128554'
+
+select * from Product
+
+
+--Category
+Create Procedure GetNameCategory
+as
+begin
+	select Category.cate_name from Category
+end
+
+
+Create Procedure GetIdNameCategory (@cate_name nvarchar (100))
+as
+begin
+	select Category.cate_id from Category where Category.cate_name = @cate_name
+end
+
+exec  GetIdNameCategory N'Nước ngọt có ga'
+
+Create Procedure GetCategoryById (@cate_id int)
+as
+begin
+	select * from Category where cate_id = @cate_id
+end
+
+
+exec GetCategoryById 2
+
+
+--Unit
+Create Procedure GetNameUnit
+as
+begin
+	select Unit.unit_name from Unit
+end
+
+Create Procedure GetIdNameUnit (@unit_name nvarchar (100))
+as
+begin
+	select Unit.unit_id from Unit where Unit.unit_name = @unit_name
+end
+
+
+exec GetIdNameUnit N'chai'
+
+
+Create Procedure GetUnitById (@unit_id int)
+as
+begin
+	select * from Unit where unit_id = @unit_id
+end
 
 

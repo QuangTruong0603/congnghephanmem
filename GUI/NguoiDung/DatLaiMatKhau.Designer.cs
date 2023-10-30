@@ -160,6 +160,7 @@
             this.otp.TabIndex = 1;
             this.otp.Text = "";
             this.otp.TrailingIcon = null;
+            this.otp.TextChanged += new System.EventHandler(this.otp_TextChanged);
             this.otp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.materialTextBox1_KeyPress);
             // 
             // txt_titleOtp

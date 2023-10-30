@@ -10,16 +10,17 @@ namespace DTO
     {
 
         public DTO_Product() { }
-        private int product_id { set; get; }
-        private string product_name { set; get; }
-        private string product_barcode { set; get; }
-        private int product_price { set; get; }
 
-        private int product_status { set; get; }
-        private string procduct_image { set; get; }
-        private int unit_id { set; get; }
-        private int cate_id { set; get; }
-        private int inven_id {  set; get; }
+        public int product_id {  get; set; }
+        public string product_name { get; set; }
+        public string product_barcode { get; set; }
+        public int product_price { get; set; }
+
+        public int product_status { get; set; }
+        public string procduct_image { get; set; }
+        public int unit_id { get; set; }
+        public int cate_id { get; set; }
+        public int inven_id {  get; set; }
         
 
     }

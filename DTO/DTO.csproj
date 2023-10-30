@@ -141,8 +141,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="DTO_Category.cs" />
     <Compile Include="DTO_Product.cs" />
     <Compile Include="DTO_Staff.cs" />
+    <Compile Include="DTO_Unit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

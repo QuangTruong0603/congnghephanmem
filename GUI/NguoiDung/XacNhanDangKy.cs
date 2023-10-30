@@ -51,7 +51,7 @@ namespace GUI
 
         private void txt_otp_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsNumber(e.KeyChar);
+            e.Handled = !char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != 8;
         }
 
         private void btn_confirm_Click(object sender, EventArgs e)
@@ -124,6 +124,11 @@ namespace GUI
             Register fgpass = new Register();
             fgpass.Show();
             this.Visible = false;
+        }
+
+        private void txt_otp_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

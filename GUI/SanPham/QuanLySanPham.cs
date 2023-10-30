@@ -193,5 +193,34 @@ namespace GUI.SanPham
             dt = bLL_Product.getProductManage();
             dataSanPham.DataSource = dt;    
         }
+
+
+        public void refreshData()
+        {
+            DataTable dt = new DataTable();
+            dt = bLL_Product.getProductManage();
+            dataSanPham.DataSource = dt;
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            ThemSanPham addProduct = new ThemSanPham();
+            addProduct.ShowDialog();
+
+            refreshData();
+           
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+
+            int row = dataSanPham.CurrentCell.RowIndex;
+
+            String barcode = dataSanPham.Rows[row].Cells[1].Value.ToString();
+
+            SuaSanPham edit = new SuaSanPham(bLL_Product.getProductBarcode(barcode));
+
+            edit.ShowDialog();
+        }
     }
 }

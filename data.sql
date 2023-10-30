@@ -25,8 +25,7 @@ VALUES (N'chai'),
 (N'túi'),
 (N'cái'),
 (N'lít'),
-(N'gói');
-
+(N'gói'),(N'lon');
 
 --
 INSERT INTO StaffType (stafftype_name) 
