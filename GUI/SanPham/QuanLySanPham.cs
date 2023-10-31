@@ -229,5 +229,12 @@ namespace GUI.SanPham
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ManHinhChinh main = new ManHinhChinh();
+            main.Show();
+            this.Hide();
+        }
     }
 }
