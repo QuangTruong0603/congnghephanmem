@@ -132,6 +132,7 @@ namespace GUI.SanPham
             }
 
             p.product_price = iprice;
+
             p.product_status = 1;
             p.procduct_image = filename;
             p.unit_id = bLL_Unit.getIdUnitName(cb_donvitinh.Text.ToString());

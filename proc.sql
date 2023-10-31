@@ -292,7 +292,7 @@ CREATE PROCEDURE Update_Product
     @new_product_price INT,
     @new_unit_id INT,
     @new_cate_id INT,
-    @new_inven_id BIGINT
+	@new_product_image varchar(100)
 AS
 BEGIN
     UPDATE Product
@@ -302,9 +302,13 @@ BEGIN
         product_price = @new_product_price,
         unit_id = @new_unit_id,
         cate_id = @new_cate_id,
-        inven_id = @new_inven_id
+        product_image= @new_product_image
     WHERE product_id = @product_id
 END
+
+drop procedure Update_Product
+
+select * from Product
 
 --Inventory
 go
@@ -1019,7 +1023,7 @@ drop procedure FindProduct
 exec FindProduct '3128554'
 
 select * from Product
-
+select * from Unit
 
 --Category
 Create Procedure GetNameCategory
@@ -1069,5 +1073,9 @@ as
 begin
 	select * from Unit where unit_id = @unit_id
 end
+
+
+exec GetUnitById 9
+
 
 

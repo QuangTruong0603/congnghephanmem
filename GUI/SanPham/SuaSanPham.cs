@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using DTO;
 using System.IO;
 using System.Reflection;
+using System.Drawing.Imaging;
 
 namespace GUI.SanPham
 {
@@ -21,6 +22,9 @@ namespace GUI.SanPham
         private BLL_Category bLL_Category = new BLL_Category();
         private BLL_Unit bLL_Unit = new BLL_Unit();
         private DTO_Product product;
+
+        private string filename = "";
+        private string filepath = "";
 
         public SuaSanPham(DTO_Product product)
         {
@@ -110,6 +114,148 @@ namespace GUI.SanPham
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void refreshData()
+        {
+            var frm = (QuanLySanPham)this.Owner;
+            if (frm != null)
+                frm.btn_refresh.PerformClick();
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+
+            DTO_Product updateProduct = new DTO_Product();
+
+
+            updateProduct.product_id = product.product_id;
+            updateProduct.inven_id = product.inven_id;
+
+
+            string price = tb_giasanpham.Text.ToString();
+            int iprice = 0;
+            if (price != "")
+            {
+                iprice = int.Parse(price);
+            }
+            else
+            {
+                tb_giasanpham.Text = "0";
+            }
+
+            updateProduct.product_price = iprice;
+
+            updateProduct.product_status = product.product_status;
+
+            updateProduct.product_name = tb_tensanpham.Text.ToString();
+            updateProduct.product_barcode = tb_masanpham.Text.ToString();
+
+            updateProduct.unit_id = bLL_Unit.getIdUnitName(cb_donvitinh.Text.ToString());
+            updateProduct.cate_id = bLL_Category.getIdNameCategory(cb_loai.Text.ToString());
+
+
+            if (filename == "" && filepath == "")
+            {
+                updateProduct.procduct_image = product.procduct_image;
+
+            }
+            else
+            {
+                string newNameImage = bLL_Product.newFilenName(filename);
+                updateProduct.procduct_image = newNameImage;
+            }
+
+
+            string checkProduct = "";
+
+
+            if(product.product_barcode == updateProduct.product_barcode)
+            {
+                checkProduct = bLL_Product.checkProductNoBarcode(updateProduct, filename, filepath);
+            }
+            else
+            {
+
+                checkProduct = bLL_Product.checkProduct(updateProduct, filename, filepath);
+            }
+
+
+
+            if (checkProduct == "OK")
+            {
+                bool c = bLL_Product.updateProduct(updateProduct);
+
+                if (c == true)
+                {
+
+                    if(filename != "" && filepath != "")
+                    {
+
+                        string workingDirectory = Environment.CurrentDirectory;
+                        string newpath = Directory.GetParent(workingDirectory).Parent.Parent.FullName.ToString();
+                        string newname = bLL_Product.newFilenName(filename);
+
+                        try
+                        {
+
+                            String savePath = newpath + "\\GUI\\Resources\\Image Products\\" + newname;
+                            pictureBox1.Image.Save(savePath, ImageFormat.Jpeg);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.ToString());
+                          
+                        }
+
+
+                        MessageBox.Show("Chỉnh sửa sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        refreshData();
+                        this.Close();
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Chỉnh sửa sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        refreshData();
+                        this.Close();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Chỉnh sửa thông tin thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show(checkProduct, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+
+
+        public Boolean saveProductUpdate(DTO_Product product)
+        {
+            return bLL_Product.updateProduct(product);
+        }
+
+        private void btn_upload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Images FIles (*.jpg; *.png; *.jpeg;) | *.jpg; *.png; *.jpeg;";
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                filename = dlg.SafeFileName.ToString();
+                filepath = dlg.FileName.ToString();
+
+                pictureBox1.Image = new Bitmap(dlg.FileName);
+
+            }
         }
     }
 }

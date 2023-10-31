@@ -173,7 +173,9 @@ namespace GUI.SanPham
                         dataSanPham.DataSource = dt;
                     }
                     else{
-                        MetroFramework.MetroMessageBox.Show(this, "Không tìm thấy sản phẩm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // MetroFramework.MetroMessageBox.Show(this, "Không tìm thấy sản phẩm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        MessageBox.Show(this, "Không tìm thấy sản phẩm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
@@ -220,7 +222,12 @@ namespace GUI.SanPham
 
             SuaSanPham edit = new SuaSanPham(bLL_Product.getProductBarcode(barcode));
 
-            edit.ShowDialog();
+            edit.ShowDialog(this);
+        }
+
+        private void textb_search_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

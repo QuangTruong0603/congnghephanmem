@@ -250,8 +250,42 @@ namespace DAL
         }
 
 
+        public Boolean updateProduct(DTO_Product product)
+        {
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+                SqlCommand sqlCommand = new SqlCommand("Update_Product", conn);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                sqlCommand.Parameters.Add("@new_product_name",SqlDbType.NVarChar).Value =  product.product_name.ToString();
+                sqlCommand.Parameters.Add("@new_product_barcode",SqlDbType.VarChar).Value = product.product_barcode.ToString();
+                sqlCommand.Parameters.Add("@new_product_price", SqlDbType.Int).Value = product.product_price;
+                sqlCommand.Parameters.Add("@new_product_image", SqlDbType.VarChar).Value = product.procduct_image.ToString();
+                sqlCommand.Parameters.Add("@new_unit_id", SqlDbType.Int).Value = product.unit_id;
+                sqlCommand.Parameters.Add("@new_cate_id", SqlDbType.Int).Value = product.cate_id;
+                sqlCommand.Parameters.Add("@product_id", SqlDbType.Int).Value = product.product_id;
+
+                int i = sqlCommand.ExecuteNonQuery();
+
+                return true;
+
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return false;
+            }
+        }
+
+
 
     }
+
+
+
 
 
 

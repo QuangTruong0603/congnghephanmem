@@ -67,7 +67,30 @@ namespace BLL
             return "OK";
 
         }
-       
+
+        public String checkProductNoBarcode(DTO_Product product, String filename, String path)
+        {
+            String sku = product.product_barcode.ToString();
+
+
+            if (product.product_name == "" || product.product_barcode == "" || product.procduct_image == "")
+            {
+                return "Vui lòng nhập đầy đủ thông tin";
+            }
+
+
+            if (product.product_price < 1000)
+            {
+                return "Giá bán phải lớn hơn hoặc bằng 1000 VND";
+            }
+
+
+            return "OK";
+
+        }
+
+
+
 
         public String newFilenName(String name)
         {
@@ -88,5 +111,10 @@ namespace BLL
             return dAL_Productcs.getProduct(barcode);
         }
 
+
+        public Boolean updateProduct(DTO_Product p)
+        {
+            return dAL_Productcs.updateProduct(p);
+        }
     }
 }
