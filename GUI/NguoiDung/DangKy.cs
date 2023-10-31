@@ -84,7 +84,7 @@ namespace GUI
 
             if(result == "OK")
             {
-                var confirmResult = MetroFramework.MetroMessageBox.Show(this,"Xác nhận tạo tài khoản ?",
+                var confirmResult = MessageBox.Show(this,"Xác nhận tạo tài khoản ?",
                                   "Xác nhận",
                                   MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
@@ -103,7 +103,7 @@ namespace GUI
                     }
                     else
                     {
-                        MetroFramework.MetroMessageBox.Show(this, "Gửi mã xác nhận thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                       MessageBox.Show( "Gửi mã xác nhận thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
                 }
@@ -114,7 +114,7 @@ namespace GUI
             }
             else
             {
-                MetroFramework.MetroMessageBox.Show(this, result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
 

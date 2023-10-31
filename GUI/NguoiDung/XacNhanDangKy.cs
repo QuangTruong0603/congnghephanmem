@@ -61,7 +61,7 @@ namespace GUI
 
             if(getOtp == "")
             {
-                MetroFramework.MetroMessageBox.Show(this, "Vui lòng nhập mã xác nhận", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập mã xác nhận", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -75,13 +75,13 @@ namespace GUI
 
                 if (!getOtp.Equals(sendOtp.Text.ToString()))
                 {
-                    MetroFramework.MetroMessageBox.Show(this, "Mã xác nhận không chính xác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Mã xác nhận không chính xác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
                     if(minutes >3)
                     {
-                        MetroFramework.MetroMessageBox.Show(this, "Mã xác nhận đã hết hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Mã xác nhận đã hết hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -89,14 +89,14 @@ namespace GUI
 
                         if(addNewStaff == true)
                         {
-                            MetroFramework.MetroMessageBox.Show(this, "Đăng ký tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Đăng ký tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Login lg = new Login();
                             lg.Show();
                             this.Hide();
                         }
                         else
                         {
-                            MetroFramework.MetroMessageBox.Show(this, "Đăng ký tài khoản thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Đăng ký tài khoản thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }

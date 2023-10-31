@@ -177,10 +177,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="databasev1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>databasev1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NguoiDung\DangNhap.cs">
       <SubType>Form</SubType>
@@ -194,10 +203,10 @@
     <Compile Include="NguoiDung\DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManHinhChinh.cs">
+    <Compile Include="Main\ManHinhChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManHinhChinh.Designer.cs">
+    <Compile Include="Main\ManHinhChinh.Designer.cs">
       <DependentUpon>ManHinhChinh.cs</DependentUpon>
     </Compile>
     <Compile Include="NguoiDung\DatLaiMatKhau.cs">
@@ -238,13 +247,16 @@
     <Compile Include="SanPham\ThemSanPham.Designer.cs">
       <DependentUpon>ThemSanPham.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManHinhChinh.resx">
+    <EmbeddedResource Include="Main\ManHinhChinh.resx">
       <DependentUpon>ManHinhChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung\DatLaiMatKhau.resx">
@@ -332,6 +344,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh-page-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

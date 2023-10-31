@@ -45,6 +45,8 @@ namespace GUI.SanPham
             dataSanPham.RowTemplate.Height = 120;
 
 
+            label1.Font = new Font("Arial", 24, FontStyle.Bold);
+
         }
 
         private void QuanLySanPham_Load(object sender, EventArgs e)
@@ -124,7 +126,7 @@ namespace GUI.SanPham
 
             String name = dataSanPham.Rows[row].Cells[2].Value.ToString();
 
-            var confirmResult = MetroFramework.MetroMessageBox.Show(this,"Xóa " + name +" ?",
+            var confirmResult = MessageBox.Show("Xóa " + name +" ?",
                                      "Xác nhận xóa ?",
                                      MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (confirmResult == DialogResult.Yes)
@@ -138,12 +140,12 @@ namespace GUI.SanPham
                 {
                    // dataSanPham.DataSource = bLL_Product.getProductManage();
                     dataSanPham.Rows.RemoveAt(row);
-                    MetroFramework.MetroMessageBox.Show(this, "Đã xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Đã xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                    
                 }
                 else
                 {
-                    MetroFramework.MetroMessageBox.Show(this, "Đã xảy ra lỗi ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Đã xảy ra lỗi ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -235,6 +237,16 @@ namespace GUI.SanPham
             ManHinhChinh main = new ManHinhChinh();
             main.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -114,7 +114,7 @@ namespace GUI
             }
             else
             {
-                MetroFramework.MetroMessageBox.Show(this,result, "Lỗi", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
           

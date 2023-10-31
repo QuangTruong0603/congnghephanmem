@@ -90,13 +90,13 @@ namespace GUI.NguoiDung
 
                 }
                 else{
-                    MetroFramework.MetroMessageBox.Show(this, "Gửi mã xác nhận không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Gửi mã xác nhận không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 
             }
             else{
-                MetroFramework.MetroMessageBox.Show(this, res, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(res, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

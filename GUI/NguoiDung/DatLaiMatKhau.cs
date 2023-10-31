@@ -97,20 +97,20 @@ namespace GUI.NguoiDung
 
             if (getOtp == "" ||  getNewPassword == "")
             {
-                MetroFramework.MetroMessageBox.Show(this,"Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 if (!getOtp.Equals(sOtp))
                 {
-                    MetroFramework.MetroMessageBox.Show(this,"Mã xác nhận không chính xác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Mã xác nhận không chính xác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
 
                     if (minutes > 3)
                     {
-                        MetroFramework.MetroMessageBox.Show(this, "Mã xác nhận đã hết hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show( "Mã xác nhận đã hết hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else{
 
@@ -123,20 +123,20 @@ namespace GUI.NguoiDung
 
                             if (setNewPass == true)
                             {
-                                MetroFramework.MetroMessageBox.Show(this, "Đặt lại mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show("Đặt lại mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 Login lg = new Login();
                                 lg.Show();
                                 this.Hide();
                             }
                             else
                             {
-                                MetroFramework.MetroMessageBox.Show(this, "Đặt lại mật khẩu thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Đặt lại mật khẩu thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
 
                         }
                         else
                         {
-                            MetroFramework.MetroMessageBox.Show(this, "Mật khẩu không đủ độ phức tạp. Vui lòng thử lại mật khẩu khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Mật khẩu không đủ độ phức tạp. Vui lòng thử lại mật khẩu khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
 
                     }
