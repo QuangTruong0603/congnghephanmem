@@ -257,23 +257,7 @@ BEGIN
     VALUES (@product_name, @product_barcode, @product_price, @unit_id, @cate_id, @inven_id,@product_image,@product_status)
 END
 
-drop procedure Insert_Product
-
-
-select * from Product
-
-select * from Category
-
-select * from Inventory
-
-delete from Product where product_barcode = '3124567'
-
-delete from Inventory where inven_id = 6
-
-Select * from Unit
-
-delete from Category
-
+go
 --Xóa
 go
 CREATE PROCEDURE Delete_Product
@@ -305,10 +289,6 @@ BEGIN
         product_image= @new_product_image
     WHERE product_id = @product_id
 END
-
-drop procedure Update_Product
-
-select * from Product
 
 --Inventory
 go
@@ -835,12 +815,6 @@ BEGIN
 END
 go
 
-Exec Insert_Staff 'tranloc222','12334','Tran Huu Loc','1000-10-10','Null','Null','loc@gmail.com','null','1000-10-10','1000-10-10','null',1,0
-
-drop procedure Insert_Staff
-
-select * from Staff
-
 --Xóa
 CREATE PROCEDURE Delete_Staff
     @username VARCHAR(100)
@@ -851,7 +825,6 @@ BEGIN
 END
 go
 
-exec Delete_Staff 'tranloc129'
 
 --Sửa
 CREATE PROCEDURE Update_Staff
@@ -897,50 +870,27 @@ begin
 end
 go
 
-drop procedure CheckLogin
-
-
-Exec CheckLogin 'admin','2OURnkUbjTqJv4XmG6iw5Q=='
-
-
-select count(*) from Staff
-
-
 
 Create Procedure GetRole (@username varchar (50))
 as
 begin
   select  role_id from Staff_Role where username = @username
 end
-
-Exec GetRole 'admin'
+go
 
 Create Procedure GetStaff(@username varchar (50))
 as
 begin
 	select  * from Staff where username = @username
 end
-
-
-
-
-drop procedure GetStaff
-
-Exec GetStaff 'admin'
+go
 
 Create Procedure GetStaffByEmail(@email varchar (50))
 as
 begin
 	select  * from Staff where staff_email = @email
 end
-
-select * from Staff
-
-Exec GetStaffByEmail 'loctran7129@gmail.com'
-
-select * from Staff
-
-update Staff set staff_enable = 1 where username = 'admin'
+go
 
 
 
@@ -949,20 +899,7 @@ as
 begin
 	Update Staff set password = @newpassword where staff_email = @staffemail
 end
-
-drop procedure UpdatePassword
-
-exec UpdatePassword 'staff1@email.com','abc'
-
-
-
-select * from Category
-
-select * from Unit
-
-select * from Product
-
-select * from Discount
+go
 
 
 --Product
@@ -972,13 +909,7 @@ as
 begin
 	select * from Product where Product.product_barcode = @product_barcode
 end
-
-exec GetInfoProduct '3128554'
-
-
-
-select * from Product
-
+go
 
 Create Procedure ManageProduct
 as
@@ -986,20 +917,6 @@ begin
 	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
 	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1
 end
-
-drop procedure ManageProduct
-
-exec ManageProduct
-
-delete from Product
-
-delete from Category
-
-delete from Discount
-
-select * from Product
-
-update Product set product_status = 1 where product_barcode = '3128554'
 
 go
 
@@ -1018,12 +935,6 @@ begin
 	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1 and Product.product_barcode = @product_barcode
 end
 
-drop procedure FindProduct
-
-exec FindProduct '3128554'
-
-select * from Product
-select * from Unit
 
 --Category
 Create Procedure GetNameCategory
@@ -1048,9 +959,6 @@ begin
 end
 
 
-exec GetCategoryById 2
-
-
 --Unit
 Create Procedure GetNameUnit
 as
@@ -1065,17 +973,12 @@ begin
 end
 
 
-exec GetIdNameUnit N'chai'
-
 
 Create Procedure GetUnitById (@unit_id int)
 as
 begin
 	select * from Unit where unit_id = @unit_id
 end
-
-
-exec GetUnitById 9
 
 
 
