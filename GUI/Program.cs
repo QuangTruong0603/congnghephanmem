@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using GUI.DatMon;
 namespace GUI
 {
     internal static class Program
@@ -19,6 +19,7 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new QuanLySanPham());
+            //Application.Run(new GUI.DatMon.DatMon());
         }
     }
 }
