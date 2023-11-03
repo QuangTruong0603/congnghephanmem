@@ -35,16 +35,21 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btn_All = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanelItem = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanelThanhToan = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelTongcong = new System.Windows.Forms.Label();
             this.Tongtien = new System.Windows.Forms.Label();
+            this.labelTongcong = new System.Windows.Forms.Label();
+            this.flowLayoutPanelThanhToan = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnTichDiem = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelItem = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,6 +82,7 @@
             this.btn_coffee.TabIndex = 4;
             this.btn_coffee.Text = "Cà phê";
             this.btn_coffee.UseVisualStyleBackColor = false;
+            this.btn_coffee.Click += new System.EventHandler(this.btn_coffee_Click);
             // 
             // btn_nuocuong
             // 
@@ -95,6 +101,7 @@
             this.btn_nuocuong.TabIndex = 3;
             this.btn_nuocuong.Text = "Nước uống";
             this.btn_nuocuong.UseVisualStyleBackColor = false;
+            this.btn_nuocuong.Click += new System.EventHandler(this.btn_nuocuong_Click);
             // 
             // button1
             // 
@@ -141,71 +148,12 @@
             this.panel2.Controls.Add(this.Tongtien);
             this.panel2.Controls.Add(this.labelTongcong);
             this.panel2.Controls.Add(this.flowLayoutPanelThanhToan);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.btnTichDiem);
+            this.panel2.Controls.Add(this.btnThanhToan);
             this.panel2.Location = new System.Drawing.Point(948, 29);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(252, 595);
             this.panel2.TabIndex = 1;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.button7.Location = new System.Drawing.Point(16, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(105, 38);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "Tích điểm";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(16, 482);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(218, 51);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "THANH TOÁN";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FloralWhite;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.flowLayoutPanelItem);
-            this.panel6.Controls.Add(this.panel1);
-            this.panel6.Location = new System.Drawing.Point(45, 29);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1155, 595);
-            this.panel6.TabIndex = 2;
-            // 
-            // flowLayoutPanelItem
-            // 
-            this.flowLayoutPanelItem.AutoScroll = true;
-            this.flowLayoutPanelItem.Location = new System.Drawing.Point(214, 85);
-            this.flowLayoutPanelItem.Name = "flowLayoutPanelItem";
-            this.flowLayoutPanelItem.Size = new System.Drawing.Size(682, 509);
-            this.flowLayoutPanelItem.TabIndex = 1;
-            // 
-            // flowLayoutPanelThanhToan
-            // 
-            this.flowLayoutPanelThanhToan.AutoScroll = true;
-            this.flowLayoutPanelThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(205)))), ((int)(((byte)(202)))));
-            this.flowLayoutPanelThanhToan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanelThanhToan.Location = new System.Drawing.Point(16, 73);
-            this.flowLayoutPanelThanhToan.Name = "flowLayoutPanelThanhToan";
-            this.flowLayoutPanelThanhToan.Size = new System.Drawing.Size(218, 324);
-            this.flowLayoutPanelThanhToan.TabIndex = 4;
-            // 
-            // labelTongcong
-            // 
-            this.labelTongcong.AutoSize = true;
-            this.labelTongcong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTongcong.Location = new System.Drawing.Point(11, 419);
-            this.labelTongcong.Name = "labelTongcong";
-            this.labelTongcong.Size = new System.Drawing.Size(105, 25);
-            this.labelTongcong.TabIndex = 5;
-            this.labelTongcong.Text = "Tổng cộng:";
             // 
             // Tongtien
             // 
@@ -217,6 +165,109 @@
             this.Tongtien.TabIndex = 6;
             this.Tongtien.Text = "0";
             // 
+            // labelTongcong
+            // 
+            this.labelTongcong.AutoSize = true;
+            this.labelTongcong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTongcong.Location = new System.Drawing.Point(11, 419);
+            this.labelTongcong.Name = "labelTongcong";
+            this.labelTongcong.Size = new System.Drawing.Size(105, 25);
+            this.labelTongcong.TabIndex = 5;
+            this.labelTongcong.Text = "Tổng cộng:";
+            // 
+            // flowLayoutPanelThanhToan
+            // 
+            this.flowLayoutPanelThanhToan.AutoScroll = true;
+            this.flowLayoutPanelThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(205)))), ((int)(((byte)(202)))));
+            this.flowLayoutPanelThanhToan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanelThanhToan.Location = new System.Drawing.Point(16, 73);
+            this.flowLayoutPanelThanhToan.Name = "flowLayoutPanelThanhToan";
+            this.flowLayoutPanelThanhToan.Size = new System.Drawing.Size(218, 324);
+            this.flowLayoutPanelThanhToan.TabIndex = 4;
+            // 
+            // btnTichDiem
+            // 
+            this.btnTichDiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnTichDiem.Location = new System.Drawing.Point(16, 3);
+            this.btnTichDiem.Name = "btnTichDiem";
+            this.btnTichDiem.Size = new System.Drawing.Size(105, 38);
+            this.btnTichDiem.TabIndex = 3;
+            this.btnTichDiem.Text = "Tích điểm";
+            this.btnTichDiem.UseVisualStyleBackColor = false;
+            this.btnTichDiem.Click += new System.EventHandler(this.btnTichDiem_Click);
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.Location = new System.Drawing.Point(16, 482);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(218, 51);
+            this.btnThanhToan.TabIndex = 1;
+            this.btnThanhToan.Text = "THANH TOÁN";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.panel4);
+            this.panel6.Controls.Add(this.panel3);
+            this.panel6.Controls.Add(this.flowLayoutPanelItem);
+            this.panel6.Controls.Add(this.panel1);
+            this.panel6.Location = new System.Drawing.Point(45, 29);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1155, 595);
+            this.panel6.TabIndex = 2;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.textBoxSearch);
+            this.panel4.Location = new System.Drawing.Point(410, 23);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(362, 34);
+            this.panel4.TabIndex = 3;
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.BackColor = System.Drawing.Color.FloralWhite;
+            this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSearch.Location = new System.Drawing.Point(3, 10);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(334, 15);
+            this.textBoxSearch.TabIndex = 2;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::GUI.Properties.Resources.search;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(767, 23);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(39, 34);
+            this.panel3.TabIndex = 0;
+            // 
+            // flowLayoutPanelItem
+            // 
+            this.flowLayoutPanelItem.AutoScroll = true;
+            this.flowLayoutPanelItem.Location = new System.Drawing.Point(214, 85);
+            this.flowLayoutPanelItem.Name = "flowLayoutPanelItem";
+            this.flowLayoutPanelItem.Size = new System.Drawing.Size(682, 509);
+            this.flowLayoutPanelItem.TabIndex = 1;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = global::GUI.Properties.Resources.arrow;
+            this.btnBack.Location = new System.Drawing.Point(70, 649);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 32);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
             // DatMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -224,6 +275,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1234, 693);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -234,6 +286,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -246,12 +300,16 @@
         private System.Windows.Forms.Button btn_nuocuong;
         private System.Windows.Forms.Button btn_coffee;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnTichDiem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelItem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelThanhToan;
         private System.Windows.Forms.Label Tongtien;
         private System.Windows.Forms.Label labelTongcong;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Panel panel4;
     }
 }

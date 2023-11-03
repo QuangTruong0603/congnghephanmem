@@ -16,5 +16,15 @@ namespace GUI.DatMon
         {
             InitializeComponent();
         }
+
+        private void TichDiem_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -142,6 +142,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="DAL_Customer2.cs" />
     <Compile Include="DAL_Productcs.cs" />
     <Compile Include="DAL_Staff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
