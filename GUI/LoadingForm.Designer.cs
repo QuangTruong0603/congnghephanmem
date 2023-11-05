@@ -40,7 +40,7 @@
             // title
             // 
             this.title.AutoSize = true;
-            this.title.BackColor = System.Drawing.Color.FloralWhite;
+            this.title.BackColor = System.Drawing.Color.Transparent;
             this.title.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.Location = new System.Drawing.Point(195, 101);
             this.title.Name = "title";
@@ -50,6 +50,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GUI.Properties.Resources._7_Eleven_Logo;
             this.pictureBox1.Location = new System.Drawing.Point(330, 154);
             this.pictureBox1.Name = "pictureBox1";

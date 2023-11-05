@@ -94,6 +94,10 @@ namespace GUI
                 string staffname = bLL_Login_Staff.getName(username);
                 DateTime currentDateTime = DateTime.Now;
                 string formattedDateTime = currentDateTime.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+
+                string rolename = bLL_Login_Staff.getRoleName(username);
+
+                DTO_Staff st = bLL_Login_Staff.GetStaff(username);
                 
                 //Properties.Settings.Default.username = username;
                 //Properties.Settings.Default.name = staffname;
@@ -105,6 +109,9 @@ namespace GUI
                 Account.name = staffname;
                 Account.roleid = roleid;
                 Account.timeLogin = formattedDateTime;
+                Account.roleName = rolename;
+
+                Account.pathImage = st.staff_image;
 
                 ManHinhChinh main = new ManHinhChinh();
                 main.Show();
