@@ -15,7 +15,7 @@ using DTO;
 
 namespace GUI.NguoiDung
 {
-    public partial class NewPassword : MaterialForm
+    public partial class NewPassword :Form
     {
 
         private DAL_Staff dAL_Staff = new DAL_Staff();
@@ -23,10 +23,6 @@ namespace GUI.NguoiDung
         public NewPassword(String otp, String time,String email, DTO_Staff staff)
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
 
             sendOtp.Text = otp;
             sendTime.Text = time;   

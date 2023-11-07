@@ -15,7 +15,7 @@ using DTO;
 
 namespace GUI.NguoiDung
 {
-    public partial class ForgotPassword : MaterialForm
+    public partial class ForgotPassword : Form
     {
 
         private BLL_Register bll_Register = new BLL_Register();
@@ -24,10 +24,7 @@ namespace GUI.NguoiDung
         public ForgotPassword()
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
+         
         }
 
         private void QuenMatKhau_Load(object sender, EventArgs e)

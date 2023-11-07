@@ -43,11 +43,10 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.txt_nhapEmail);
-            this.panel1.Controls.Add(this.btn_next);
             this.panel1.Controls.Add(this.txtB_email);
             this.panel1.Location = new System.Drawing.Point(136, 279);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(531, 307);
+            this.panel1.Size = new System.Drawing.Size(531, 207);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -75,7 +74,7 @@
             this.btn_next.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btn_next.HoverTextColor = System.Drawing.Color.White;
             this.btn_next.IsDerivedStyle = true;
-            this.btn_next.Location = new System.Drawing.Point(184, 220);
+            this.btn_next.Location = new System.Drawing.Point(323, 533);
             this.btn_next.Name = "btn_next";
             this.btn_next.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.btn_next.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -114,6 +113,7 @@
             // 
             this.img_logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.img_logo.BackColor = System.Drawing.Color.Transparent;
             this.img_logo.Image = global::GUI.Properties.Resources._7_Eleven_Logo;
             this.img_logo.Location = new System.Drawing.Point(242, 80);
             this.img_logo.Name = "img_logo";
@@ -124,6 +124,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GUI.Properties.Resources.arrow;
             this.pictureBox1.Location = new System.Drawing.Point(67, 102);
             this.pictureBox1.Name = "pictureBox1";
@@ -136,8 +137,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 616);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_next);
             this.Controls.Add(this.img_logo);
             this.Controls.Add(this.panel1);
             this.Name = "ForgotPassword";

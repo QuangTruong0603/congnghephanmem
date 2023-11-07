@@ -16,18 +16,13 @@ using System.IO;
 
 namespace GUI.SanPham
 {
-    public partial class QuanLySanPham : MaterialForm
+    public partial class QuanLySanPham : Form
     {
 
         private BLL_Product bLL_Product = new BLL_Product();
         public QuanLySanPham()
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
-
            
             textb_search.Text = "Nhập mã sản phẩm để tìm kiếm";
             textb_search.ForeColor = Color.Gray;

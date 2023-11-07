@@ -14,19 +14,13 @@ using GUI.NguoiDung;
 
 namespace GUI
 {
-    public partial class XacNhanDangKy : MaterialForm
+    public partial class XacNhanDangKy : Form
     {
 
         private DAL_Staff dalStaff = new DAL_Staff();
         public XacNhanDangKy(String email, String username, String password, String otp, String time)
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
-
-
 
             sendEmail.Text = email;
             sendPassword.Text = password;
@@ -39,9 +33,6 @@ namespace GUI
         {
             txt_title.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 20);
             warning.ForeColor = Color.Red;
-           
-
-
         }
 
         private void txt_title_Click(object sender, EventArgs e)

@@ -49,14 +49,13 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.ch_showPass);
             this.panel1.Controls.Add(this.waring);
-            this.panel1.Controls.Add(this.btn_createNewPass);
             this.panel1.Controls.Add(this.password);
             this.panel1.Controls.Add(this.txt_titlePassword);
             this.panel1.Controls.Add(this.otp);
             this.panel1.Controls.Add(this.txt_titleOtp);
             this.panel1.Location = new System.Drawing.Point(106, 281);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 476);
+            this.panel1.Size = new System.Drawing.Size(661, 421);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -97,7 +96,7 @@
             this.btn_createNewPass.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btn_createNewPass.HoverTextColor = System.Drawing.Color.White;
             this.btn_createNewPass.IsDerivedStyle = true;
-            this.btn_createNewPass.Location = new System.Drawing.Point(249, 412);
+            this.btn_createNewPass.Location = new System.Drawing.Point(351, 725);
             this.btn_createNewPass.Name = "btn_createNewPass";
             this.btn_createNewPass.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.btn_createNewPass.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -177,6 +176,7 @@
             // 
             this.img_logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.img_logo.BackColor = System.Drawing.Color.Transparent;
             this.img_logo.Image = global::GUI.Properties.Resources._7_Eleven_Logo;
             this.img_logo.Location = new System.Drawing.Point(248, 80);
             this.img_logo.Name = "img_logo";
@@ -219,9 +219,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(837, 798);
             this.Controls.Add(this.sendEmail);
             this.Controls.Add(this.sendTime);
+            this.Controls.Add(this.btn_createNewPass);
             this.Controls.Add(this.sendOtp);
             this.Controls.Add(this.img_logo);
             this.Controls.Add(this.panel1);

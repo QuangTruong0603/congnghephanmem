@@ -12,5 +12,7 @@ namespace DTO
         public static String name;
         public static int roleid;
         public static String timeLogin;
+        public static String roleName;
+        public static String pathImage;
     }
 }

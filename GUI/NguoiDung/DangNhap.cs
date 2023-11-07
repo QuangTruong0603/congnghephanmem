@@ -16,7 +16,7 @@ using GUI.NguoiDung;
 
 namespace GUI
 {
-    public partial class Login : MaterialForm
+    public partial class Login : Form
     {
 
         private BLL_Login_Staff bLL_Login_Staff = new BLL_Login_Staff();
@@ -24,19 +24,16 @@ namespace GUI
         public Login()
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800,MaterialSkin.Primary.Green300,Accent.LightGreen700,TextShade.WHITE);
-             
-
         }
+
+       
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
                 txt_dangnhap.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
                 txt_matkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 16);
                forgotPassword.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 13);
+                
         }
 
         private void materialLabel1_Click(object sender, EventArgs e)
@@ -144,6 +141,27 @@ namespace GUI
         private void forgotPassword_MouseLeave(object sender, EventArgs e)
         {
             forgotPassword.ForeColor = Color.Black;
+        }
+
+        private void txt_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_dangnhap_Click_1(sender,e);
+            }
+        }
+
+        public void EndResponsive()
+        {
+            if(this.Width  < 1100)
+            {
+                tableLayoutPanel1.ColumnStyles[1].Width = 1000;
+            }
+        }
+
+        private void Login_ResizeEnd(object sender, EventArgs e)
+        {
+            EndResponsive();
         }
     }
 }

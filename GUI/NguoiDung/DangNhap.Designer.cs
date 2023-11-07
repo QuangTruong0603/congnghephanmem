@@ -39,16 +39,18 @@
             this.btn_dangky = new MetroSet_UI.Controls.MetroSetButton();
             this.btn_dangnhap = new MetroSet_UI.Controls.MetroSetButton();
             this.img_logo = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_logo)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_dangnhap
             // 
             this.txt_dangnhap.AutoSize = true;
             this.txt_dangnhap.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dangnhap.Location = new System.Drawing.Point(13, 19);
+            this.txt_dangnhap.Location = new System.Drawing.Point(13, 44);
             this.txt_dangnhap.Name = "txt_dangnhap";
             this.txt_dangnhap.Size = new System.Drawing.Size(178, 33);
             this.txt_dangnhap.TabIndex = 2;
@@ -58,7 +60,7 @@
             // 
             this.txt_matkhau.AutoSize = true;
             this.txt_matkhau.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_matkhau.Location = new System.Drawing.Point(13, 152);
+            this.txt_matkhau.Location = new System.Drawing.Point(13, 217);
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(121, 33);
             this.txt_matkhau.TabIndex = 4;
@@ -67,21 +69,23 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Controls.Add(this.forgotPassword);
             this.panel1.Controls.Add(this.ch_showpass);
             this.panel1.Controls.Add(this.txt_password);
             this.panel1.Controls.Add(this.txt_username);
             this.panel1.Controls.Add(this.txt_dangnhap);
             this.panel1.Controls.Add(this.txt_matkhau);
-            this.panel1.Location = new System.Drawing.Point(259, 312);
+            this.panel1.Location = new System.Drawing.Point(71, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(621, 339);
+            this.panel1.Size = new System.Drawing.Size(925, 461);
             this.panel1.TabIndex = 6;
             // 
             // forgotPassword
             // 
+            this.forgotPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.forgotPassword.AutoSize = true;
-            this.forgotPassword.Location = new System.Drawing.Point(419, 272);
+            this.forgotPassword.Location = new System.Drawing.Point(708, 377);
             this.forgotPassword.Name = "forgotPassword";
             this.forgotPassword.Size = new System.Drawing.Size(103, 16);
             this.forgotPassword.TabIndex = 8;
@@ -94,7 +98,7 @@
             // 
             this.ch_showpass.AutoSize = true;
             this.ch_showpass.Depth = 0;
-            this.ch_showpass.Location = new System.Drawing.Point(19, 263);
+            this.ch_showpass.Location = new System.Drawing.Point(19, 368);
             this.ch_showpass.Margin = new System.Windows.Forms.Padding(0);
             this.ch_showpass.MouseLocation = new System.Drawing.Point(-1, -1);
             this.ch_showpass.MouseState = MaterialSkin.MouseState.HOVER;
@@ -115,17 +119,18 @@
             this.txt_password.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_password.Hint = "Nhập mật khẩu";
             this.txt_password.LeadingIcon = global::GUI.Properties.Resources.padlock;
-            this.txt_password.Location = new System.Drawing.Point(19, 199);
+            this.txt_password.Location = new System.Drawing.Point(19, 277);
             this.txt_password.MaxLength = 50;
             this.txt_password.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_password.Multiline = false;
             this.txt_password.Name = "txt_password";
             this.txt_password.Password = true;
-            this.txt_password.Size = new System.Drawing.Size(571, 50);
+            this.txt_password.Size = new System.Drawing.Size(869, 50);
             this.txt_password.TabIndex = 6;
             this.txt_password.Text = "";
             this.txt_password.TrailingIcon = null;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             // 
             // txt_username
             // 
@@ -135,12 +140,12 @@
             this.txt_username.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_username.Hint = "Nhập tên đăng nhập";
             this.txt_username.LeadingIcon = global::GUI.Properties.Resources.user;
-            this.txt_username.Location = new System.Drawing.Point(19, 71);
+            this.txt_username.Location = new System.Drawing.Point(19, 108);
             this.txt_username.MaxLength = 50;
             this.txt_username.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_username.Multiline = false;
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(571, 50);
+            this.txt_username.Size = new System.Drawing.Size(869, 50);
             this.txt_username.TabIndex = 5;
             this.txt_username.Text = "";
             this.txt_username.TrailingIcon = null;
@@ -150,9 +155,9 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.Controls.Add(this.btn_dangky);
             this.panel2.Controls.Add(this.btn_dangnhap);
-            this.panel2.Location = new System.Drawing.Point(392, 657);
+            this.panel2.Location = new System.Drawing.Point(349, 470);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(369, 85);
+            this.panel2.Size = new System.Drawing.Size(369, 87);
             this.panel2.TabIndex = 7;
             // 
             // btn_dangky
@@ -213,31 +218,52 @@
             // 
             this.img_logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.img_logo.BackColor = System.Drawing.Color.Transparent;
             this.img_logo.Image = global::GUI.Properties.Resources._7_Eleven_Logo;
-            this.img_logo.Location = new System.Drawing.Point(412, 102);
+            this.img_logo.Location = new System.Drawing.Point(415, 81);
             this.img_logo.Name = "img_logo";
-            this.img_logo.Size = new System.Drawing.Size(307, 180);
+            this.img_logo.Size = new System.Drawing.Size(383, 180);
             this.img_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_logo.TabIndex = 1;
             this.img_logo.TabStop = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(92, 282);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.39286F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.60714F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1068, 560);
+            this.tableLayoutPanel1.TabIndex = 8;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 748);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1200, 921);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.img_logo);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.DangNhap_Load);
+            this.ResizeEnd += new System.EventHandler(this.Login_ResizeEnd);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_logo)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -255,6 +281,7 @@
         private MaterialSkin.Controls.MaterialTextBox txt_password;
         private MaterialSkin.Controls.MaterialCheckbox ch_showpass;
         private System.Windows.Forms.Label forgotPassword;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 

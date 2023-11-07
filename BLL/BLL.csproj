@@ -140,6 +140,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_Bill.cs" />
     <Compile Include="BLL_Category.cs" />
     <Compile Include="BLL_Login_Staff.cs" />
     <Compile Include="BLL_Product.cs" />

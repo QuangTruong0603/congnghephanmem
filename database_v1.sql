@@ -100,8 +100,8 @@ GO
 CREATE TABLE [Bill]
 (
     [bill_id] [bigint] NOT NULL IDENTITY(1,1),
-    [bill_no] [varchar] (20) NOT NULL,
-    [bill_date] [date] NOT NULL,
+    [bill_no] [varchar] (100) NOT NULL,
+    [bill_date] [datetime] NOT NULL,
     [bill_total_before] [int] NOT NULL,
     [bill_total_after] [int] NOT NULL,
     [paymentmethod_id] [int] NOT NULL,
@@ -110,6 +110,8 @@ CREATE TABLE [Bill]
     CONSTRAINT PK_Bill PRIMARY KEY (bill_id)    
 )
 GO
+
+
 
 
 -- Table PaymentMethod --------------------------

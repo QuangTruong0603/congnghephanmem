@@ -14,7 +14,7 @@ using DAL;
 
 namespace GUI
 {
-    public partial class Register : MaterialForm
+    public partial class Register :Form
     {
 
         private BLL_Register bLL_Register = new BLL_Register();
@@ -22,10 +22,7 @@ namespace GUI
         public Register()
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
+          
         }
 
         private void Register_Load(object sender, EventArgs e)

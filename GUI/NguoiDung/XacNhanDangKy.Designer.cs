@@ -47,12 +47,11 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.warning);
-            this.panel1.Controls.Add(this.btn_confirm);
             this.panel1.Controls.Add(this.txt_title);
             this.panel1.Controls.Add(this.txt_otp);
             this.panel1.Location = new System.Drawing.Point(166, 104);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 299);
+            this.panel1.Size = new System.Drawing.Size(459, 230);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -80,7 +79,7 @@
             this.btn_confirm.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.btn_confirm.HoverTextColor = System.Drawing.Color.White;
             this.btn_confirm.IsDerivedStyle = true;
-            this.btn_confirm.Location = new System.Drawing.Point(168, 207);
+            this.btn_confirm.Location = new System.Drawing.Point(339, 373);
             this.btn_confirm.Name = "btn_confirm";
             this.btn_confirm.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.btn_confirm.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -179,6 +178,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GUI.Properties.Resources.arrow;
             this.pictureBox1.Location = new System.Drawing.Point(51, 82);
             this.pictureBox1.Name = "pictureBox1";
@@ -191,8 +191,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_confirm);
             this.Controls.Add(this.sendTime);
             this.Controls.Add(this.sendOtp);
             this.Controls.Add(this.sendEmail);

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DTO;
+
 namespace BLL
 {
     public class BLL_Login_Staff
@@ -44,6 +46,17 @@ namespace BLL
         public String getName(String username)
         {
             return dalstaff.GetNameStaff(username);
+        }
+
+        public String getRoleName(String username)
+        {
+            return dalstaff.getRoleName(username);
+        }
+
+
+        public DTO_Staff GetStaff(String username)
+        {
+            return dalstaff.getStaffByUserName(username);
         }
 
 

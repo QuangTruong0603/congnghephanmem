@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuaSanPham));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_loai = new System.Windows.Forms.ComboBox();
             this.cate = new System.Windows.Forms.Label();
@@ -52,41 +52,37 @@
             this.tensanpham = new System.Windows.Forms.Label();
             this.masanpham = new System.Windows.Forms.Label();
             this.tb_masanpham = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_upload = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_upload = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cb_loai);
-            this.panel1.Controls.Add(this.cate);
-            this.panel1.Controls.Add(this.cb_donvitinh);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.tb_giasanpham);
-            this.panel1.Controls.Add(this.giasanpham);
-            this.panel1.Controls.Add(this.tb_tensanpham);
-            this.panel1.Controls.Add(this.tensanpham);
-            this.panel1.Controls.Add(this.masanpham);
-            this.panel1.Controls.Add(this.tb_masanpham);
-            this.panel1.Location = new System.Drawing.Point(25, 54);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(35, 53);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 420);
+            this.panel1.Size = new System.Drawing.Size(876, 420);
             this.panel1.TabIndex = 5;
             // 
             // cb_loai
             // 
             this.cb_loai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_loai.FormattingEnabled = true;
-            this.cb_loai.Location = new System.Drawing.Point(175, 362);
+            this.cb_loai.Location = new System.Drawing.Point(157, 326);
             this.cb_loai.Name = "cb_loai";
             this.cb_loai.Size = new System.Drawing.Size(260, 24);
             this.cb_loai.TabIndex = 12;
@@ -95,7 +91,7 @@
             // 
             this.cate.AutoSize = true;
             this.cate.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cate.Location = new System.Drawing.Point(23, 356);
+            this.cate.Location = new System.Drawing.Point(13, 322);
             this.cate.Name = "cate";
             this.cate.Size = new System.Drawing.Size(53, 26);
             this.cate.TabIndex = 11;
@@ -105,7 +101,7 @@
             // 
             this.cb_donvitinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_donvitinh.FormattingEnabled = true;
-            this.cb_donvitinh.Location = new System.Drawing.Point(175, 301);
+            this.cb_donvitinh.Location = new System.Drawing.Point(157, 272);
             this.cb_donvitinh.Name = "cb_donvitinh";
             this.cb_donvitinh.Size = new System.Drawing.Size(260, 24);
             this.cb_donvitinh.TabIndex = 10;
@@ -114,7 +110,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 295);
+            this.label4.Location = new System.Drawing.Point(13, 268);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 26);
             this.label4.TabIndex = 9;
@@ -147,32 +143,32 @@
             this.tb_giasanpham.IconRight = null;
             this.tb_giasanpham.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_giasanpham.Lines = new string[0];
-            this.tb_giasanpham.Location = new System.Drawing.Point(175, 222);
+            this.tb_giasanpham.Location = new System.Drawing.Point(157, 177);
             this.tb_giasanpham.MaxLength = 32767;
             this.tb_giasanpham.MinimumSize = new System.Drawing.Size(1, 1);
             this.tb_giasanpham.Modified = false;
             this.tb_giasanpham.Multiline = false;
             this.tb_giasanpham.Name = "tb_giasanpham";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_giasanpham.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tb_giasanpham.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_giasanpham.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_giasanpham.OnIdleState = stateProperties16;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_giasanpham.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tb_giasanpham.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_giasanpham.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_giasanpham.OnIdleState = stateProperties12;
             this.tb_giasanpham.Padding = new System.Windows.Forms.Padding(3);
             this.tb_giasanpham.PasswordChar = '\0';
             this.tb_giasanpham.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -199,7 +195,7 @@
             // 
             this.giasanpham.AutoSize = true;
             this.giasanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giasanpham.Location = new System.Drawing.Point(23, 222);
+            this.giasanpham.Location = new System.Drawing.Point(13, 177);
             this.giasanpham.Name = "giasanpham";
             this.giasanpham.Size = new System.Drawing.Size(44, 26);
             this.giasanpham.TabIndex = 7;
@@ -232,32 +228,32 @@
             this.tb_tensanpham.IconRight = null;
             this.tb_tensanpham.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_tensanpham.Lines = new string[0];
-            this.tb_tensanpham.Location = new System.Drawing.Point(175, 141);
+            this.tb_tensanpham.Location = new System.Drawing.Point(157, 116);
             this.tb_tensanpham.MaxLength = 32767;
             this.tb_tensanpham.MinimumSize = new System.Drawing.Size(1, 1);
             this.tb_tensanpham.Modified = false;
             this.tb_tensanpham.Multiline = false;
             this.tb_tensanpham.Name = "tb_tensanpham";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_tensanpham.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tb_tensanpham.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_tensanpham.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_tensanpham.OnIdleState = stateProperties20;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_tensanpham.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tb_tensanpham.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_tensanpham.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_tensanpham.OnIdleState = stateProperties8;
             this.tb_tensanpham.Padding = new System.Windows.Forms.Padding(3);
             this.tb_tensanpham.PasswordChar = '\0';
             this.tb_tensanpham.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -283,7 +279,7 @@
             // 
             this.tensanpham.AutoSize = true;
             this.tensanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tensanpham.Location = new System.Drawing.Point(14, 141);
+            this.tensanpham.Location = new System.Drawing.Point(3, 116);
             this.tensanpham.Name = "tensanpham";
             this.tensanpham.Size = new System.Drawing.Size(143, 26);
             this.tensanpham.TabIndex = 5;
@@ -293,7 +289,7 @@
             // 
             this.masanpham.AutoSize = true;
             this.masanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.masanpham.Location = new System.Drawing.Point(14, 35);
+            this.masanpham.Location = new System.Drawing.Point(4, 51);
             this.masanpham.Name = "masanpham";
             this.masanpham.Size = new System.Drawing.Size(136, 26);
             this.masanpham.TabIndex = 4;
@@ -326,32 +322,32 @@
             this.tb_masanpham.IconRight = null;
             this.tb_masanpham.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_masanpham.Lines = new string[0];
-            this.tb_masanpham.Location = new System.Drawing.Point(175, 35);
+            this.tb_masanpham.Location = new System.Drawing.Point(157, 51);
             this.tb_masanpham.MaxLength = 32767;
             this.tb_masanpham.MinimumSize = new System.Drawing.Size(1, 1);
             this.tb_masanpham.Modified = false;
             this.tb_masanpham.Multiline = false;
             this.tb_masanpham.Name = "tb_masanpham";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_masanpham.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.tb_masanpham.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_masanpham.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.tb_masanpham.OnIdleState = stateProperties24;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_masanpham.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.tb_masanpham.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_masanpham.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.tb_masanpham.OnIdleState = stateProperties4;
             this.tb_masanpham.Padding = new System.Windows.Forms.Padding(3);
             this.tb_masanpham.PasswordChar = '\0';
             this.tb_masanpham.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -374,49 +370,9 @@
             this.tb_masanpham.WordWrap = true;
             this.tb_masanpham.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_masanpham_KeyPress);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_upload);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(527, 54);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(384, 418);
-            this.panel2.TabIndex = 13;
-            // 
-            // btn_upload
-            // 
-            this.btn_upload.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_upload.Location = new System.Drawing.Point(114, 369);
-            this.btn_upload.Name = "btn_upload";
-            this.btn_upload.Size = new System.Drawing.Size(146, 46);
-            this.btn_upload.TabIndex = 3;
-            this.btn_upload.Text = "Upload";
-            this.btn_upload.UseVisualStyleBackColor = true;
-            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 293);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(128, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 26);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Ảnh sản phẩm";
-            // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel3.Controls.Add(this.btn_cancel);
             this.panel3.Controls.Add(this.btn_save);
             this.panel3.Location = new System.Drawing.Point(321, 509);
@@ -450,24 +406,85 @@
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(141, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 26);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Ảnh sản phẩm";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(335, 293);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_upload
+            // 
+            this.btn_upload.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_upload.Location = new System.Drawing.Point(133, 350);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Size = new System.Drawing.Size(146, 46);
+            this.btn_upload.TabIndex = 3;
+            this.btn_upload.Text = "Upload";
+            this.btn_upload.UseVisualStyleBackColor = true;
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.btn_upload);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(486, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(387, 411);
+            this.panel2.TabIndex = 13;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.masanpham);
+            this.panel4.Controls.Add(this.cb_loai);
+            this.panel4.Controls.Add(this.tb_masanpham);
+            this.panel4.Controls.Add(this.cate);
+            this.panel4.Controls.Add(this.tensanpham);
+            this.panel4.Controls.Add(this.cb_donvitinh);
+            this.panel4.Controls.Add(this.tb_tensanpham);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.giasanpham);
+            this.panel4.Controls.Add(this.tb_giasanpham);
+            this.panel4.Location = new System.Drawing.Point(12, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(458, 407);
+            this.panel4.TabIndex = 8;
+            // 
             // SuaSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 593);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "SuaSanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa thông tin sản phẩm";
             this.Load += new System.EventHandler(this.SuaSanPham_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -485,12 +502,13 @@
         private System.Windows.Forms.Label tensanpham;
         private System.Windows.Forms.Label masanpham;
         private Bunifu.UI.WinForms.BunifuTextBox tb_masanpham;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_upload;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_upload;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

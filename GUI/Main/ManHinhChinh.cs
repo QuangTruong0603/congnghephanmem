@@ -32,10 +32,12 @@ namespace GUI
             string path = Directory.GetParent(workingDirectory).Parent.Parent.FullName.ToString();
 
 
-          //Console.WriteLine(path + "\\GUI\\Resources\\Avatar\\" + Account.pathImage);
+      
 
             Image img  = Image.FromFile(path + "\\GUI\\Resources\\Avatar\\" + Account.pathImage);
-            avatar.Image = img;
+
+
+             avatar.Image = img;
 
 
 
@@ -56,6 +58,16 @@ namespace GUI
         {
             date.Text = DateTime.Now.ToLongDateString();
             time.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

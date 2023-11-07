@@ -46,27 +46,30 @@
             this.cate = new System.Windows.Forms.Label();
             this.cb_donvitinh = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.tb_giasanpham = new Bunifu.UI.WinForms.BunifuTextBox();
             this.giasanpham = new System.Windows.Forms.Label();
+            this.tb_tensanpham = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tensanpham = new System.Windows.Forms.Label();
             this.masanpham = new System.Windows.Forms.Label();
+            this.tb_masanpham = new Bunifu.UI.WinForms.BunifuTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_upload = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tb_giasanpham = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.tb_tensanpham = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.tb_masanpham = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.cb_loai);
             this.panel1.Controls.Add(this.cate);
             this.panel1.Controls.Add(this.cb_donvitinh);
@@ -77,7 +80,7 @@
             this.panel1.Controls.Add(this.tensanpham);
             this.panel1.Controls.Add(this.masanpham);
             this.panel1.Controls.Add(this.tb_masanpham);
-            this.panel1.Location = new System.Drawing.Point(48, 70);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(461, 420);
             this.panel1.TabIndex = 4;
@@ -119,112 +122,6 @@
             this.label4.Size = new System.Drawing.Size(119, 26);
             this.label4.TabIndex = 9;
             this.label4.Text = "Đơn vị tính";
-            // 
-            // giasanpham
-            // 
-            this.giasanpham.AutoSize = true;
-            this.giasanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giasanpham.Location = new System.Drawing.Point(23, 222);
-            this.giasanpham.Name = "giasanpham";
-            this.giasanpham.Size = new System.Drawing.Size(44, 26);
-            this.giasanpham.TabIndex = 7;
-            this.giasanpham.Text = "Giá";
-            // 
-            // tensanpham
-            // 
-            this.tensanpham.AutoSize = true;
-            this.tensanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tensanpham.Location = new System.Drawing.Point(14, 141);
-            this.tensanpham.Name = "tensanpham";
-            this.tensanpham.Size = new System.Drawing.Size(143, 26);
-            this.tensanpham.TabIndex = 5;
-            this.tensanpham.Text = "Tên sản phẩm";
-            // 
-            // masanpham
-            // 
-            this.masanpham.AutoSize = true;
-            this.masanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.masanpham.Location = new System.Drawing.Point(14, 35);
-            this.masanpham.Name = "masanpham";
-            this.masanpham.Size = new System.Drawing.Size(136, 26);
-            this.masanpham.TabIndex = 4;
-            this.masanpham.Text = "Mã sản phẩm";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_upload);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(541, 70);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(384, 418);
-            this.panel2.TabIndex = 5;
-            // 
-            // btn_upload
-            // 
-            this.btn_upload.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_upload.Location = new System.Drawing.Point(114, 369);
-            this.btn_upload.Name = "btn_upload";
-            this.btn_upload.Size = new System.Drawing.Size(146, 46);
-            this.btn_upload.TabIndex = 3;
-            this.btn_upload.Text = "Upload";
-            this.btn_upload.UseVisualStyleBackColor = true;
-            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(128, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 26);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Ảnh sản phẩm";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btn_cancel);
-            this.panel3.Controls.Add(this.btn_save);
-            this.panel3.Location = new System.Drawing.Point(341, 513);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(337, 55);
-            this.panel3.TabIndex = 6;
-            // 
-            // btn_cancel
-            // 
-            this.btn_cancel.BackColor = System.Drawing.Color.Red;
-            this.btn_cancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancel.ForeColor = System.Drawing.Color.White;
-            this.btn_cancel.Location = new System.Drawing.Point(215, 4);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(119, 48);
-            this.btn_cancel.TabIndex = 1;
-            this.btn_cancel.Text = "Hủy";
-            this.btn_cancel.UseVisualStyleBackColor = false;
-            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
-            // 
-            // btn_save
-            // 
-            this.btn_save.BackColor = System.Drawing.Color.LimeGreen;
-            this.btn_save.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(-1, 3);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(119, 48);
-            this.btn_save.TabIndex = 0;
-            this.btn_save.Text = "Tạo mới";
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 293);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // tb_giasanpham
             // 
@@ -302,6 +199,16 @@
             this.tb_giasanpham.TextChanged += new System.EventHandler(this.tb_giasanpham_TextChanged);
             this.tb_giasanpham.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_giasanpham_KeyPress);
             // 
+            // giasanpham
+            // 
+            this.giasanpham.AutoSize = true;
+            this.giasanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giasanpham.Location = new System.Drawing.Point(23, 222);
+            this.giasanpham.Name = "giasanpham";
+            this.giasanpham.Size = new System.Drawing.Size(44, 26);
+            this.giasanpham.TabIndex = 7;
+            this.giasanpham.Text = "Giá";
+            // 
             // tb_tensanpham
             // 
             this.tb_tensanpham.AcceptsReturn = false;
@@ -375,6 +282,26 @@
             this.tb_tensanpham.TextPlaceholder = "Nhập tên sản phẩm";
             this.tb_tensanpham.UseSystemPasswordChar = false;
             this.tb_tensanpham.WordWrap = true;
+            // 
+            // tensanpham
+            // 
+            this.tensanpham.AutoSize = true;
+            this.tensanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tensanpham.Location = new System.Drawing.Point(14, 141);
+            this.tensanpham.Name = "tensanpham";
+            this.tensanpham.Size = new System.Drawing.Size(143, 26);
+            this.tensanpham.TabIndex = 5;
+            this.tensanpham.Text = "Tên sản phẩm";
+            // 
+            // masanpham
+            // 
+            this.masanpham.AutoSize = true;
+            this.masanpham.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masanpham.Location = new System.Drawing.Point(14, 35);
+            this.masanpham.Name = "masanpham";
+            this.masanpham.Size = new System.Drawing.Size(136, 26);
+            this.masanpham.TabIndex = 4;
+            this.masanpham.Text = "Mã sản phẩm";
             // 
             // tb_masanpham
             // 
@@ -451,15 +378,103 @@
             this.tb_masanpham.WordWrap = true;
             this.tb_masanpham.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_masanpham_KeyPress);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Controls.Add(this.btn_upload);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Location = new System.Drawing.Point(519, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(384, 418);
+            this.panel2.TabIndex = 5;
+            // 
+            // btn_upload
+            // 
+            this.btn_upload.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_upload.Location = new System.Drawing.Point(114, 369);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Size = new System.Drawing.Size(146, 46);
+            this.btn_upload.TabIndex = 3;
+            this.btn_upload.Text = "Upload";
+            this.btn_upload.UseVisualStyleBackColor = true;
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(335, 293);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(128, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 26);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Ảnh sản phẩm";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel3.Controls.Add(this.btn_cancel);
+            this.panel3.Controls.Add(this.btn_save);
+            this.panel3.Location = new System.Drawing.Point(341, 513);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(337, 55);
+            this.panel3.TabIndex = 6;
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.BackColor = System.Drawing.Color.Red;
+            this.btn_cancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.White;
+            this.btn_cancel.Location = new System.Drawing.Point(215, 4);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(119, 48);
+            this.btn_cancel.TabIndex = 1;
+            this.btn_cancel.Text = "Hủy";
+            this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_save.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(-1, 3);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(119, 48);
+            this.btn_save.TabIndex = 0;
+            this.btn_save.Text = "Tạo mới";
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Location = new System.Drawing.Point(29, 50);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(906, 447);
+            this.panel4.TabIndex = 7;
+            // 
             // ThemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(947, 593);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "ThemSanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -470,8 +485,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,5 +511,6 @@
         private System.Windows.Forms.Button btn_upload;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Panel panel4;
     }
 }

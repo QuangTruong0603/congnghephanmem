@@ -222,6 +222,7 @@
             // 
             this.img_logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.img_logo.BackColor = System.Drawing.Color.Transparent;
             this.img_logo.Image = global::GUI.Properties.Resources._7_Eleven_Logo;
             this.img_logo.Location = new System.Drawing.Point(396, 104);
             this.img_logo.Name = "img_logo";
@@ -232,6 +233,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::GUI.Properties.Resources.arrow;
             this.pictureBox1.Location = new System.Drawing.Point(67, 122);
             this.pictureBox1.Name = "pictureBox1";
@@ -244,6 +246,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1124, 800);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_create);

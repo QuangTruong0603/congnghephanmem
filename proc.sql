@@ -594,6 +594,54 @@ BEGIN
 END
 go
 
+CREATE PROCEDURE GetAllBill
+AS
+BEGIN
+    select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng'  from Bill, PaymentMethod, Staff
+	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username
+END
+go
+
+CREATE PROCEDURE GetOneBill (@bill_no varchar (100))
+AS
+BEGIN
+    select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng'  from Bill, PaymentMethod, Staff
+	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username and Bill.bill_no = @bill_no
+END
+go
+
+
+CREATE PROCEDURE GetBillByNoBill (@bill_no varchar (100))
+AS
+BEGIN
+     select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng'  from Bill, PaymentMethod, Staff
+	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username and Bill.bill_no = @bill_no and Bill.bill_no = @bill_no
+END
+go
+
+
+
+
+CREATE PROCEDURE GetCustomerOfBill (@bill_no varchar (100))
+AS
+BEGIN
+     select  Customer.customer_name, Customer.customer_phone from Bill, Customer where Bill.customer_id = Customer.customer_id and Bill.bill_no = @bill_no
+END
+go
+
+
+--Bill detail
+
+CREATE PROCEDURE GetListProductOfBill (@bill_no varchar (100))
+AS
+BEGIN
+     select Product.product_name as N'Tên sản phẩm', Product.product_barcode as N'Mã sản phẩm', Bill_detail.quantity as N'Số lượng', Bill_detail.size as N'Size' , Bill_detail.price as N'Số tiền' from Bill, Product, Bill_detail
+
+	 where Bill.bill_no = @bill_no and Bill.bill_id = Bill_detail.bill_id and Bill_detail.product_id = Product.product_id
+END
+go
+
+
 
 --OrderOnline
 --Thêm
@@ -874,9 +922,10 @@ go
 Create Procedure GetRole (@username varchar (50))
 as
 begin
-  select  role_id from Staff_Role where username = @username
+  select  Staff_Role.role_id,Role.role_name  from Staff_Role, Role where username = @username and Staff_Role.role_id = Role.role_id
 end
 go
+
 
 Create Procedure GetStaff(@username varchar (50))
 as
