@@ -144,6 +144,8 @@
     <Compile Include="DTO_Bill.cs" />
     <Compile Include="DTO_BillDetail.cs" />
     <Compile Include="DTO_Category.cs" />
+    <Compile Include="DTO_Order.cs" />
+    <Compile Include="DTO_OrderDetail.cs" />
     <Compile Include="DTO_Product.cs" />
     <Compile Include="DTO_Staff.cs" />
     <Compile Include="DTO_Unit.cs" />

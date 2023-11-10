@@ -227,3 +227,25 @@ As
 	End
 Go
 
+
+--xoa order online
+
+Create trigger deleteWithOrderDetail on OrderOnline
+instead of delete
+as 
+begin
+
+    Declare @id int
+	Select @id = deleted.order_id from deleted
+	delete OrderDetail where OrderDetail.order_id = @id
+	delete OrderOnline where OrderOnline.order_id = @id
+
+End
+
+drop trigger deleteWithOrderDetail
+
+delete OrderOnline where order_id = 8
+
+select * from OrderOnline where order_id = 8
+
+select * from OrderDetail

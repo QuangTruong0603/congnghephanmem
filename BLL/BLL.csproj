@@ -143,6 +143,7 @@
     <Compile Include="BLL_Bill.cs" />
     <Compile Include="BLL_Category.cs" />
     <Compile Include="BLL_Login_Staff.cs" />
+    <Compile Include="BLL_Order.cs" />
     <Compile Include="BLL_Product.cs" />
     <Compile Include="BLL_Register.cs" />
     <Compile Include="BLL_Unit.cs" />

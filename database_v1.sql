@@ -83,14 +83,14 @@ CREATE TABLE [OrderOnline]
     [order_name] [nvarchar] (100) NOT NULL,
     [order_address] [nvarchar] (100) NOT NULL,
     [order_phone] [varchar] (10) NOT NULL,
-    [order_status] [int] NOT NULL,
+    [order_status] [nvarchar] (50) NOT NULL,
     [order_total_before] [int] NOT NULL,
     [order_total_after] [int] NOT NULL,
-    [order_paycheck] [varchar] (20) NOT NULL,
+	[order_date] datetime NOT NULL,
+    [order_paycheck] [nvarchar] (50) NOT NULL,
     CONSTRAINT PK_Order_Online PRIMARY KEY (order_id)   
 )
 GO
-
 
 
 

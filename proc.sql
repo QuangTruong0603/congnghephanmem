@@ -697,6 +697,79 @@ END
 go
 
 
+--get all
+--0 : cho lay hang / 1: dang van chuyen /2: dang giao cho KH / 3: giao thanh cong /...
+
+CREATE PROCEDURE GetAllOrder
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán'
+	from OrderOnline
+END
+go
+
+
+CREATE PROCEDURE GetOneOrderById (@order_id int)
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán'
+	from OrderOnline where OrderOnline.order_id = @order_id
+END
+go
+
+
+
+CREATE PROCEDURE GetOrderByStatus(@order_status nvarchar(100))
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán'
+	from OrderOnline where order_status = @order_status
+END
+go
+
+
+
+
+CREATE PROCEDURE GetOrderById (@order_id int)
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán', Customer.customer_name as N'Tên tài khoản đặt hàng',Customer.customer_phone as N'Số điện thoại TKDH', OrderOnline.order_date as N'Ngày tạo đơn', OrderOnline.order_total_before as N'Số tiền ban đầu'
+	from OrderOnline, Customer where OrderOnline.order_id = @order_id  and OrderOnline.customer_id = Customer.customer_id
+END
+go
+
+
+CREATE PROCEDURE GetOrderDetailById (@order_id int)
+AS
+BEGIN
+    select Product.product_barcode as N'Mã sản phẩm', Product.product_name as N'Tên sản phẩm', OrderDetail.quantity as N'Số lượng', OrderDetail.size as N'Size', OrderDetail.price as N'Giá tiền'
+	from OrderDetail, Product where OrderDetail.order_id = @order_id and OrderDetail.product_id = Product.product_id
+END
+go
+
+
+
+CREATE PROCEDURE GetListProductOfOrder (@order_id varchar (100))
+AS
+BEGIN
+     select Product.product_name as N'Tên sản phẩm', Product.product_barcode as N'Mã sản phẩm', OrderDetail.quantity as N'Số lượng', OrderDetail.size as N'Size' , OrderDetail.price as N'Số tiền' from  Product, OrderDetail
+
+	 where OrderDetail.order_id = @order_id and OrderDetail.product_id = Product.product_id
+END
+go
+
+
+
+CREATE PROCEDURE DeleteOrder (@order_id varchar (100))
+AS
+BEGIN
+     delete OrderOnline where OrderOnline.order_id = @order_id
+END
+go
+
+
+
+
 
 --StaffRelatives
 
