@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BLL;
 using DAL;
 using DTO;
+using GUI.DonHang;
 
 namespace GUI
 {
@@ -92,7 +93,7 @@ namespace GUI
 
                 ContextMenu m = new ContextMenu();
                 m.MenuItems.Add("Thông tin chi tiết", (s, args) => { ShowDetails(); });
-                m.MenuItems.Add(new MenuItem("Chỉnh sửa đơn"));
+                m.MenuItems.Add(new MenuItem("Chỉnh sửa đơn", (s, args) => { EditOrder(); }));
                 m.MenuItems.Add(new MenuItem("In đơn", (s, args) => { PrintOrder(); }));
                 m.MenuItems.Add(new MenuItem("Hủy đơn", (s, args) => { DeleteOrder(); }));
 
@@ -104,6 +105,14 @@ namespace GUI
             catch(Exception ex) { }
           
         }
+
+        public void EditOrder()
+        {
+            ChinhSuaDonHang edit = new ChinhSuaDonHang(idOrder);
+            edit.ShowDialog();
+            refresh();
+        }
+
 
         private void dataAll_MouseClick(object sender, MouseEventArgs e)
         {
@@ -300,6 +309,11 @@ namespace GUI
         {
             ManHinhChinh main = new ManHinhChinh();
             this.Hide();
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

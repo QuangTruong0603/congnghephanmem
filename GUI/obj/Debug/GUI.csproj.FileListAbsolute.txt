@@ -162,3 +162,5 @@ D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\G
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.QuanLyGiaoHang.resources
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ChiTietDonHang.resources
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.PrintReview.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.DonHang.ChinhSuaDonHang.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ThemSanPhamOrder.resources

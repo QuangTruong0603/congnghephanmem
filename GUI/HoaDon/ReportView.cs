@@ -50,7 +50,14 @@ namespace GUI
             param[4] = new ReportParameter("fprice", list[4], false);
             param[5] = new ReportParameter("lprice", list[5], false);
             param[6] = new ReportParameter("paymentmethod", list[6], false);
-            param[7] = new ReportParameter("soluong",l.Count().ToString(), false);
+
+            int count = 0;
+
+            foreach(DTO_BillDetail detail in l)
+            {
+                count = count + detail.quatity;
+            }
+            param[7] = new ReportParameter("soluong",count.ToString(), false);
             param[8] = new ReportParameter("tongtien", list[4], false);
             param[9] = new ReportParameter("thanhtien", list[5], false);
             param[10] = new ReportParameter("giamgia", calDiscount(list[4], list[5]), false);

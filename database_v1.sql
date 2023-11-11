@@ -245,7 +245,7 @@ CREATE TABLE [Bill_detail]
 GO
 
 
--- Table OrderDetail --------------------------
+-- Table OrderDetail --------------------------   CONSTRAINT PK_Order_detail PRIMARY KEY (order_id, product_id) 
 CREATE TABLE [OrderDetail]
 (
     [quantity] [int] NOT NULL,
@@ -253,9 +253,10 @@ CREATE TABLE [OrderDetail]
     [size] [varchar] (10) NOT NULL,
 	[order_id] [bigint] NOT NULL,
     [product_id] [bigint] NOT NULL,
-	CONSTRAINT PK_Order_detail PRIMARY KEY (order_id, product_id) 
+	 CONSTRAINT PK_Order_detail PRIMARY KEY (order_id, product_id) 
 )
 GO
+
 
 
 

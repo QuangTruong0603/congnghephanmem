@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -280,6 +281,116 @@ namespace DAL
         }
        
 
+        public Boolean addProductOrderDetail(int orderId, int productid,string size, int quantity, int price)
+        {
+
+            bool c = false;
+
+            try
+            {
+                conn = database.getConnection() ;
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("addProductOrderDetail", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@order_id", SqlDbType.Int).Value = orderId;
+                cmd.Parameters.Add("@product_id", SqlDbType.Int).Value = productid;
+                cmd.Parameters.Add("@quantity", SqlDbType.Int).Value = quantity;
+                cmd.Parameters.Add("@price", SqlDbType.Int).Value = price;
+                cmd.Parameters.Add("@size", SqlDbType.VarChar).Value = size;
+                int count = cmd.ExecuteNonQuery();
+                if(count == 0)
+                {
+                    return c;
+                }
+
+                conn.Close();
+                c = true;
+                return c;
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                conn.Close ();
+                return c;
+            }
+
+        }
+
+        public Boolean deleteProductOrderDetail(int idOrder, int product_id)
+        {
+            bool c = false;
+
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("deleteProductOrderDetail", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@order_id", SqlDbType.Int).Value = idOrder;
+                cmd.Parameters.Add("@product_id", SqlDbType.Int).Value = product_id;
+             
+                int count = cmd.ExecuteNonQuery();
+                if (count == 0)
+                {
+                    return c;
+                }
+
+                conn.Close();
+                c = true;
+                return c;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                conn.Close();
+                return c;
+            }
+        }
+
+
+        public Boolean updateOrder(int orderid, string name, string address, string phone, string status, string paychek, int delivery)
+        {
+            bool c = false;
+
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("Update_OrderOnline", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@order_id", SqlDbType.Int).Value = orderid;
+                cmd.Parameters.Add("@new_order_name", SqlDbType.NVarChar).Value = name;
+                cmd.Parameters.Add("@new_order_address", SqlDbType.NVarChar).Value = address;
+                cmd.Parameters.Add("@new_order_phone", SqlDbType.VarChar).Value = phone;
+                cmd.Parameters.Add("@new_order_status", SqlDbType.NVarChar).Value = status;
+                cmd.Parameters.Add("@new_order_paycheck", SqlDbType.NVarChar).Value = paychek;
+                cmd.Parameters.Add("@delivery", SqlDbType.Int).Value = delivery;
+
+                int count = cmd.ExecuteNonQuery();
+                if (count == 0)
+                {
+                    return c;
+                }
+
+                conn.Close();
+                c = true;
+                return c;
+
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                conn.Close();
+                return c;
+            }
+
+        }
 
 
     }

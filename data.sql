@@ -252,3 +252,5 @@ insert into OrderDetail(order_id, product_id,quantity, size, price) values (11,8
 insert into OrderDetail(order_id, product_id,quantity, size, price) values (10,8,4,'null',80000)
 
 insert into OrderDetail(order_id, product_id,quantity, size, price) values (10,9,1,'null',20000)
+
+select * from Product

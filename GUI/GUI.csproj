@@ -213,6 +213,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DonHang\ChinhSuaDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonHang\ChinhSuaDonHang.Designer.cs">
+      <DependentUpon>ChinhSuaDonHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="DonHang\ChiTietDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,10 +326,22 @@
       <DependentUpon>ThemSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="DonHang\ThemSanPhamOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonHang\ThemSanPhamOrder.Designer.cs">
+      <DependentUpon>ThemSanPhamOrder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DonHang\ChinhSuaDonHang.resx">
+      <DependentUpon>ChinhSuaDonHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DonHang\ChiTietDonHang.resx">
       <DependentUpon>ChiTietDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DonHang\DonHang.rdlc" />
+    <EmbeddedResource Include="DonHang\ThemSanPhamOrder.resx">
+      <DependentUpon>ThemSanPhamOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoaDon\ChiTietHoaDon.resx">
       <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>

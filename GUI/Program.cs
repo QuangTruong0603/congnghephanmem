@@ -1,4 +1,5 @@
-﻿using GUI.NguoiDung;
+﻿using GUI.DonHang;
+using GUI.NguoiDung;
 using GUI.SanPham;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace GUI
         {
              Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoadingForm());
+            Application.Run(new QuanLyGiaoHang());
         }
     }
 }

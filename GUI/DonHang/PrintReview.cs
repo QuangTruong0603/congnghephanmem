@@ -117,7 +117,14 @@ namespace GUI
             param[10] = new ReportParameter("phivanchuyen", delivery.ToString()+ " VND", false);
 
 
-            param[11] = new ReportParameter("total",list.Count().ToString(),false);
+            int count = 0;
+
+            foreach(DTO_BillDetail detail in list)
+            {
+                count = count + detail.quatity;
+            }
+
+            param[11] = new ReportParameter("total",count.ToString(),false);
 
 
             this.reportViewer1.LocalReport.SetParameters(param);

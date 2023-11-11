@@ -52,5 +52,20 @@ namespace BLL
         }
 
 
+        public Boolean addProductOrderDetail(int orderId, int productid, string size, int quantity, int price)
+        {
+            return dAL_Order.addProductOrderDetail(orderId, productid, size, quantity, price);
+        }
+
+        public Boolean deleteProductOrderDetail(int orderId, int productid)
+        {
+            return dAL_Order.deleteProductOrderDetail(orderId, productid);
+        }
+
+        public Boolean updateOrder(int orderid, string name, string address, string phone, string status, string paychek, int delivery)
+        {
+            return dAL_Order.updateOrder(orderid, name, address, phone, status, paychek, delivery);
+        }
+
     }
 }

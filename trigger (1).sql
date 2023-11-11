@@ -242,10 +242,66 @@ begin
 
 End
 
-drop trigger deleteWithOrderDetail
 
-delete OrderOnline where order_id = 8
+--them orderdetail
 
-select * from OrderOnline where order_id = 8
+Create trigger addOrderDetail on OrderDetail
+instead of insert
+as 
+begin
 
-select * from OrderDetail
+	declare @order_id int
+
+	select @order_id = inserted.order_id from inserted
+
+	declare @size varchar(50)
+
+	select @size = inserted.size from inserted
+	
+	declare @price int
+	declare @soluong int
+	select @soluong = inserted.quantity from inserted
+	declare @product_id int
+	select @product_id = inserted.product_id from inserted
+
+	declare @count int
+
+	select @count =  count (*) from OrderDetail where order_id = @order_id and product_id = @product_id
+
+	if @count > 0
+	 BEGIN
+		 select @price = @soluong*Product.product_price from Product where Product.product_id = @product_id
+		 update OrderOnline set order_total_before = order_total_before + @price , order_total_after = order_total_after + @price where order_id = @order_id
+		 update OrderDetail set quantity = quantity + @soluong, price = price +@price , size = @size where order_id = @order_id and product_id = @product_id
+     End
+	else
+	 Begin
+	    select @price = @soluong*Product.product_price from Product where Product.product_id = @product_id
+	    update OrderOnline set order_total_before = order_total_before + @price , order_total_after = order_total_after + @price where order_id = @order_id
+        insert into OrderDetail(product_id,order_id,quantity,size,price) values (@product_id,@order_id,@soluong,@size,@price)
+	 End
+
+End
+
+
+
+--xoa order detail
+Create trigger deleteOrderDetail on OrderDetail
+instead of delete
+as 
+begin
+
+    declare @price int
+	select @price = price from deleted
+
+	declare @product_id int
+	select @product_id = product_id from deleted
+
+	declare @order_id int
+	select @order_id = order_id from deleted
+
+	update  OrderOnline set order_total_before = order_total_before - @price, order_total_after= order_total_after - @price where order_id = @order_id
+	delete OrderDetail where order_id = @order_id and @product_id = product_id
+
+End
+

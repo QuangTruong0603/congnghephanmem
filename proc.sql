@@ -672,25 +672,21 @@ go
 --Sửa
 CREATE PROCEDURE Update_OrderOnline
     @order_id BIGINT,
-    @new_customer_id BIGINT,
     @new_order_name NVARCHAR(100),
     @new_order_address NVARCHAR(100),
     @new_order_phone VARCHAR(10),
-    @new_order_status INT,
-    @new_order_total_before INT,
-    @new_order_total_after INT,
-    @new_order_paycheck VARCHAR(20)
+    @new_order_status NVARCHAR(50),
+    @new_order_paycheck NVARCHAR(50),
+	@delivery int
 AS
 BEGIN
     UPDATE OrderOnline
     SET 
-        customer_id = @new_customer_id,
         order_name = @new_order_name,
         order_address = @new_order_address,
         order_phone = @new_order_phone,
         order_status = @new_order_status,
-        order_total_before = @new_order_total_before,
-        order_total_after = @new_order_total_after,
+        order_total_after = order_total_before + @delivery,
         order_paycheck = @new_order_paycheck
     WHERE order_id = @order_id
 END
@@ -769,7 +765,24 @@ go
 
 
 
+CREATE PROCEDURE addProductOrderDetail (@order_id int , @product_id int, @quantity int,@price int, @size varchar(50))
+AS
+BEGIN
+      insert into OrderDetail(order_id, product_id, quantity, size, price) values (@order_id,@product_id,@quantity,@size, @price)
+END
+go
 
+
+
+CREATE PROCEDURE deleteProductOrderDetail (@order_id int , @product_id int)
+AS
+BEGIN
+      delete OrderDetail where order_id = @order_id and product_id = @product_id
+END
+go
+
+
+drop procedure addProductOrderDetail 
 
 --StaffRelatives
 

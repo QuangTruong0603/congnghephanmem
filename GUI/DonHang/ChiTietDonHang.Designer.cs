@@ -43,17 +43,17 @@
             this.payment = new System.Windows.Forms.Label();
             this.dataDetail = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.date = new System.Windows.Forms.Label();
-            this.tb_customer = new System.Windows.Forms.Label();
-            this.tb_name = new System.Windows.Forms.Label();
-            this.tb_address = new System.Windows.Forms.Label();
-            this.tb_sdt = new System.Windows.Forms.Label();
-            this.tb_date = new System.Windows.Forms.Label();
-            this.tb_fprice = new System.Windows.Forms.Label();
-            this.tb_delivery = new System.Windows.Forms.Label();
-            this.tb_eprice = new System.Windows.Forms.Label();
-            this.tb_status = new System.Windows.Forms.Label();
             this.tb_thanhtoan = new System.Windows.Forms.Label();
+            this.tb_status = new System.Windows.Forms.Label();
+            this.tb_eprice = new System.Windows.Forms.Label();
+            this.tb_delivery = new System.Windows.Forms.Label();
+            this.tb_fprice = new System.Windows.Forms.Label();
+            this.tb_date = new System.Windows.Forms.Label();
+            this.tb_sdt = new System.Windows.Forms.Label();
+            this.tb_address = new System.Windows.Forms.Label();
+            this.tb_name = new System.Windows.Forms.Label();
+            this.tb_customer = new System.Windows.Forms.Label();
+            this.date = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataDetail)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -179,7 +179,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataDetail.ColumnHeadersHeight = 40;
             this.dataDetail.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dataDetail.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dataDetail.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -250,65 +250,45 @@
             this.panel1.Size = new System.Drawing.Size(1117, 305);
             this.panel1.TabIndex = 11;
             // 
-            // date
+            // tb_thanhtoan
             // 
-            this.date.AutoSize = true;
-            this.date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.Location = new System.Drawing.Point(23, 258);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(134, 23);
-            this.date.TabIndex = 10;
-            this.date.Text = "Ngày tạo đơn: ";
+            this.tb_thanhtoan.AutoSize = true;
+            this.tb_thanhtoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_thanhtoan.Location = new System.Drawing.Point(795, 267);
+            this.tb_thanhtoan.Name = "tb_thanhtoan";
+            this.tb_thanhtoan.Size = new System.Drawing.Size(60, 22);
+            this.tb_thanhtoan.TabIndex = 20;
+            this.tb_thanhtoan.Text = "label1";
             // 
-            // tb_customer
+            // tb_status
             // 
-            this.tb_customer.AutoSize = true;
-            this.tb_customer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_customer.Location = new System.Drawing.Point(210, 54);
-            this.tb_customer.Name = "tb_customer";
-            this.tb_customer.Size = new System.Drawing.Size(60, 22);
-            this.tb_customer.TabIndex = 11;
-            this.tb_customer.Text = "label1";
+            this.tb_status.AutoSize = true;
+            this.tb_status.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_status.Location = new System.Drawing.Point(874, 223);
+            this.tb_status.Name = "tb_status";
+            this.tb_status.Size = new System.Drawing.Size(60, 22);
+            this.tb_status.TabIndex = 19;
+            this.tb_status.Text = "label1";
             // 
-            // tb_name
+            // tb_eprice
             // 
-            this.tb_name.AutoSize = true;
-            this.tb_name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_name.Location = new System.Drawing.Point(210, 105);
-            this.tb_name.Name = "tb_name";
-            this.tb_name.Size = new System.Drawing.Size(60, 22);
-            this.tb_name.TabIndex = 12;
-            this.tb_name.Text = "label1";
+            this.tb_eprice.AutoSize = true;
+            this.tb_eprice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_eprice.Location = new System.Drawing.Point(795, 166);
+            this.tb_eprice.Name = "tb_eprice";
+            this.tb_eprice.Size = new System.Drawing.Size(60, 22);
+            this.tb_eprice.TabIndex = 18;
+            this.tb_eprice.Text = "label1";
             // 
-            // tb_address
+            // tb_delivery
             // 
-            this.tb_address.AutoSize = true;
-            this.tb_address.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_address.Location = new System.Drawing.Point(210, 157);
-            this.tb_address.Name = "tb_address";
-            this.tb_address.Size = new System.Drawing.Size(60, 22);
-            this.tb_address.TabIndex = 13;
-            this.tb_address.Text = "label1";
-            // 
-            // tb_sdt
-            // 
-            this.tb_sdt.AutoSize = true;
-            this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_sdt.Location = new System.Drawing.Point(210, 214);
-            this.tb_sdt.Name = "tb_sdt";
-            this.tb_sdt.Size = new System.Drawing.Size(60, 22);
-            this.tb_sdt.TabIndex = 14;
-            this.tb_sdt.Text = "label1";
-            // 
-            // tb_date
-            // 
-            this.tb_date.AutoSize = true;
-            this.tb_date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_date.Location = new System.Drawing.Point(210, 258);
-            this.tb_date.Name = "tb_date";
-            this.tb_date.Size = new System.Drawing.Size(60, 22);
-            this.tb_date.TabIndex = 15;
-            this.tb_date.Text = "label1";
+            this.tb_delivery.AutoSize = true;
+            this.tb_delivery.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_delivery.Location = new System.Drawing.Point(837, 114);
+            this.tb_delivery.Name = "tb_delivery";
+            this.tb_delivery.Size = new System.Drawing.Size(60, 22);
+            this.tb_delivery.TabIndex = 17;
+            this.tb_delivery.Text = "label1";
             // 
             // tb_fprice
             // 
@@ -321,45 +301,65 @@
             this.tb_fprice.Text = "label1";
             this.tb_fprice.Click += new System.EventHandler(this.tb_fprice_Click);
             // 
-            // tb_delivery
+            // tb_date
             // 
-            this.tb_delivery.AutoSize = true;
-            this.tb_delivery.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_delivery.Location = new System.Drawing.Point(837, 114);
-            this.tb_delivery.Name = "tb_delivery";
-            this.tb_delivery.Size = new System.Drawing.Size(60, 22);
-            this.tb_delivery.TabIndex = 17;
-            this.tb_delivery.Text = "label1";
+            this.tb_date.AutoSize = true;
+            this.tb_date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_date.Location = new System.Drawing.Point(210, 258);
+            this.tb_date.Name = "tb_date";
+            this.tb_date.Size = new System.Drawing.Size(60, 22);
+            this.tb_date.TabIndex = 15;
+            this.tb_date.Text = "label1";
             // 
-            // tb_eprice
+            // tb_sdt
             // 
-            this.tb_eprice.AutoSize = true;
-            this.tb_eprice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_eprice.Location = new System.Drawing.Point(795, 166);
-            this.tb_eprice.Name = "tb_eprice";
-            this.tb_eprice.Size = new System.Drawing.Size(60, 22);
-            this.tb_eprice.TabIndex = 18;
-            this.tb_eprice.Text = "label1";
+            this.tb_sdt.AutoSize = true;
+            this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_sdt.Location = new System.Drawing.Point(210, 214);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.Size = new System.Drawing.Size(60, 22);
+            this.tb_sdt.TabIndex = 14;
+            this.tb_sdt.Text = "label1";
             // 
-            // tb_status
+            // tb_address
             // 
-            this.tb_status.AutoSize = true;
-            this.tb_status.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_status.Location = new System.Drawing.Point(874, 223);
-            this.tb_status.Name = "tb_status";
-            this.tb_status.Size = new System.Drawing.Size(60, 22);
-            this.tb_status.TabIndex = 19;
-            this.tb_status.Text = "label1";
+            this.tb_address.AutoSize = true;
+            this.tb_address.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_address.Location = new System.Drawing.Point(210, 157);
+            this.tb_address.Name = "tb_address";
+            this.tb_address.Size = new System.Drawing.Size(60, 22);
+            this.tb_address.TabIndex = 13;
+            this.tb_address.Text = "label1";
             // 
-            // tb_thanhtoan
+            // tb_name
             // 
-            this.tb_thanhtoan.AutoSize = true;
-            this.tb_thanhtoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_thanhtoan.Location = new System.Drawing.Point(795, 267);
-            this.tb_thanhtoan.Name = "tb_thanhtoan";
-            this.tb_thanhtoan.Size = new System.Drawing.Size(60, 22);
-            this.tb_thanhtoan.TabIndex = 20;
-            this.tb_thanhtoan.Text = "label1";
+            this.tb_name.AutoSize = true;
+            this.tb_name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_name.Location = new System.Drawing.Point(210, 105);
+            this.tb_name.Name = "tb_name";
+            this.tb_name.Size = new System.Drawing.Size(60, 22);
+            this.tb_name.TabIndex = 12;
+            this.tb_name.Text = "label1";
+            // 
+            // tb_customer
+            // 
+            this.tb_customer.AutoSize = true;
+            this.tb_customer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_customer.Location = new System.Drawing.Point(210, 54);
+            this.tb_customer.Name = "tb_customer";
+            this.tb_customer.Size = new System.Drawing.Size(60, 22);
+            this.tb_customer.TabIndex = 11;
+            this.tb_customer.Text = "label1";
+            // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.Location = new System.Drawing.Point(23, 258);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(134, 23);
+            this.date.TabIndex = 10;
+            this.date.Text = "Ngày tạo đơn: ";
             // 
             // ChiTietDonHang
             // 

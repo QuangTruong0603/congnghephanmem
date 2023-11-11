@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.circularPictureBox1 = new GUI.CircularPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -49,7 +48,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.avatar = new GUI.CircularPictureBox();
             this.username = new System.Windows.Forms.Label();
             this.rolename = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.Label();
@@ -59,7 +57,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
+            this.avatar = new GUI.CircularPictureBox();
+            this.circularPictureBox1 = new GUI.CircularPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -70,30 +69,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // circularPictureBox1
-            // 
-            this.circularPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.circularPictureBox1.BackgroundImage = global::GUI.Properties.Resources.logo;
-            this.circularPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.circularPictureBox1.Border = 0;
-            this.circularPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
-            this.circularPictureBox1.Borderstyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.circularPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
-            this.circularPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
-            this.circularPictureBox1.Gradiant = 50F;
-            this.circularPictureBox1.Location = new System.Drawing.Point(1102, 798);
-            this.circularPictureBox1.Name = "circularPictureBox1";
-            this.circularPictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox1.TabIndex = 0;
-            this.circularPictureBox1.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -307,21 +289,6 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Quản lý NCC";
             // 
-            // avatar
-            // 
-            this.avatar.Border = 2;
-            this.avatar.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
-            this.avatar.Borderstyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.avatar.ColorBorder = System.Drawing.Color.RoyalBlue;
-            this.avatar.ColorBorder2 = System.Drawing.Color.HotPink;
-            this.avatar.Gradiant = 50F;
-            this.avatar.Location = new System.Drawing.Point(11, 5);
-            this.avatar.Name = "avatar";
-            this.avatar.Size = new System.Drawing.Size(91, 91);
-            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.avatar.TabIndex = 20;
-            this.avatar.TabStop = false;
-            // 
             // username
             // 
             this.username.AutoSize = true;
@@ -428,10 +395,44 @@
             this.panel3.Controls.Add(this.rolename);
             this.panel3.Controls.Add(this.username);
             this.panel3.Controls.Add(this.avatar);
-            this.panel3.Location = new System.Drawing.Point(1, 15);
+            this.panel3.Location = new System.Drawing.Point(12, 15);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(234, 99);
             this.panel3.TabIndex = 28;
+            // 
+            // avatar
+            // 
+            this.avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.avatar.Border = 2;
+            this.avatar.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
+            this.avatar.Borderstyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.avatar.ColorBorder = System.Drawing.Color.RoyalBlue;
+            this.avatar.ColorBorder2 = System.Drawing.Color.HotPink;
+            this.avatar.Gradiant = 50F;
+            this.avatar.Location = new System.Drawing.Point(11, 5);
+            this.avatar.Name = "avatar";
+            this.avatar.Size = new System.Drawing.Size(88, 88);
+            this.avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatar.TabIndex = 20;
+            this.avatar.TabStop = false;
+            // 
+            // circularPictureBox1
+            // 
+            this.circularPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.circularPictureBox1.BackgroundImage = global::GUI.Properties.Resources.logo;
+            this.circularPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.circularPictureBox1.Border = 0;
+            this.circularPictureBox1.BorderCap = System.Drawing.Drawing2D.DashCap.Flat;
+            this.circularPictureBox1.Borderstyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.circularPictureBox1.ColorBorder = System.Drawing.Color.RoyalBlue;
+            this.circularPictureBox1.ColorBorder2 = System.Drawing.Color.HotPink;
+            this.circularPictureBox1.Gradiant = 50F;
+            this.circularPictureBox1.Location = new System.Drawing.Point(1102, 798);
+            this.circularPictureBox1.Name = "circularPictureBox1";
+            this.circularPictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPictureBox1.TabIndex = 0;
+            this.circularPictureBox1.TabStop = false;
             // 
             // ManHinhChinh
             // 
@@ -452,7 +453,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ManHinhChinh_FormClosing);
             this.Load += new System.EventHandler(this.ManHinhChinh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -463,7 +463,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -471,6 +470,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
