@@ -142,6 +142,7 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="DTO_customer.cs" />
+    <Compile Include="DTO_Discount2.cs" />
     <Compile Include="DTO_Product.cs" />
     <Compile Include="DTO_product2.cs" />
     <Compile Include="DTO_Staff.cs" />

@@ -133,7 +133,7 @@ namespace DAL
                     {
                         DTO_product2 product = new DTO_product2
                         {
-                            
+                            product_id = (long)reader["product_id"],
                             product_name = reader["product_name"].ToString(),
                             product_barcode = reader["product_barcode"].ToString(),
                             product_price = (int)reader["product_price"],

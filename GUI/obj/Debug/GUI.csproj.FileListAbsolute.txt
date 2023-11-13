@@ -292,3 +292,7 @@ D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GU
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.exe
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.pdb
 D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.DangNhapTichDiem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.TrangChuGiamGia.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.Add.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.DeleteConfirm.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.Update.resources

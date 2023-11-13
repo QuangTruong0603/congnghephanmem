@@ -75,7 +75,7 @@
             this.btn_coffee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_coffee.Image = global::GUI.Properties.Resources.coffee;
             this.btn_coffee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_coffee.Location = new System.Drawing.Point(3, 229);
+            this.btn_coffee.Location = new System.Drawing.Point(3, 228);
             this.btn_coffee.Name = "btn_coffee";
             this.btn_coffee.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_coffee.Size = new System.Drawing.Size(207, 77);
@@ -94,7 +94,7 @@
             this.btn_nuocuong.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_nuocuong.Image = global::GUI.Properties.Resources.sparkling_water;
             this.btn_nuocuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_nuocuong.Location = new System.Drawing.Point(0, 146);
+            this.btn_nuocuong.Location = new System.Drawing.Point(0, 145);
             this.btn_nuocuong.Name = "btn_nuocuong";
             this.btn_nuocuong.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btn_nuocuong.Size = new System.Drawing.Size(207, 77);
@@ -270,15 +270,16 @@
             // 
             // DatMon
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1234, 693);
+            this.ClientSize = new System.Drawing.Size(1238, 693);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "DatMon";
             this.Text = "DatMon";
             this.Load += new System.EventHandler(this.DatMon_Load);

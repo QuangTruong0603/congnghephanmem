@@ -262,6 +262,30 @@
     <Compile Include="NguoiDung\XacNhanDangKy.Designer.cs">
       <DependentUpon>XacNhanDangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLGiamGia\Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGiamGia\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLGiamGia\DeleteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGiamGia\DeleteConfirm.Designer.cs">
+      <DependentUpon>DeleteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLGiamGia\TrangChuGiamGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGiamGia\TrangChuGiamGia.Designer.cs">
+      <DependentUpon>TrangChuGiamGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLGiamGia\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGiamGia\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="SanPham\QuanLySanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +341,18 @@
     </Compile>
     <EmbeddedResource Include="NguoiDung\XacNhanDangKy.resx">
       <DependentUpon>XacNhanDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGiamGia\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGiamGia\DeleteConfirm.resx">
+      <DependentUpon>DeleteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGiamGia\TrangChuGiamGia.resx">
+      <DependentUpon>TrangChuGiamGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGiamGia\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SanPham\QuanLySanPham.resx">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
@@ -419,6 +455,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

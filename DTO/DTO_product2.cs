@@ -9,7 +9,7 @@ namespace DTO
     public class DTO_product2
     {
         public DTO_product2() { }
-        public int product_id { set; get; }
+        public long product_id { set; get; }
         public string product_name { set; get; }
         public string product_barcode { set; get; }
         public int product_price { set; get; }
