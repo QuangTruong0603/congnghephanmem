@@ -212,3 +212,96 @@ As
 Go
 
 
+Create Trigger addInvenIdProduct
+on Product After Insert
+As
+	Begin
+		Declare @date Date
+		SELECT @date =  CAST( GETDATE() AS Date )
+		Insert into Inventory (inven_quantity, inven_latest_date, inven_update_quantity) values (0, @date, 0)
+		Declare @invenid int
+		select @invenid = Inventory.inven_id from Inventory where Inventory.inven_id = (select top 1 Inventory.inven_id from Inventory ORDER BY Inventory.inven_id DESC)
+		Declare @barcode varchar(100)
+		select  @barcode  = inserted.[product_barcode] from inserted
+		Update Product set inven_id = @invenid where Product.product_barcode = @barcode
+	End
+Go
+
+
+--xoa order online
+
+Create trigger deleteWithOrderDetail on OrderOnline
+instead of delete
+as 
+begin
+
+    Declare @id int
+	Select @id = deleted.order_id from deleted
+	delete OrderDetail where OrderDetail.order_id = @id
+	delete OrderOnline where OrderOnline.order_id = @id
+
+End
+
+
+--them orderdetail
+
+Create trigger addOrderDetail on OrderDetail
+instead of insert
+as 
+begin
+
+	declare @order_id int
+
+	select @order_id = inserted.order_id from inserted
+
+	declare @size varchar(50)
+
+	select @size = inserted.size from inserted
+	
+	declare @price int
+	declare @soluong int
+	select @soluong = inserted.quantity from inserted
+	declare @product_id int
+	select @product_id = inserted.product_id from inserted
+
+	declare @count int
+
+	select @count =  count (*) from OrderDetail where order_id = @order_id and product_id = @product_id
+
+	if @count > 0
+	 BEGIN
+		 select @price = @soluong*Product.product_price from Product where Product.product_id = @product_id
+		 update OrderOnline set order_total_before = order_total_before + @price , order_total_after = order_total_after + @price where order_id = @order_id
+		 update OrderDetail set quantity = quantity + @soluong, price = price +@price , size = @size where order_id = @order_id and product_id = @product_id
+     End
+	else
+	 Begin
+	    select @price = @soluong*Product.product_price from Product where Product.product_id = @product_id
+	    update OrderOnline set order_total_before = order_total_before + @price , order_total_after = order_total_after + @price where order_id = @order_id
+        insert into OrderDetail(product_id,order_id,quantity,size,price) values (@product_id,@order_id,@soluong,@size,@price)
+	 End
+
+End
+
+
+
+--xoa order detail
+Create trigger deleteOrderDetail on OrderDetail
+instead of delete
+as 
+begin
+
+    declare @price int
+	select @price = price from deleted
+
+	declare @product_id int
+	select @product_id = product_id from deleted
+
+	declare @order_id int
+	select @order_id = order_id from deleted
+
+	update  OrderOnline set order_total_before = order_total_before - @price, order_total_after= order_total_after - @price where order_id = @order_id
+	delete OrderDetail where order_id = @order_id and @product_id = product_id
+
+End
+

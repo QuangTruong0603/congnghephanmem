@@ -25,8 +25,7 @@ VALUES (N'chai'),
 (N'túi'),
 (N'cái'),
 (N'lít'),
-(N'gói');
-
+(N'gói'),(N'lon');
 
 --
 INSERT INTO StaffType (stafftype_name) 
@@ -121,12 +120,6 @@ VALUES
 (N'Trần Văn A', 'Relative Address 1', '1234567890', 'Info1', 'dai'),
 (N'Nguyễn Văn B', 'Relative Address 2', '9876543210', 'Info2', 'viet');
 
---OderOnline
-INSERT INTO OrderOnline (customer_id, order_name, order_address, order_phone, order_status, order_total_before, order_total_after, order_paycheck)
-VALUES
-(1, 'Order 1', 'Address 1', '1234567890', 1, 100, 90, 'Paid'),
-(2, 'Order 2', 'Address 2', '9876543210', 2, 150, 140, 'Paid');
-
 
 --Bill
 INSERT INTO Bill (bill_no, bill_date, bill_total_before, bill_total_after, paymentmethod_id, customer_id, username)
@@ -195,7 +188,7 @@ VALUES
 select * from unit
 select * from Category
 
-delete from Product
+delete from Product where product_id = 15
 select * from product
 
 INSERT INTO Consignment (consi_date, consi_quantity_product, consi_mgfdate, consi_expdate, consi_price_one_product, consi_total, product_id, supplier_id, username)
@@ -216,3 +209,40 @@ VALUES
 ('2024-01-15', '2024-01-31', 28, 8),
 ('2024-02-01', '2024-02-29', 14, 9),
 ('2024-02-15', '2024-02-29', 24, 10);
+
+
+--order online
+
+insert into OrderOnline (customer_id,order_name,order_address,order_phone,order_status,order_total_before,order_total_after,order_paycheck,order_date) 
+		values(1,N'Nguyễn Thái Nam',N'24 Nguyễn Chí Thanh, P9, Q5, TPHCM','0909786543',N'Đang vận chuyển',120000,150000,N'Đã thanh toán','2023-11-04 10:56:09')
+
+insert into OrderOnline (customer_id,order_name,order_address,order_phone,order_status,order_total_before,order_total_after,order_paycheck,order_date) 
+		values(2,N'Lê Nguyễn Minh Thư',N'110 Nguyễn Thị Thập, P. Tân Quy, Q7, TPHCM','0912722543',N'Đang giao cho khách hàng',100000,120000,N'Đã thanh toán','2023-11-01 12:12:09')
+
+
+insert into OrderOnline (customer_id,order_name,order_address,order_phone,order_status,order_total_before,order_total_after,order_paycheck,order_date) 
+		values(1,N'Nguyễn Thái Minh',N'24 Nguyễn Chí Thanh, P9, Q5, TPHCM','0909786543',N'Chờ lấy hàng',120000,150000,N'Đã thanh toán','2023-08-12 09:56:09')
+
+insert into OrderOnline (customer_id,order_name,order_address,order_phone,order_status,order_total_before,order_total_after,order_paycheck,order_date) 
+		values(2,N'Trần Lê Phương Ngọc',N'610 Lê Văn Lương, P. Tân Phong, Q7, TPHCM','0909786543',N'Đã giao thành công',100000,150000,N'Đã thanh toán','2023-10-12 12:56:09')
+
+
+
+--orderdetail
+
+insert into OrderDetail(order_id, product_id,quantity, size, price) values (7,8,6,'null',120000)
+
+insert into OrderDetail(order_id, product_id,quantity, size, price) values (8,9,5,'null',100000)
+
+
+
+insert into OrderDetail(order_id, product_id,quantity, size, price) values (9,8,6,'null',120000)
+
+
+
+insert into OrderDetail(order_id, product_id,quantity, size, price) values (11,8,5,'null',100000)
+
+
+insert into OrderDetail(order_id, product_id,quantity, size, price) values (10,8,4,'null',80000)
+
+insert into OrderDetail(order_id, product_id,quantity, size, price) values (10,9,1,'null',20000)

@@ -15,7 +15,7 @@ using DTO;
 
 namespace GUI.NguoiDung
 {
-    public partial class NewPassword : MaterialForm
+    public partial class NewPassword :Form
     {
 
         private DAL_Staff dAL_Staff = new DAL_Staff();
@@ -23,69 +23,31 @@ namespace GUI.NguoiDung
         public NewPassword(String otp, String time,String email, DTO_Staff staff)
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
 
             sendOtp.Text = otp;
-            sendTime.Text = time;   
+            sendTime.Text = time;
             sendEmail.Text = email;
 
             string username = staff.username;
-
-            this.Text = "Đặt lại mật khẩu cho " + username ;
-
-            txt_titleOtp.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 14);
-            txt_titlePassword.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 14);
-            waring.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 10);
-            waring.ForeColor = Color.Red;
-
 
         }
 
         private void DatLaiMatKhau_Load(object sender, EventArgs e)
         {
+            password.UseSystemPasswordChar = true;
+         }
 
-        }
-
-        private void materialTextBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsNumber(e.KeyChar);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void password_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void NewPassword_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Environment.Exit(0);
-            Application.Exit();
-        }
-
-        private void ch_showPass_CheckedChanged(object sender, EventArgs e)
-        {
-            if(ch_showPass.Checked == true)
-            {
-                password.Password = false;
-            }
-            else
-            {
-                password.Password  = true;
-            }
-        }
-
-
-
-
-        private void btn_createNewPass_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             String getOtp = otp.Text.ToString();
 
-            String getNewPassword = password.Text.ToString(); 
-            
+            String getNewPassword = password.Text.ToString();
+
             String sOtp = sendOtp.Text.ToString();
 
             DateTime now = DateTime.Now;
@@ -95,24 +57,25 @@ namespace GUI.NguoiDung
 
             int minutes = span.Minutes;
 
-            if (getOtp == "" ||  getNewPassword == "")
+            if (getOtp == "" || getNewPassword == "")
             {
-                MetroFramework.MetroMessageBox.Show(this,"Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               guna2MessageDialog1.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo");
             }
             else
             {
                 if (!getOtp.Equals(sOtp))
                 {
-                    MetroFramework.MetroMessageBox.Show(this,"Mã xác nhận không chính xác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   guna2MessageDialog1.Show("Mã xác nhận không chính xác", "Lỗi");
                 }
                 else
                 {
 
                     if (minutes > 3)
                     {
-                        MetroFramework.MetroMessageBox.Show(this, "Mã xác nhận đã hết hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       guna2MessageDialog1.Show("Mã xác nhận đã hết hiệu lực", "Thông báo");
                     }
-                    else{
+                    else
+                    {
 
 
                         bool checkPass = bLL_Register.checkPassword(getNewPassword);
@@ -123,26 +86,59 @@ namespace GUI.NguoiDung
 
                             if (setNewPass == true)
                             {
-                                MetroFramework.MetroMessageBox.Show(this, "Đặt lại mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                guna2MessageDialog2.Show("Đặt lại mật khẩu thành công", "Thông báo");
                                 Login lg = new Login();
                                 lg.Show();
                                 this.Hide();
                             }
                             else
                             {
-                                MetroFramework.MetroMessageBox.Show(this, "Đặt lại mật khẩu thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                guna2MessageDialog1.Show("Đặt lại mật khẩu thất bại", "Lỗi");
                             }
 
                         }
                         else
                         {
-                            MetroFramework.MetroMessageBox.Show(this, "Mật khẩu không đủ độ phức tạp. Vui lòng thử lại mật khẩu khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            guna2MessageDialog1.Show("Mật khẩu không đủ độ phức tạp. Vui lòng thử lại mật khẩu khác", "Thông báo");
                         }
 
                     }
                 }
             }
+        }
 
+        private void otp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != 8;
+        }
+
+        private void cb_showpasss_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_showpasss.Checked == true)
+            {
+                password.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                password.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void title_login_MouseHover(object sender, EventArgs e)
+        {
+            title_login.ForeColor = Color.Red;
+        }
+
+        private void title_login_MouseLeave(object sender, EventArgs e)
+        {
+            title_login.ForeColor = Color.Black;
+        }
+
+        private void title_login_Click(object sender, EventArgs e)
+        {
+            Login lg = new Login();
+            lg.Show();
+            this.Hide();
         }
     }
 }

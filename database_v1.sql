@@ -1,4 +1,4 @@
-
+﻿
 create database databasev1
 
 use databasev1
@@ -83,14 +83,14 @@ CREATE TABLE [OrderOnline]
     [order_name] [nvarchar] (100) NOT NULL,
     [order_address] [nvarchar] (100) NOT NULL,
     [order_phone] [varchar] (10) NOT NULL,
-    [order_status] [int] NOT NULL,
+    [order_status] [nvarchar] (50) NOT NULL,
     [order_total_before] [int] NOT NULL,
     [order_total_after] [int] NOT NULL,
-    [order_paycheck] [varchar] (20) NOT NULL,
+	[order_date] datetime NOT NULL,
+    [order_paycheck] [nvarchar] (50) NOT NULL,
     CONSTRAINT PK_Order_Online PRIMARY KEY (order_id)   
 )
 GO
-
 
 
 
@@ -100,8 +100,8 @@ GO
 CREATE TABLE [Bill]
 (
     [bill_id] [bigint] NOT NULL IDENTITY(1,1),
-    [bill_no] [varchar] (20) NOT NULL,
-    [bill_date] [date] NOT NULL,
+    [bill_no] [varchar] (100) NOT NULL,
+    [bill_date] [datetime] NOT NULL,
     [bill_total_before] [int] NOT NULL,
     [bill_total_after] [int] NOT NULL,
     [paymentmethod_id] [int] NOT NULL,
@@ -110,6 +110,8 @@ CREATE TABLE [Bill]
     CONSTRAINT PK_Bill PRIMARY KEY (bill_id)    
 )
 GO
+
+
 
 
 -- Table PaymentMethod --------------------------
@@ -218,7 +220,7 @@ CREATE TABLE [Product]
     [product_name] [nvarchar] (150) NOT NULL,
     [product_barcode] [varchar] (20) NOT NULL,
     [product_price] [int] NOT NULL,
-	[product_status] [int] NOT NULL,
+	[product_status] [int]  NOT NULL,
 	[product_image] [varchar](100) NULL,
     [unit_id] [int] NOT NULL,
     [cate_id] [int] NOT NULL,
@@ -226,7 +228,6 @@ CREATE TABLE [Product]
     CONSTRAINT PK_Product PRIMARY KEY (product_id)  
 )
 GO
-
 
 -- Table Bill_detail --------------------------
 --
@@ -243,7 +244,7 @@ CREATE TABLE [Bill_detail]
 GO
 
 
--- Table OrderDetail --------------------------
+-- Table OrderDetail --------------------------   CONSTRAINT PK_Order_detail PRIMARY KEY (order_id, product_id) 
 CREATE TABLE [OrderDetail]
 (
     [quantity] [int] NOT NULL,
@@ -251,9 +252,10 @@ CREATE TABLE [OrderDetail]
     [size] [varchar] (10) NOT NULL,
 	[order_id] [bigint] NOT NULL,
     [product_id] [bigint] NOT NULL,
-	CONSTRAINT PK_Order_detail PRIMARY KEY (order_id, product_id) 
+	 CONSTRAINT PK_Order_detail PRIMARY KEY (order_id, product_id) 
 )
 GO
+
 
 
 

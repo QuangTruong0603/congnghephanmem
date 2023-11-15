@@ -11,29 +11,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DAL;
+using System.Runtime.InteropServices;
 
 namespace GUI
 {
-    public partial class Register : MaterialForm
+    public partial class Register :Form
     {
 
         private BLL_Register bLL_Register = new BLL_Register();
         private SendMail sendMail = new SendMail();
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+       (
+           int nLeftRect,
+           int nTopRect,
+           int nRightRect,
+           int nBottomRect,
+           int nWidthEllipse,
+           int nHeightEllipse
+       );
         public Register()
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
+            this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, this.Width, this.Height, 10, 10));
         }
 
         private void Register_Load(object sender, EventArgs e)
         {
-            txt_titleEmail.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 14);
-            txt_titleTaiKhoan.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 14);
-            txt_titleMatkhau.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 14);
-            txt_tittleConfirm.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 14);
+            txt_password.UseSystemPasswordChar = true;
+            txt_password2.UseSystemPasswordChar = true;
         }
 
      
@@ -43,17 +49,18 @@ namespace GUI
             Application.Exit();
         }
 
-        private void ch_showpass_CheckedChanged(object sender, EventArgs e)
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(ch_showpass.Checked == true)
+            if(guna2CheckBox1.Checked)
             {
-                txt_password.Password = false;
-                txt_confirmpassword.Password = false;
+                txt_password.UseSystemPasswordChar = false;
+                txt_password2.UseSystemPasswordChar= false;
             }
             else
             {
-                txt_password.Password = true;
-                txt_confirmpassword.Password = true;
+                txt_password.UseSystemPasswordChar = true;
+                txt_password2.UseSystemPasswordChar = true;
+
             }
         }
 
@@ -64,68 +71,77 @@ namespace GUI
             string[] arr = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
             String otp = "";
             Random rand = new Random();
-            for (int i = 0; i<6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                otp = otp + arr[rand.Next(0,arr.Length)];
+                otp = otp + arr[rand.Next(0, arr.Length)];
             }
 
             return otp;
 
         }
 
-        private void btn_create_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
+       
             String email = txt_email.Text.ToString();
             String password = txt_password.Text.ToString();
             String username = txt_username.Text.ToString();
-            String confirm = txt_confirmpassword.Text.ToString();
+            String confirm = txt_password2.Text.ToString();
 
             String result = bLL_Register.checkNewStaff(email, username, password, confirm);
 
-            if(result == "OK")
+            if (result == "OK")
             {
-                var confirmResult = MetroFramework.MetroMessageBox.Show(this,"Xác nhận tạo tài khoản ?",
-                                  "Xác nhận",
-                                  MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                //var confirmResult = MessageBox.Show(this, "Xác nhận tạo tài khoản ?",
+                // "Xác nhận",
+                //  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                DialogResult confirmResult = guna2MessageDialog2.Show( "Xác nhận tạo tài khoản ?",
+                                  "Xác nhận" );
 
                 if (confirmResult == DialogResult.Yes)
                 {
-                    String otp = random();
-                    bool smail = sendMail.sendEmail(email, otp,"Mã xác nhận tạo tài khoản");
-                   // bool smail = true;
+                     String otp = random();
+                     bool smail = sendMail.sendEmail(email, otp, "Mã xác nhận tạo tài khoản");
                     if (smail == true)
                     {
                         DateTime currentDateTime = DateTime.Now;
                         string formattedDateTime = currentDateTime.ToString("dddd, dd MMMM yyyy HH:mm:ss");
-                        XacNhanDangKy confir = new XacNhanDangKy(email,username,password,otp,formattedDateTime);
+                        XacNhanDangKy confir = new XacNhanDangKy(email, username, password, otp, formattedDateTime);
                         confir.Show();
                         this.Hide();
+                        
+                    
                     }
+
                     else
                     {
-                        MetroFramework.MetroMessageBox.Show(this, "Gửi mã xác nhận thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                       guna2MessageDialog1.Show("Gửi mã xác nhận thất bại", "Lỗi");
 
                     }
                 }
                 else
                 {
-                    
+
                 }
             }
             else
             {
-                MetroFramework.MetroMessageBox.Show(this, result, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                guna2MessageDialog1.Show(result, "Lỗi");
             }
-           
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
             Login lg = new Login();
             lg.Show();
-            Visible = false; ;
+            this.Hide();
         }
     }
 }

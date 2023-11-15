@@ -64,7 +64,12 @@ namespace DAL
                 SqlCommand command = new SqlCommand("GetRole", conn);
                 command.CommandType = System.Data.CommandType.StoredProcedure;
                 command.Parameters.Add("@username", SqlDbType.VarChar).Value = username;
-                int roleid = (int) command.ExecuteScalar();
+                SqlDataReader reader = command.ExecuteReader();
+                int roleid = -1;
+                while (reader.Read())
+                {
+                    roleid = int.Parse(reader["role_id"].ToString());
+                }
                 conn.Close();
                 return roleid;
 
@@ -75,6 +80,35 @@ namespace DAL
             {
                 conn.Close();
                 return -1;
+            }
+        }
+
+        public String getRoleName(String username)
+        {
+
+            String rolename = "";
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+                SqlCommand command = new SqlCommand("GetRole", conn);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.Add("@username", SqlDbType.VarChar).Value = username;
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    rolename = reader["role_name"].ToString();
+                }
+                conn.Close();
+                return rolename;
+
+
+            }
+            catch (Exception ex)
+
+            {
+                conn.Close();
+                return rolename;
             }
         }
 
@@ -194,6 +228,57 @@ namespace DAL
                 }
 
                
+
+                conn.Close();
+                return staff;
+
+
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                Console.WriteLine(ex.Message);
+                return staff;
+            }
+
+        }
+
+
+        public DTO_Staff getStaffByUserName(String username)
+        {
+            DTO_Staff staff = new DTO_Staff();
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+                SqlCommand command = new SqlCommand("GetStaff", conn);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.Add("@username", SqlDbType.VarChar).Value = username;
+                SqlDataReader reader = command.ExecuteReader();
+                int e;
+                while (reader.Read())
+                {
+
+
+                    staff.staff_id = int.Parse(reader["staff_id"].ToString());
+                    staff.username = reader["username"].ToString();
+                    staff.password = reader["password"].ToString();
+                    staff.staff_name = reader["staff_name"].ToString();
+                    staff.staff_birthday = DateTime.Parse(reader["staff_birthday"].ToString());
+                    staff.staff_phone = reader["staff_phone"].ToString();
+                    staff.staff_email = reader["staff_email"].ToString();
+                    staff.staff_address = reader["staff_address"].ToString();
+                    staff.staff_gender = reader["staff_gender"].ToString();
+                    staff.staff_start = DateTime.Parse(reader["staff_start"].ToString());
+                    staff.staff_end = DateTime.Parse(reader["staff_end"].ToString());
+                    staff.staff_image = reader["staff_image"].ToString();
+                    staff.staffType_id = int.Parse(reader["stafftype_id"].ToString());
+                    staff.staff_enable = int.Parse(reader["staff_enable"].ToString());
+
+
+                }
+
+
 
                 conn.Close();
                 return staff;

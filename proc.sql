@@ -243,27 +243,21 @@ go
 --Product
 --Thêm
 CREATE PROCEDURE Insert_Product 
-	@product_name NVARCHAR(50),
+	@product_name NVARCHAR(150),
 	@product_barcode VARCHAR(20),
 	@product_price INT,
+	@product_image varchar(100),
+	@product_status int,
 	@unit_id INT,
 	@cate_id INT,
 	@inven_id BIGINT
 AS
 BEGIN
-    INSERT INTO Product (product_name, product_barcode, product_price, unit_id, cate_id, inven_id)
-    VALUES (@product_name, @product_barcode, @product_price, @unit_id, @cate_id, @inven_id)
+    INSERT INTO Product (product_name, product_barcode, product_price, unit_id, cate_id, inven_id,product_image,product_status)
+    VALUES (@product_name, @product_barcode, @product_price, @unit_id, @cate_id, @inven_id,@product_image,@product_status)
 END
 
-
-select * from Product
-
-select * from Category
-
-Select * from Unit
-
-delete from Category
-
+go
 --Xóa
 go
 CREATE PROCEDURE Delete_Product
@@ -282,7 +276,7 @@ CREATE PROCEDURE Update_Product
     @new_product_price INT,
     @new_unit_id INT,
     @new_cate_id INT,
-    @new_inven_id BIGINT
+	@new_product_image varchar(100)
 AS
 BEGIN
     UPDATE Product
@@ -292,7 +286,7 @@ BEGIN
         product_price = @new_product_price,
         unit_id = @new_unit_id,
         cate_id = @new_cate_id,
-        inven_id = @new_inven_id
+        product_image= @new_product_image
     WHERE product_id = @product_id
 END
 
@@ -600,6 +594,55 @@ BEGIN
 END
 go
 
+CREATE PROCEDURE GetAllBill
+AS
+BEGIN
+    select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng'  from Bill, PaymentMethod, Staff
+	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username
+END
+go
+
+CREATE PROCEDURE GetOneBill (@bill_no varchar (100))
+AS
+BEGIN
+    select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng'  from Bill, PaymentMethod, Staff
+	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username and Bill.bill_no = @bill_no
+END
+go
+
+
+CREATE PROCEDURE GetBillByNoBill (@bill_no varchar (100))
+AS
+BEGIN
+     select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng', Bill.bill_total_before as N'Số tiền ban đầu'  from Bill, PaymentMethod, Staff
+	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username and Bill.bill_no = @bill_no and Bill.bill_no = @bill_no
+END
+go
+
+
+
+
+
+CREATE PROCEDURE GetCustomerOfBill (@bill_no varchar (100))
+AS
+BEGIN
+     select  Customer.customer_name, Customer.customer_phone from Bill, Customer where Bill.customer_id = Customer.customer_id and Bill.bill_no = @bill_no
+END
+go
+
+
+--Bill detail
+
+CREATE PROCEDURE GetListProductOfBill (@bill_no varchar (100))
+AS
+BEGIN
+     select Product.product_name as N'Tên sản phẩm', Product.product_barcode as N'Mã sản phẩm', Bill_detail.quantity as N'Số lượng', Bill_detail.size as N'Size' , Bill_detail.price as N'Số tiền' from Bill, Product, Bill_detail
+
+	 where Bill.bill_no = @bill_no and Bill.bill_id = Bill_detail.bill_id and Bill_detail.product_id = Product.product_id
+END
+go
+
+
 
 --OrderOnline
 --Thêm
@@ -630,31 +673,117 @@ go
 --Sửa
 CREATE PROCEDURE Update_OrderOnline
     @order_id BIGINT,
-    @new_customer_id BIGINT,
     @new_order_name NVARCHAR(100),
     @new_order_address NVARCHAR(100),
     @new_order_phone VARCHAR(10),
-    @new_order_status INT,
-    @new_order_total_before INT,
-    @new_order_total_after INT,
-    @new_order_paycheck VARCHAR(20)
+    @new_order_status NVARCHAR(50),
+    @new_order_paycheck NVARCHAR(50),
+	@delivery int
 AS
 BEGIN
     UPDATE OrderOnline
     SET 
-        customer_id = @new_customer_id,
         order_name = @new_order_name,
         order_address = @new_order_address,
         order_phone = @new_order_phone,
         order_status = @new_order_status,
-        order_total_before = @new_order_total_before,
-        order_total_after = @new_order_total_after,
+        order_total_after = order_total_before + @delivery,
         order_paycheck = @new_order_paycheck
     WHERE order_id = @order_id
 END
 go
 
 
+--get all
+--0 : cho lay hang / 1: dang van chuyen /2: dang giao cho KH / 3: giao thanh cong /...
+
+CREATE PROCEDURE GetAllOrder
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán'
+	from OrderOnline
+END
+go
+
+
+CREATE PROCEDURE GetOneOrderById (@order_id int)
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán'
+	from OrderOnline where OrderOnline.order_id = @order_id
+END
+go
+
+
+
+CREATE PROCEDURE GetOrderByStatus(@order_status nvarchar(100))
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán'
+	from OrderOnline where order_status = @order_status
+END
+go
+
+
+
+
+CREATE PROCEDURE GetOrderById (@order_id int)
+AS
+BEGIN
+    select order_id as N'Mã đơn hàng', order_name as N'Tên người nhận' ,order_address as N'Địa chỉ', order_phone as N'SDT', order_total_after as N'Số tiền' , order_status as N'Trạng thái', order_paycheck as N'Thanh toán', Customer.customer_name as N'Tên tài khoản đặt hàng',Customer.customer_phone as N'Số điện thoại TKDH', OrderOnline.order_date as N'Ngày tạo đơn', OrderOnline.order_total_before as N'Số tiền ban đầu'
+	from OrderOnline, Customer where OrderOnline.order_id = @order_id  and OrderOnline.customer_id = Customer.customer_id
+END
+go
+
+
+CREATE PROCEDURE GetOrderDetailById (@order_id int)
+AS
+BEGIN
+    select Product.product_barcode as N'Mã sản phẩm', Product.product_name as N'Tên sản phẩm', OrderDetail.quantity as N'Số lượng', OrderDetail.size as N'Size', OrderDetail.price as N'Giá tiền'
+	from OrderDetail, Product where OrderDetail.order_id = @order_id and OrderDetail.product_id = Product.product_id
+END
+go
+
+
+
+CREATE PROCEDURE GetListProductOfOrder (@order_id varchar (100))
+AS
+BEGIN
+     select Product.product_name as N'Tên sản phẩm', Product.product_barcode as N'Mã sản phẩm', OrderDetail.quantity as N'Số lượng', OrderDetail.size as N'Size' , OrderDetail.price as N'Số tiền' from  Product, OrderDetail
+
+	 where OrderDetail.order_id = @order_id and OrderDetail.product_id = Product.product_id
+END
+go
+
+
+
+CREATE PROCEDURE DeleteOrder (@order_id varchar (100))
+AS
+BEGIN
+     delete OrderOnline where OrderOnline.order_id = @order_id
+END
+go
+
+
+
+CREATE PROCEDURE addProductOrderDetail (@order_id int , @product_id int, @quantity int,@price int, @size varchar(50))
+AS
+BEGIN
+      insert into OrderDetail(order_id, product_id, quantity, size, price) values (@order_id,@product_id,@quantity,@size, @price)
+END
+go
+
+
+
+CREATE PROCEDURE deleteProductOrderDetail (@order_id int , @product_id int)
+AS
+BEGIN
+      delete OrderDetail where order_id = @order_id and product_id = @product_id
+END
+go
+
+
+drop procedure addProductOrderDetail 
 
 --StaffRelatives
 
@@ -821,12 +950,6 @@ BEGIN
 END
 go
 
-Exec Insert_Staff 'tranloc222','12334','Tran Huu Loc','1000-10-10','Null','Null','loc@gmail.com','null','1000-10-10','1000-10-10','null',1,0
-
-drop procedure Insert_Staff
-
-select * from Staff
-
 --Xóa
 CREATE PROCEDURE Delete_Staff
     @username VARCHAR(100)
@@ -837,7 +960,6 @@ BEGIN
 END
 go
 
-exec Delete_Staff 'tranloc129'
 
 --Sửa
 CREATE PROCEDURE Update_Staff
@@ -883,50 +1005,28 @@ begin
 end
 go
 
-drop procedure CheckLogin
-
-
-Exec CheckLogin 'admin','2OURnkUbjTqJv4XmG6iw5Q=='
-
-
-select count(*) from Staff
-
-
 
 Create Procedure GetRole (@username varchar (50))
 as
 begin
-  select  role_id from Staff_Role where username = @username
+  select  Staff_Role.role_id,Role.role_name  from Staff_Role, Role where username = @username and Staff_Role.role_id = Role.role_id
 end
+go
 
-Exec GetRole 'admin'
 
 Create Procedure GetStaff(@username varchar (50))
 as
 begin
 	select  * from Staff where username = @username
 end
-
-
-
-
-drop procedure GetStaff
-
-Exec GetStaff 'admin'
+go
 
 Create Procedure GetStaffByEmail(@email varchar (50))
 as
 begin
 	select  * from Staff where staff_email = @email
 end
-
-select * from Staff
-
-Exec GetStaffByEmail 'loctran7129@gmail.com'
-
-select * from Staff
-
-update Staff set staff_enable = 1 where username = 'admin'
+go
 
 
 
@@ -935,47 +1035,49 @@ as
 begin
 	Update Staff set password = @newpassword where staff_email = @staffemail
 end
-
-drop procedure UpdatePassword
-
-exec UpdatePassword 'staff1@email.com','abc'
-
-
-
-select * from Category
-
-select * from Unit
-
-select * from Product
-
-select * from Discount
+go
 
 
 --Product
 
+Create Procedure GetInfoProduct (@product_barcode varchar(100))
+as
+begin
+	select * from Product where Product.product_barcode = @product_barcode
+end
+go
 
 Create Procedure ManageProduct
 as
 begin
-	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id 
+end
+
+go
+
+
+
+
+Create Procedure ManageProductKD
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
 	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1
 end
 
-drop procedure ManageProduct
+go
 
-exec ManageProduct
-
-delete from Product
-
-delete from Category
-
-delete from Discount
+Create Procedure ManageProductKKD
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 0
+end
+go
 
 select * from Product
 
-update Product set product_status = 1 where product_barcode = '3128554'
-
-go
 
 Create Procedure DisableProduct (@product_barcode varchar(100))
 as
@@ -985,15 +1087,75 @@ end
 
 go
 
+Create Procedure EnableProduct (@product_barcode varchar(100))
+as
+begin
+	update Product set product_status = 1 where product_barcode = @product_barcode
+end
+
+go
+
+
+
 Create Procedure FindProduct (@product_barcode varchar(100))
 as
 begin
-	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
-	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1 and Product.product_barcode = @product_barcode
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id  and Product.product_barcode = @product_barcode
 end
 
-drop procedure FindProduct
 
-exec FindProduct '3128554'
+
+Create Procedure FindProduct2 (@product_barcode varchar(100))
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id  and  Product.product_status = 1   and Product.product_barcode = @product_barcode 
+end
+
+--Category
+Create Procedure GetNameCategory
+as
+begin
+	select Category.cate_name from Category
+end
+
+
+Create Procedure GetIdNameCategory (@cate_name nvarchar (100))
+as
+begin
+	select Category.cate_id from Category where Category.cate_name = @cate_name
+end
+
+exec  GetIdNameCategory N'Nước ngọt có ga'
+
+Create Procedure GetCategoryById (@cate_id int)
+as
+begin
+	select * from Category where cate_id = @cate_id
+end
+
+
+--Unit
+Create Procedure GetNameUnit
+as
+begin
+	select Unit.unit_name from Unit
+end
+
+Create Procedure GetIdNameUnit (@unit_name nvarchar (100))
+as
+begin
+	select Unit.unit_id from Unit where Unit.unit_name = @unit_name
+end
+
+
+
+Create Procedure GetUnitById (@unit_id int)
+as
+begin
+	select * from Unit where unit_id = @unit_id
+end
+
 
 

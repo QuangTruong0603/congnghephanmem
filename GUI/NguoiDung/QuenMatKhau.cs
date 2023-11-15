@@ -15,7 +15,7 @@ using DTO;
 
 namespace GUI.NguoiDung
 {
-    public partial class ForgotPassword : MaterialForm
+    public partial class ForgotPassword : Form
     {
 
         private BLL_Register bll_Register = new BLL_Register();
@@ -24,27 +24,13 @@ namespace GUI.NguoiDung
         public ForgotPassword()
         {
             InitializeComponent();
-            var skinManage = MaterialSkin.MaterialSkinManager.Instance;
-            skinManage.AddFormToManage(this);
-            skinManage.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            skinManage.ColorScheme = new MaterialSkin.ColorScheme(MaterialSkin.Primary.Green700, MaterialSkin.Primary.Green800, MaterialSkin.Primary.Green300, Accent.LightGreen700, TextShade.WHITE);
+         
         }
 
         private void QuenMatKhau_Load(object sender, EventArgs e)
         {
 
-            txt_nhapEmail.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif),16);
-        }
-
-        private void ForgotPassword_FormClosing(object sender, FormClosingEventArgs e)
-        {
-           Environment.Exit(0);
-           Application.Exit();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+          
         }
 
         public String random()
@@ -62,19 +48,24 @@ namespace GUI.NguoiDung
 
         }
 
-        private void btn_next_Click(object sender, EventArgs e)
+        private void ForgotPassword_FormClosing(object sender, FormClosingEventArgs e)
         {
-            String email = txtB_email.Text.ToString();
+          
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            String email = txt_nhapEmail.Text.ToString();
 
             String res = bll_Register.checkForgotPassword(email);
 
-            if(res == "OK")
+            if (res == "OK")
             {
 
                 string otp = random();
 
-                 bool sMail = sendMail.sendEmail(email, otp, "Mã xác nhận đặt lại mật khẩu");
-                 //bool sMail = true;
+                bool sMail = sendMail.sendEmail(email, otp, "Mã xác nhận đặt lại mật khẩu");
+                //bool sMail = true;
                 if (sMail == true)
                 {
                     DateTime currentDateTime = DateTime.Now;
@@ -83,30 +74,30 @@ namespace GUI.NguoiDung
 
                     DTO_Staff staff = bll_Register.getInformationOfStaff(email);
 
-                    NewPassword newPass     = new NewPassword(otp,formattedDateTime,email,staff);
+                    NewPassword newPass = new NewPassword(otp, formattedDateTime, email, staff);
 
                     newPass.Show();
                     this.Hide();
 
                 }
-                else{
-                    MetroFramework.MetroMessageBox.Show(this, "Gửi mã xác nhận không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                   guna2MessageDialog1.Show("Gửi mã xác nhận không thành công", "Lỗi");
                 }
 
 
             }
-            else{
-                MetroFramework.MetroMessageBox.Show(this, res, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                guna2MessageDialog1.Show(res, "Lỗi");
             }
-
-
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
             Login lg = new Login();
             lg.Show();
-            this.Visible = false;
+            this.Hide();
         }
     }
 }
