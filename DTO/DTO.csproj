@@ -141,14 +141,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
-    <Compile Include="DTO_Bill.cs" />
-    <Compile Include="DTO_BillDetail.cs" />
-    <Compile Include="DTO_Category.cs" />
-    <Compile Include="DTO_Order.cs" />
-    <Compile Include="DTO_OrderDetail.cs" />
+    <Compile Include="DTO_customer.cs" />
+    <Compile Include="DTO_Discount2.cs" />
     <Compile Include="DTO_Product.cs" />
+    <Compile Include="DTO_product2.cs" />
     <Compile Include="DTO_Staff.cs" />
-    <Compile Include="DTO_Unit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -157,6 +157,38 @@ namespace DAL
             return dt;
 
         }
+        public List<DTO_product2> GetProducts()
+        {
+            List<DTO_product2> products = new List<DTO_product2>();
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+                SqlCommand command = new SqlCommand("select * from Product", conn);
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        DTO_product2 product = new DTO_product2
+                        {
+                            product_id = (long)reader["product_id"],
+                            product_name = reader["product_name"].ToString(),
+                            product_barcode = reader["product_barcode"].ToString(),
+                            product_price = (int)reader["product_price"],
+                            cate_id = (int)reader["cate_id"],
+                            product_image = reader["product_image"].ToString(),
+                           
+                        };
+
+                        products.Add(product);
+                    }
+                }
+                return products;
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); return null; }
+
+        }
+        
 
         public Boolean enableProduct(String sku)
         {

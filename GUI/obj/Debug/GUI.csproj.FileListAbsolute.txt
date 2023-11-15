@@ -91,87 +91,208 @@ D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\B
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.exe.licenses
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.SanPham.ThemSanPham.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.SanPham.SuaSanPham.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.LoadingForm.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.QuanLyHoaDon.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ChiTietHoaDon.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\BouncyCastle.Crypto.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\itextsharp.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\itextsharp.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Syncfusion.Compression.Base.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Syncfusion.Licensing.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Syncfusion.Pdf.Base.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Syncfusion.Compression.Base.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Syncfusion.Pdf.Base.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Dapper.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Dapper.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\SqlServerTypes\x86\msvcr120.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Microsoft.ReportViewer.Common.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Microsoft.ReportViewer.Design.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Microsoft.SqlServer.Types.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\EnvDTE.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\stdole.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ReportView.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.QuanLyGiaoHang.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ChiTietDonHang.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.PrintReview.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.DonHang.ChinhSuaDonHang.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ThemSanPhamOrder.resources
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Guna.UI2.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.DirectShow.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.presentation.dll
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.DirectShow.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.xml
-D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.presentation.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\GUI.exe.config
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\GUI.exe
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\GUI.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\BLL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.Licensing.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\DAL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\DTO.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\MaterialSkin.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\MetroFramework.Design.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\MetroFramework.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\MetroFramework.Fonts.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\MetroSet UI.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\BLL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\DAL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\DTO.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.Register.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.Login.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.ManHinhChinh.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.NguoiDung.NewPassword.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.NguoiDung.ForgotPassword.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.XacNhanDangKy.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.SanPham.QuanLySanPham.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.exe.licenses
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.exe
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.DatMon.DatMon.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.DatMon.product_item.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.DatMon.TichDiem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.DatMon.thongtintichdiem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.DatMon.thanhtoan.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven2\congnghephanmem\GUI\obj\Debug\GUI.DatMon.ThanhToanItem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\GUI.exe.config
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\GUI.exe
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\GUI.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\BLL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.Licensing.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\DAL.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\DTO.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\MaterialSkin.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\MetroFramework.Design.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\MetroFramework.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\MetroFramework.Fonts.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\MetroSet UI.dll
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\BLL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\DAL.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\DTO.pdb
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.DangNhapTichDiem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.DatMon.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.product_item.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.thanhtoan.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.ThanhToanItem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.thongtintichdiem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.DatMon.TichDiem.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.Register.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.Login.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.ManHinhChinh.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.NguoiDung.NewPassword.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.NguoiDung.ForgotPassword.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.XacNhanDangKy.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.Add.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.DeleteConfirm.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.TrangChuGiamGia.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.QLGiamGia.Update.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.SanPham.QuanLySanPham.resources
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.exe.licenses
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.exe
+D:\KI1-NAM3\CONG NGHE PHAN MEM\DO AN CK\Project\seven_eleven3\congnghephanmem\GUI\obj\Debug\GUI.pdb

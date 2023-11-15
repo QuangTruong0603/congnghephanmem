@@ -48,18 +48,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
-      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
-      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
-    </Reference>
-    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
-      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
-    </Reference>
-    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
-      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.Licensing.dll</HintPath>
     </Reference>
@@ -159,15 +147,6 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
-    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.2.1.15\lib\net461\Dapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
-    </Reference>
-    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
-      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
@@ -183,39 +162,10 @@
     <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Compression.Base, Version=23.1460.43.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Compression.Base.23.1.43\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing, Version=23.1460.43.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Licensing.23.1.43\lib\net46\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Pdf.Base, Version=23.1460.43.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Pdf.WinForms.23.1.43\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -225,45 +175,54 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net47\zxing.dll</HintPath>
-    </Reference>
-    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net47\zxing.presentation.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DonHang\ChinhSuaDonHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonHang\ChinhSuaDonHang.Designer.cs">
-      <DependentUpon>ChinhSuaDonHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DonHang\ChiTietDonHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonHang\ChiTietDonHang.Designer.cs">
-      <DependentUpon>ChiTietDonHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HoaDon\ChiTietHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HoaDon\ChiTietHoaDon.Designer.cs">
-      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CircularPictureBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="databasev1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>databasev1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="LoadingForm.cs">
+    <Compile Include="DatMon\DangNhapTichDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadingForm.Designer.cs">
-      <DependentUpon>LoadingForm.cs</DependentUpon>
+    <Compile Include="DatMon\DangNhapTichDiem.Designer.cs">
+      <DependentUpon>DangNhapTichDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon\DatMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatMon\DatMon.Designer.cs">
+      <DependentUpon>DatMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon\product_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatMon\product_item.Designer.cs">
+      <DependentUpon>product_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon\thanhtoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatMon\thanhtoan.Designer.cs">
+      <DependentUpon>thanhtoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon\ThanhToanItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatMon\ThanhToanItem.Designer.cs">
+      <DependentUpon>ThanhToanItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon\thongtintichdiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatMon\thongtintichdiem.Designer.cs">
+      <DependentUpon>thongtintichdiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon\TichDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatMon\TichDiem.Designer.cs">
+      <DependentUpon>TichDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="NguoiDung\DangNhap.cs">
       <SubType>Form</SubType>
@@ -277,10 +236,10 @@
     <Compile Include="NguoiDung\DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\ManHinhChinh.cs">
+    <Compile Include="ManHinhChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\ManHinhChinh.Designer.cs">
+    <Compile Include="ManHinhChinh.Designer.cs">
       <DependentUpon>ManHinhChinh.cs</DependentUpon>
     </Compile>
     <Compile Include="NguoiDung\DatLaiMatKhau.cs">
@@ -295,12 +254,6 @@
     <Compile Include="NguoiDung\QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonHang\PrintReview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonHang\PrintReview.Designer.cs">
-      <DependentUpon>PrintReview.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NguoiDung\XacNhanDangKy.cs">
@@ -309,26 +262,29 @@
     <Compile Include="NguoiDung\XacNhanDangKy.Designer.cs">
       <DependentUpon>XacNhanDangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon\QuanLyHoaDon.cs">
+    <Compile Include="QLGiamGia\Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HoaDon\QuanLyHoaDon.Designer.cs">
-      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    <Compile Include="QLGiamGia\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon\ReportView.cs">
+    <Compile Include="QLGiamGia\DeleteConfirm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HoaDon\ReportView.Designer.cs">
-      <DependentUpon>ReportView.cs</DependentUpon>
+    <Compile Include="QLGiamGia\DeleteConfirm.Designer.cs">
+      <DependentUpon>DeleteConfirm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonHang\QuanLyGiaoHang.cs">
+    <Compile Include="QLGiamGia\TrangChuGiamGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonHang\QuanLyGiaoHang.Designer.cs">
-      <DependentUpon>QuanLyGiaoHang.cs</DependentUpon>
+    <Compile Include="QLGiamGia\TrangChuGiamGia.Designer.cs">
+      <DependentUpon>TrangChuGiamGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="RJButton.cs">
-      <SubType>Component</SubType>
+    <Compile Include="QLGiamGia\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLGiamGia\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
     </Compile>
     <Compile Include="SanPham\QuanLySanPham.cs">
       <SubType>Form</SubType>
@@ -336,44 +292,26 @@
     <Compile Include="SanPham\QuanLySanPham.Designer.cs">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="SanPham\SuaSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SanPham\SuaSanPham.Designer.cs">
-      <DependentUpon>SuaSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SanPham\ThemSanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SanPham\ThemSanPham.Designer.cs">
-      <DependentUpon>ThemSanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="DonHang\ThemSanPhamOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonHang\ThemSanPhamOrder.Designer.cs">
-      <DependentUpon>ThemSanPhamOrder.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="DonHang\ChinhSuaDonHang.resx">
-      <DependentUpon>ChinhSuaDonHang.cs</DependentUpon>
+    <EmbeddedResource Include="DatMon\DangNhapTichDiem.resx">
+      <DependentUpon>DangNhapTichDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonHang\ChiTietDonHang.resx">
-      <DependentUpon>ChiTietDonHang.cs</DependentUpon>
+    <EmbeddedResource Include="DatMon\DatMon.resx">
+      <DependentUpon>DatMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonHang\DonHang.rdlc" />
-    <EmbeddedResource Include="DonHang\ThemSanPhamOrder.resx">
-      <DependentUpon>ThemSanPhamOrder.cs</DependentUpon>
+    <EmbeddedResource Include="DatMon\product_item.resx">
+      <DependentUpon>product_item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDon\ChiTietHoaDon.resx">
-      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
+    <EmbeddedResource Include="DatMon\thanhtoan.resx">
+      <DependentUpon>thanhtoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDon\Hoadon.rdlc" />
-    <EmbeddedResource Include="HoaDon\QuanLyHoaDon.resx">
-      <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
+    <EmbeddedResource Include="DatMon\ThanhToanItem.resx">
+      <DependentUpon>ThanhToanItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoadingForm.resx">
-      <DependentUpon>LoadingForm.cs</DependentUpon>
+    <EmbeddedResource Include="DatMon\thongtintichdiem.resx">
+      <DependentUpon>thongtintichdiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatMon\TichDiem.resx">
+      <DependentUpon>TichDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -381,7 +319,7 @@
     <EmbeddedResource Include="NguoiDung\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\ManHinhChinh.resx">
+    <EmbeddedResource Include="ManHinhChinh.resx">
       <DependentUpon>ManHinhChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung\DatLaiMatKhau.resx">
@@ -389,9 +327,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiDung\QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DonHang\PrintReview.resx">
-      <DependentUpon>PrintReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -407,20 +342,20 @@
     <EmbeddedResource Include="NguoiDung\XacNhanDangKy.resx">
       <DependentUpon>XacNhanDangKy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDon\ReportView.resx">
-      <DependentUpon>ReportView.cs</DependentUpon>
+    <EmbeddedResource Include="QLGiamGia\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonHang\QuanLyGiaoHang.resx">
-      <DependentUpon>QuanLyGiaoHang.cs</DependentUpon>
+    <EmbeddedResource Include="QLGiamGia\DeleteConfirm.resx">
+      <DependentUpon>DeleteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGiamGia\TrangChuGiamGia.resx">
+      <DependentUpon>TrangChuGiamGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLGiamGia\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SanPham\QuanLySanPham.resx">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SanPham\SuaSanPham.resx">
-      <DependentUpon>SuaSanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SanPham\ThemSanPham.resx">
-      <DependentUpon>ThemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="databasev1DataSet.xsc">
       <DependentUpon>databasev1DataSet.xsd</DependentUpon>
@@ -434,8 +369,6 @@
       <DependentUpon>databasev1DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\DTO.DTO_BillDetail.datasource" />
-    <None Include="Properties\DataSources\DTO.DTO_OrderDetail.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -482,94 +415,49 @@
     <None Include="Resources\refresh-page-option.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\grid.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\restaurant %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.jpg" />
+    <None Include="Resources\sparkling-water.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\7-Eleven-logo-08AAB4F0FE-seeklogo.com.png" />
+    <None Include="Resources\coffee.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\manager.png" />
+    <None Include="Resources\trash-can.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\manager %281%29.png" />
+    <None Include="Resources\coca.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\checkout.png" />
+    <None Include="Resources\cocacola.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\notes.png" />
+    <None Include="Resources\7up.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\calendar.png" />
+    <None Include="Resources\sevenup.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bar-chart.png" />
+    <None Include="Resources\number1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\courier.png" />
+    <None Include="Resources\plus.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\invoice.png" />
+    <None Include="Resources\anhnen.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\discount.png" />
+    <None Include="Resources\anhnen1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wholesale.png" />
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\leave.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\document.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\document %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search-file.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eco-friendly-7-eleven-jfmegjsfu6lmwbdr.jpg" />
-    <None Include="Resources\fran_model_opportunity_desktop_min_270_1866.png" />
-    <None Include="Resources\brnad 711 02.png" />
-    <None Include="Resources\7-eleven-franchise-store-ns9vdzbjcdus03vm.jpg" />
-    <None Include="Resources\brnad 711 021.png" />
-    <None Include="Resources\12585-231023070038.png" />
-    <None Include="Resources\previous.png" />
-    <None Include="Resources\7-eleven-vector-art-logo-m51glnsvvfeqnv99.jpg" />
-    <None Include="Resources\823-8237174_copyright-2018-7-eleven-stores-pty-flag.png" />
-    <None Include="Resources\snapedit_1699975554185.png" />
-    <None Include="Resources\snapedit_1699975619967.png" />
-    <None Include="Resources\snapedit_16999756199671.png" />
-    <None Include="Resources\png-transparent-logo-7-eleven-encapsulated-postscript-7-miscellaneous-angle-company.png" />
-    <None Include="Resources\company-banner-brand-area-logo-removebg-preview.png" />
-    <None Include="Resources\barcode.png" />
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\pen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
