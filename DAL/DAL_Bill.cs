@@ -142,11 +142,11 @@ namespace DAL
 
                 while (reader.Read())
                 {
-                    dir.Add("bill_date", reader["bill_date"].ToString());
-                    dir.Add("bill_total_after", reader["bill_total_after"].ToString());
-                    dir.Add("bill_total_before", reader["bill_total_before"].ToString());
-                    dir.Add("paymentmethod_name", reader["paymentmethod_name"].ToString());
-                    dir.Add("staff_name", reader["staff_name"].ToString());
+                    dir.Add("bill_date", reader["Thời gian"].ToString());
+                    dir.Add("bill_total_after", reader["Số tiền"].ToString());
+                    dir.Add("bill_total_before", reader["Số tiền ban đầu"].ToString());
+                    dir.Add("paymentmethod_name", reader["Phương thức thanh toán"].ToString());
+                    dir.Add("staff_name", reader["Nhân viên bán hàng"].ToString());
 
                 }
 

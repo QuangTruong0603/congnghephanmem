@@ -23,225 +23,204 @@ namespace GUI.SanPham
         public QuanLySanPham()
         {
             InitializeComponent();
-           
-            textb_search.Text = "Nhập mã sản phẩm để tìm kiếm";
-            textb_search.ForeColor = Color.Gray;
 
+            dataSanpham.DataSource = bLL_Product.getProductManage();
 
-            dataSanPham.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataSanPham.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataSanPham.ColumnHeadersDefaultCellStyle.BackColor = Color.Crimson;
-            dataSanPham.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            dataSanpham.AllowUserToAddRows = false;
 
-            dataSanPham.DataSource = bLL_Product.getProductManage();
-
-            dataSanPham.AllowUserToAddRows = false;
-
-            dataSanPham.RowTemplate.Height = 120;
-
-
-            label1.Font = new Font("Arial", 24, FontStyle.Bold);
-
+            dataSanpham.RowTemplate.Height = 120;
         }
 
         private void QuanLySanPham_Load(object sender, EventArgs e)
         {
-            btn_add.BackColor = Color.LimeGreen;
-            btn_add.FlatStyle = FlatStyle.Flat;
-            btn_add.FlatAppearance.BorderSize = 0;
-
-            btn_delete.BackColor = Color.Red;
-            btn_delete.FlatStyle = FlatStyle.Flat;
-            btn_delete.FlatAppearance.BorderSize = 0;
-
-            btn_edit.BackColor = Color.Orange;
-            btn_edit.FlatStyle = FlatStyle.Flat;
-            btn_edit.FlatAppearance.BorderSize = 0;
-
-            btn_refresh.BackColor = Color.LightPink;
-            btn_refresh.FlatStyle = FlatStyle.Flat;
-            btn_refresh.FlatAppearance.BorderSize = 0;
-
-
-            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.btn_add, "Thêm sản phẩm");
-
-            System.Windows.Forms.ToolTip ToolTip2 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.btn_delete, "Xóa sản phẩm");
-
-            System.Windows.Forms.ToolTip ToolTip3 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.btn_edit, "Chỉnh sửa sản phẩm");
-
-            System.Windows.Forms.ToolTip ToolTip4 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.btn_refresh, "Refresh");
-
-
+            cb_filter.SelectedIndex = 0;
 
         }
 
-        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_refresh_Click(object sender, EventArgs e)
         {
+            ThemSanPham addProduct = new ThemSanPham();
+            addProduct.ShowDialog();
 
+            refreshData();
         }
 
-        private void QuanLySanPham_FormClosing(object sender, FormClosingEventArgs e)
+        public void refreshData()
         {
-            Environment.Exit(0);
-            Application.Exit();
+            cb_filter.SelectedIndex = 0;
+            DataTable dt = new DataTable();
+            dt = bLL_Product.getProductManage();
+            dataSanpham.DataSource = dt;
         }
 
-
-
-        private void textb_search_Enter(object sender, EventArgs e)
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
         {
-           String str = textb_search.Text.ToString();
-
-            if(str == "Nhập mã sản phẩm để tìm kiếm")
-            {
-                textb_search.Text = "";
-            }
-        }
-
-        private void textb_search_Leave(object sender, EventArgs e)
-        {
-            String str = textb_search.Text.ToString();
-
-            if( str == "")
-            {
-                textb_search.Text = "Nhập mã sản phẩm để tìm kiếm";
-            }
-        }
-
-        private void btn_delete_Click(object sender, EventArgs e)
-        {
-
-            int row = dataSanPham.CurrentCell.RowIndex;
-
-
-
-            String name = dataSanPham.Rows[row].Cells[2].Value.ToString();
-
-            var confirmResult = MessageBox.Show("Xóa " + name +" ?",
-                                     "Xác nhận xóa ?",
-                                     MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (confirmResult == DialogResult.Yes)
-            {
-                String sku = dataSanPham.Rows[row].Cells[1].Value.ToString();
-
-
-                bool res = bLL_Product.DisableProduct(sku);
-
-                if (res == true)
-                {
-                   // dataSanPham.DataSource = bLL_Product.getProductManage();
-                    dataSanPham.Rows.RemoveAt(row);
-                    MessageBox.Show("Đã xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   
-                }
-                else
-                {
-                    MessageBox.Show("Đã xảy ra lỗi ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-            }
-  
-           
-
-        }
-
-        private void textb_search_KeyDown(object sender, KeyEventArgs e)
-        {
-
-            
-
             if (e.KeyCode == Keys.Enter)
             {
 
-                String key = textb_search.Text.ToString();
+                String key = txt_search.Text.ToString();
 
-                if(key != "")
+                if (key != "")
                 {
                     DataTable dt = new DataTable();
 
                     dt = bLL_Product.findProduct(key);
 
-                    if(dt.Rows.Count != 0)
+                    if (dt.Rows.Count != 0)
                     {
-                        dataSanPham.DataSource = dt;
-                    }
-                    else{
-                        // MetroFramework.MetroMessageBox.Show(this, "Không tìm thấy sản phẩm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        cb_filter.SelectedIndex = 0;
 
-                        MessageBox.Show(this, "Không tìm thấy sản phẩm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        dataSanpham.DataSource = dt;
+                    }
+                    else
+                    {
+                       
+
+                        guna2MessageDialog1.Show( "Không tìm thấy sản phẩm", "Lỗi");
                     }
                 }
                 else
                 {
                     DataTable dt = new DataTable();
                     dt = bLL_Product.getProductManage();
-                    dataSanPham.DataSource= dt;
+                    dataSanpham.DataSource = dt;
                 }
 
-               
+
             }
         }
 
-        private void btn_refresh_Click(object sender, EventArgs e)
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = bLL_Product.getProductManage();
-            dataSanPham.DataSource = dt;    
+
         }
 
-
-        public void refreshData()
+        private void btn_refresh_Click_1(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = bLL_Product.getProductManage();
-            dataSanPham.DataSource = dt;
-        }
-
-        private void btn_add_Click(object sender, EventArgs e)
-        {
-            ThemSanPham addProduct = new ThemSanPham();
-            addProduct.ShowDialog();
-
             refreshData();
-           
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
+            int row = dataSanpham.CurrentCell.RowIndex;
 
-            int row = dataSanPham.CurrentCell.RowIndex;
-
-            String barcode = dataSanPham.Rows[row].Cells[1].Value.ToString();
+            String barcode = dataSanpham.Rows[row].Cells[1].Value.ToString();
 
             SuaSanPham edit = new SuaSanPham(bLL_Product.getProductBarcode(barcode));
 
             edit.ShowDialog(this);
         }
 
-        private void textb_search_TextChanged(object sender, EventArgs e)
+        private void btn_delete_Click(object sender, EventArgs e)
         {
+            int row = dataSanpham.CurrentCell.RowIndex;
+
+
+
+            String name = dataSanpham.Rows[row].Cells[2].Value.ToString();
+
+            var confirmResult = guna2MessageDialog2.Show("Xóa " + name + " ?",
+                                     "Xác nhận xóa ?"  );
+            if (confirmResult == DialogResult.Yes)
+            {
+                String sku = dataSanpham.Rows[row].Cells[1].Value.ToString();
+
+
+                bool res = bLL_Product.DisableProduct(sku);
+
+                if (res == true)
+                {
+                    // dataSanPham.DataSource = bLL_Product.getProductManage();
+                  //  dataSanpham.Rows.RemoveAt(row);
+                   guna2MessageDialog3.Show("Đã xóa thành công", "Thông báo");
+                    refreshData();
+
+                }
+                else
+                {
+                    guna2MessageDialog1.Show("Đã xảy ra lỗi ", "Lỗi");
+                }
+
+            }
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void sanPhamKinhDoanh()
         {
-            ManHinhChinh main = new ManHinhChinh();
-            main.Show();
-            this.Hide();
+            DataTable dt = new DataTable();
+            dt = bLL_Product.getProductManageKD();
+            dataSanpham.DataSource = dt;
+        }
+        private void sanPhamKoKinhDoanh()
+        {
+            DataTable dt = new DataTable();
+            dt = bLL_Product.getProductManageKKD();
+            dataSanpham.DataSource = dt;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void sanPhamAll()
         {
+            DataTable dt = new DataTable();
+            dt = bLL_Product.getProductManage();
+            dataSanpham.DataSource = dt;
+        }
+
+
+
+
+
+        private void cb_filter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string s = cb_filter.Text.ToString();
+
+            if(s== "Đang kinh doanh")
+            {
+                sanPhamKinhDoanh();
+            }
+
+            if (s == "Không kinh doanh")
+            {
+                sanPhamKoKinhDoanh();
+            }
+
+            if (s == "Tất cả")
+            {
+                sanPhamAll();
+            }
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btn_enable_Click(object sender, EventArgs e)
         {
+            int row = dataSanpham.CurrentCell.RowIndex;
+            String sku = dataSanpham.Rows[row].Cells[1].Value.ToString();
 
+
+            var confirmResult = guna2MessageDialog2.Show("Thực hiện thao tác ?",
+                                    "Xác nhận ?");
+
+            if(confirmResult == DialogResult.Yes)
+            {
+                bool c = bLL_Product.enableproduct(sku);
+
+                if (c == true)
+                {
+                    refreshData();
+                    guna2MessageDialog3.Show("Thành công ", "Thông báo");
+                }
+                else
+                {
+                    guna2MessageDialog1.Show("Đã xảy ra lỗi", "Lỗi");
+                }
+            }
+
+            
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

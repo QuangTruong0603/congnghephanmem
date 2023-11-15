@@ -614,10 +614,11 @@ go
 CREATE PROCEDURE GetBillByNoBill (@bill_no varchar (100))
 AS
 BEGIN
-     select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng'  from Bill, PaymentMethod, Staff
+     select Bill.bill_no as N'Mã hóa đơn', bill_date as N'Thời gian' , bill_total_after as N'Số tiền' ,PaymentMethod.paymentmethod_name as N'Phương thức thanh toán',Staff.staff_name as N'Nhân viên bán hàng', Bill.bill_total_before as N'Số tiền ban đầu'  from Bill, PaymentMethod, Staff
 	where Bill.paymentmethod_id = PaymentMethod.paymentmethod_id and Bill.username = Staff.username and Bill.bill_no = @bill_no and Bill.bill_no = @bill_no
 END
 go
+
 
 
 
@@ -1049,11 +1050,34 @@ go
 Create Procedure ManageProduct
 as
 begin
-	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id 
+end
+
+go
+
+
+
+
+Create Procedure ManageProductKD
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
 	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1
 end
 
 go
+
+Create Procedure ManageProductKKD
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 0
+end
+go
+
+select * from Product
+
 
 Create Procedure DisableProduct (@product_barcode varchar(100))
 as
@@ -1063,13 +1087,31 @@ end
 
 go
 
+Create Procedure EnableProduct (@product_barcode varchar(100))
+as
+begin
+	update Product set product_status = 1 where product_barcode = @product_barcode
+end
+
+go
+
+
+
 Create Procedure FindProduct (@product_barcode varchar(100))
 as
 begin
-	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
-	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id and Product.product_status = 1 and Product.product_barcode = @product_barcode
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_status as N'Trạng thái',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id  and Product.product_barcode = @product_barcode
 end
 
+
+
+Create Procedure FindProduct2 (@product_barcode varchar(100))
+as
+begin
+	select  Product.product_barcode as N'Mã sản phẩm',Product.product_name as N'Tên sản phẩm',Product.product_price as N'Giá' ,Category.cate_name as N'Loại',Inventory.inven_quantity as N'Số lượng trong kho',Product.product_image as N'Path' from Product, Category, Inventory
+	where Product.cate_id = Category.cate_id and Product.inven_id = Inventory.inven_id  and  Product.product_status = 1   and Product.product_barcode = @product_barcode 
+end
 
 --Category
 Create Procedure GetNameCategory

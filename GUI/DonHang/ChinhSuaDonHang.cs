@@ -170,9 +170,8 @@ namespace GUI.DonHang
 
             DTO_Product pro = bLL_Product.getProductBarcode(barcode);
 
-            var confirmResult = MessageBox.Show("Bạn chắc chắn muốn xóa ??",
-                                     "Xác nhận xóa",
-                                     MessageBoxButtons.YesNo);
+            var confirmResult = guna2MessageDialog3.Show("Bạn chắc chắn muốn xóa ??",
+                                     "Xác nhận xóa");
             if (confirmResult == DialogResult.Yes)
             {
 
@@ -180,12 +179,12 @@ namespace GUI.DonHang
 
                 if (delete)
                 {
-                    MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   guna2MessageDialog2.Show("Xóa thành công", "Thông báo");
                     loadData();
                 }
                 else
                 {
-                    MessageBox.Show("Thao tác thất bại", "lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                  guna2MessageDialog2.Show("Thao tác thất bại", "lỗi");
                 }
             }
             else
@@ -210,7 +209,7 @@ namespace GUI.DonHang
 
             if(tennguoinhan =="" || diachi =="" || sdt == "")
             {
-                MessageBox.Show("Vui lòng nhập đủ thông tin","Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                guna2MessageDialog1.Show("Vui lòng nhập đủ thông tin", "Lỗi");
 
             }
             else
@@ -223,7 +222,7 @@ namespace GUI.DonHang
 
                 if(sdt.Length != 10)
                 {
-                    MessageBox.Show("Số điện thoại không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    guna2MessageDialog1.Show("Số điện thoại không hợp lệ", "Lỗi");
                 }
                 else
                 {
@@ -231,12 +230,12 @@ namespace GUI.DonHang
 
                     if (update)
                     {
-                        MessageBox.Show("Cập nhật thông tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        guna2MessageDialog2.Show("Cập nhật thông tin thành công", "Thông báo");
                         this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Thao tác thất bại", "lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            guna2MessageDialog1.Show("Thao tác thất bại", "lỗi");
                     }
                 }
             }
@@ -252,17 +251,24 @@ namespace GUI.DonHang
             loadData();
         }
 
+  
+
+        private void tb_sdt_TextChange(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
         private void dataDetail_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
                 showMenu(e, dataDetail);
             }
-        }
-
-        private void tb_sdt_TextChange(object sender, EventArgs e)
-        {
-            
         }
     }
 }

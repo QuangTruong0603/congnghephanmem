@@ -35,13 +35,8 @@ namespace GUI
         private void ChiTietHoaDon_Load(object sender, EventArgs e)
         {
 
-            btn_export.BackColor = Color.Orange;
-            btn_export.FlatStyle = FlatStyle.Flat;
-            btn_export.FlatAppearance.BorderSize = 0;
 
-            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.btn_export, "In hóa đơn");
-
+      
             title.Text = "CHI TIẾT HÓA ĐƠN: " + nobill;
 
             Dictionary<string, string> dir = bLL_Bill.getBillByNoBill(nobill);
@@ -50,6 +45,7 @@ namespace GUI
             {
                 if (item.Key.Equals("bill_date"))
                 {
+                    Console.WriteLine(item.Value);
                     txt_date.Text = item.Value;
 
                 }
@@ -87,13 +83,10 @@ namespace GUI
 
             txt_customer.Text = customer;
 
-
-            datagridview.AllowUserToAddRows = false;
-
             DataTable data = bLL_Bill.getDetailProBill(nobill);
             datagridview.DataSource = data;
 
-
+            datagridview.AllowUserToAddRows = false;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -106,8 +99,14 @@ namespace GUI
 
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void btn_export_Click(object sender, EventArgs e)
         {
+
 
             List<string> list = new List<string>();
             list.Add(nobill);
@@ -122,7 +121,7 @@ namespace GUI
 
             foreach (DataGridViewRow row in datagridview.Rows)
             {
-               DTO_BillDetail tmp = new DTO_BillDetail();
+                DTO_BillDetail tmp = new DTO_BillDetail();
                 tmp.barcode = row.Cells[2].Value.ToString();
                 tmp.namepro = row.Cells[1].Value.ToString();
                 tmp.quatity = int.Parse(row.Cells[3].Value.ToString());
@@ -132,13 +131,8 @@ namespace GUI
                 l.Add(tmp);
             }
 
-            Form rp = new ReportView(list,l);
+            Form rp = new ReportView(list, l);
             rp.ShowDialog();
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }

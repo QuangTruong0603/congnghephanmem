@@ -43,6 +43,7 @@ namespace DAL
             {
                 dr["STT"] = i;
                 i++;
+
                 try
                 {
                     dr["Ảnh sản phẩm"] = File.ReadAllBytes(path + "\\GUI\\Resources\\Image Products\\" + dr["Path"]);
@@ -72,9 +73,41 @@ namespace DAL
 
             return dt;
         }
+        public DataTable getProductManageKD()
+        {
+            conn = database.getConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ManageProductKD", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
 
 
- 
+            DataTable dt = new DataTable();
+
+
+            dt = setDataTable(adapter);
+
+            return dt;
+        }
+
+        public DataTable getProductManageKKD()
+        {
+            conn = database.getConnection();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("ManageProductKKD", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+
+            DataTable dt = new DataTable();
+
+
+            dt = setDataTable(adapter);
+
+            return dt;
+        }
+
+
 
 
         public Boolean DisableProduct(String sku)
@@ -93,6 +126,7 @@ namespace DAL
                     conn.Close();
                     return true;
                 }
+
 
                 conn.Close();
                 return false;
@@ -122,6 +156,34 @@ namespace DAL
             conn.Close();
             return dt;
 
+        }
+
+        public Boolean enableProduct(String sku)
+        {
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("EnableProduct", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@product_barcode", SqlDbType.VarChar).Value = sku;
+                int aff = cmd.ExecuteNonQuery();
+
+                if (aff == 1)
+                {
+                    conn.Close();
+                    return true;
+                }
+
+
+                conn.Close();
+                return false;
+            }
+            catch(Exception ex)
+            {
+                conn.Close();
+                return false;
+            }
         }
 
 
@@ -159,6 +221,40 @@ namespace DAL
             
     
           }
+
+        public Boolean checkBarcodeProduct2(String barcode)
+        {
+
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("FindProduct2", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@product_barcode", SqlDbType.VarChar).Value = barcode;
+                SqlDataReader reader = cmd.ExecuteReader();
+                int count = 0;
+
+                while (reader.Read())
+                {
+                    count++;
+                }
+
+                if (count == 0)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+
+        }
 
         public String newFileName(string s)
         {

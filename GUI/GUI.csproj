@@ -48,6 +48,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
@@ -153,6 +162,9 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.1.15\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
     </Reference>
@@ -202,6 +214,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -211,6 +225,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DonHang\ChinhSuaDonHang.cs">
@@ -306,6 +326,9 @@
     </Compile>
     <Compile Include="DonHang\QuanLyGiaoHang.Designer.cs">
       <DependentUpon>QuanLyGiaoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="SanPham\QuanLySanPham.cs">
       <SubType>Form</SubType>
@@ -519,6 +542,21 @@
     <None Include="Resources\search-file.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\eco-friendly-7-eleven-jfmegjsfu6lmwbdr.jpg" />
+    <None Include="Resources\fran_model_opportunity_desktop_min_270_1866.png" />
+    <None Include="Resources\brnad 711 02.png" />
+    <None Include="Resources\7-eleven-franchise-store-ns9vdzbjcdus03vm.jpg" />
+    <None Include="Resources\brnad 711 021.png" />
+    <None Include="Resources\12585-231023070038.png" />
+    <None Include="Resources\previous.png" />
+    <None Include="Resources\7-eleven-vector-art-logo-m51glnsvvfeqnv99.jpg" />
+    <None Include="Resources\823-8237174_copyright-2018-7-eleven-stores-pty-flag.png" />
+    <None Include="Resources\snapedit_1699975554185.png" />
+    <None Include="Resources\snapedit_1699975619967.png" />
+    <None Include="Resources\snapedit_16999756199671.png" />
+    <None Include="Resources\png-transparent-logo-7-eleven-encapsulated-postscript-7-miscellaneous-angle-company.png" />
+    <None Include="Resources\company-banner-brand-area-logo-removebg-preview.png" />
+    <None Include="Resources\barcode.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

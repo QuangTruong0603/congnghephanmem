@@ -24,6 +24,18 @@ namespace BLL
             return dAL_Productcs.getProductManage();
         }
 
+        public DataTable getProductManageKD()
+        {
+            return dAL_Productcs.getProductManageKD();
+        }
+        public DataTable getProductManageKKD()
+        {
+            return dAL_Productcs.getProductManageKKD();
+        }
+
+
+
+
         public Boolean DisableProduct(String sku)
         {
             return dAL_Productcs.DisableProduct(sku);
@@ -39,6 +51,17 @@ namespace BLL
         {
             return dAL_Productcs.checkBarcodeProduct(barcode);
         }
+
+        public Boolean checkBarcode2(String barcode)
+        {
+            return dAL_Productcs.checkBarcodeProduct2(barcode);
+        }
+
+        public Boolean enableproduct(String sku)
+        {
+            return dAL_Productcs.enableProduct(sku);
+        }
+
 
 
 

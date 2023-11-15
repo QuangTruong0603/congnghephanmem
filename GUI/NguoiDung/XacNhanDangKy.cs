@@ -27,32 +27,26 @@ namespace GUI
             sendOtp.Text = otp;
             sendUsername.Text = username;
             sendTime.Text = time;
+
         }
 
         private void XacNhanDangKy_Load(object sender, EventArgs e)
         {
-            txt_title.Font = new Font(new FontFamily(System.Drawing.Text.GenericFontFamilies.Serif), 20);
-            warning.ForeColor = Color.Red;
+       
         }
 
-        private void txt_title_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_otp_KeyPress(object sender, KeyPressEventArgs e)
+        private void guna2TextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != 8;
         }
 
-        private void btn_confirm_Click(object sender, EventArgs e)
+        private void btn_xacnhan_Click(object sender, EventArgs e)
         {
-
             String getOtp = txt_otp.Text.ToString();
 
-            if(getOtp == "")
+            if (getOtp == "")
             {
-                MessageBox.Show("Vui lòng nhập mã xác nhận", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               guna2MessageDialog1.Show("Vui lòng nhập mã xác nhận", "Lỗi");
             }
             else
             {
@@ -66,60 +60,40 @@ namespace GUI
 
                 if (!getOtp.Equals(sendOtp.Text.ToString()))
                 {
-                    MessageBox.Show("Mã xác nhận không chính xác", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    guna2MessageDialog1.Show("Mã xác nhận không chính xác", "Lỗi");
                 }
                 else
                 {
-                    if(minutes >3)
+                    if (minutes > 3)
                     {
-                        MessageBox.Show("Mã xác nhận đã hết hiệu lực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        guna2MessageDialog1.Show("Mã xác nhận đã hết hiệu lực", "Thông báo");
                     }
                     else
                     {
-                        bool addNewStaff = dalStaff.addStaff(sendUsername.Text.ToString(), sendPassword.Text.ToString(), sendEmail.Text.ToString());
-
-                        if(addNewStaff == true)
+                         bool addNewStaff = dalStaff.addStaff(sendUsername.Text.ToString(), sendPassword.Text.ToString(), sendEmail.Text.ToString());
+                      //  bool addNewStaff = true;
+                        if (addNewStaff == true)
                         {
-                            MessageBox.Show("Đăng ký tài khoản thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            guna2MessageDialog2.Show("Đăng ký tài khoản thành công", "Thông báo");
                             Login lg = new Login();
                             lg.Show();
                             this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Đăng ký tài khoản thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            guna2MessageDialog1.Show("Đăng ký tài khoản thất bại", "Lỗi");
                         }
                     }
                 }
 
             }
 
-
-
-            
         }
 
         private void XacNhanDangKy_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
             Application.Exit();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Register fgpass = new Register();
-            fgpass.Show();
-            this.Visible = false;
-        }
-
-        private void txt_otp_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

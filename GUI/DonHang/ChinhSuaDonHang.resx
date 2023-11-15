@@ -117,44 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tb_phivanchuyen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMsAAAAcCAYAAADPwEukAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACKSURBVHhe7dOxDQIxAARB91/VWy6DMigAZOkT9Aj28xnp
-        kst3ADestR7HcbzM7Lrdx5nKGPsAvtt9nKmIBX4RC0RigUgsEIkFIrFAJBaIxAKRWCASC0RigUgsEIkF
-        IrFAJBaIxAKRWCASC0RigUgsEIkFIrFAJBaIPmKZcz73YWbX7T7OVID/xngD/YYOhyZ+pvAAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="tb_sdt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARkAAAAcCAYAAABVqssQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACWSURBVHhe7dQxDQMxAARB80fll2EERgDkZclNem83I11z
-        AHYA5NZanznnz8zs1nZXTmLG2AfATbsrJzEiA9wnMkBKZICUyAApkQFSIgOkRAZIiQyQEhkgJTJASmSA
-        lMgAKZEBUiIDpEQGSIkMkBIZICUyQEpkgJTIACmRAVIiA6REBkj9ReZ5nu8+zMxubXflJAagMsYLo0ct
-        fKofcAYAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="tb_diachi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARkAAAAcCAYAAABVqssQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACWSURBVHhe7dQxDQMxAARB80fll2EERgDkZclNem83I11z
-        AHYA5NZanznnz8zs1nZXTmLG2AfATbsrJzEiA9wnMkBKZICUyAApkQFSIgOkRAZIiQyQEhkgJTJASmSA
-        lMgAKZEBUiIDpEQGSIkMkBIZICUyQEpkgJTIACmRAVIiA6REBkj9ReZ5nu8+zMxubXflJAagMsYLo0ct
-        fKofcAYAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="tb_tengnuoinhan.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARkAAAAcCAYAAABVqssQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACWSURBVHhe7dQxDQMxAARB80fll2EERgDkZclNem83I11z
-        AHYA5NZanznnz8zs1nZXTmLG2AfATbsrJzEiA9wnMkBKZICUyAApkQFSIgOkRAZIiQyQEhkgJTJASmSA
-        lMgAKZEBUiIDpEQGSIkMkBIZICUyQEpkgJTIACmRAVIiA6REBkj9ReZ5nu8+zMxubXflJAagMsYLo0ct
-        fKofcAYAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="guna2MessageDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
+  </metadata>
+  <metadata name="guna2MessageDialog2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>361, 17</value>
+  </metadata>
+  <metadata name="guna2MessageDialog3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>569, 17</value>
   </metadata>
 </root>

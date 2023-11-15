@@ -47,13 +47,13 @@
             this.txt_method = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
-            this.datagridview = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.btn_export = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_export = new Guna.UI2.WinForms.Guna2Button();
+            this.datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -229,101 +229,98 @@
             this.title.TabIndex = 13;
             this.title.Text = "CHI TIẾT HÓA ĐƠN: B3004";
             // 
-            // datagridview
-            // 
-            this.datagridview.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.datagridview.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.datagridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.datagridview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.datagridview.ColumnHeadersHeight = 40;
-            this.datagridview.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.datagridview.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.datagridview.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.datagridview.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.datagridview.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.datagridview.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.datagridview.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.datagridview.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.datagridview.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.datagridview.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.datagridview.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.datagridview.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.datagridview.CurrentTheme.Name = null;
-            this.datagridview.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.datagridview.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.datagridview.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.datagridview.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.datagridview.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridview.DefaultCellStyle = dataGridViewCellStyle3;
-            this.datagridview.EnableHeadersVisualStyles = false;
-            this.datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.datagridview.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.datagridview.HeaderBgColor = System.Drawing.Color.Empty;
-            this.datagridview.HeaderForeColor = System.Drawing.Color.White;
-            this.datagridview.Location = new System.Drawing.Point(0, 303);
-            this.datagridview.Name = "datagridview";
-            this.datagridview.ReadOnly = true;
-            this.datagridview.RowHeadersVisible = false;
-            this.datagridview.RowHeadersWidth = 51;
-            this.datagridview.RowTemplate.Height = 40;
-            this.datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagridview.Size = new System.Drawing.Size(1023, 307);
-            this.datagridview.TabIndex = 14;
-            this.datagridview.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // btn_export
-            // 
-            this.btn_export.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btn_export.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_export.Image = global::GUI.Properties.Resources.document__1_;
-            this.btn_export.Location = new System.Drawing.Point(471, 768);
-            this.btn_export.Name = "btn_export";
-            this.btn_export.Size = new System.Drawing.Size(112, 60);
-            this.btn_export.TabIndex = 15;
-            this.btn_export.UseVisualStyleBackColor = false;
-            this.btn_export.Click += new System.EventHandler(this.btn_export_Click);
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.datagridview);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.datagridview);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(20, 73);
+            this.panel3.Location = new System.Drawing.Point(20, 103);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1026, 660);
+            this.panel3.Size = new System.Drawing.Size(1026, 630);
             this.panel3.TabIndex = 16;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // btn_export
+            // 
+            this.btn_export.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_export.BorderRadius = 10;
+            this.btn_export.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_export.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_export.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_export.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_export.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_export.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_export.ForeColor = System.Drawing.Color.White;
+            this.btn_export.Location = new System.Drawing.Point(466, 781);
+            this.btn_export.Name = "btn_export";
+            this.btn_export.Size = new System.Drawing.Size(180, 45);
+            this.btn_export.TabIndex = 17;
+            this.btn_export.Text = "In hóa đơn";
+            this.btn_export.Click += new System.EventHandler(this.btn_export_Click);
+            // 
+            // datagridview
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.datagridview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagridview.DefaultCellStyle = dataGridViewCellStyle3;
+            this.datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagridview.Location = new System.Drawing.Point(3, 279);
+            this.datagridview.Name = "datagridview";
+            this.datagridview.ReadOnly = true;
+            this.datagridview.RowHeadersVisible = false;
+            this.datagridview.RowHeadersWidth = 51;
+            this.datagridview.RowTemplate.Height = 24;
+            this.datagridview.Size = new System.Drawing.Size(1016, 347);
+            this.datagridview.TabIndex = 13;
+            this.datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridview.ThemeStyle.HeaderStyle.Height = 28;
+            this.datagridview.ThemeStyle.ReadOnly = true;
+            this.datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.datagridview.ThemeStyle.RowsStyle.Height = 24;
+            this.datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // ChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 840);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1063, 901);
             this.Controls.Add(this.btn_export);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.title);
             this.Name = "ChiTietHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -333,9 +330,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagridview)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,10 +354,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label title;
-        private Bunifu.UI.WinForms.BunifuDataGridView datagridview;
         private System.Windows.Forms.Label txt_method;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn_export;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button btn_export;
+        private Guna.UI2.WinForms.Guna2DataGridView datagridview;
     }
 }

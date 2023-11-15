@@ -25,7 +25,7 @@ namespace GUI
             this.idOrder = idOrder;
 
 
-           dataDetail.AllowUserToAddRows = false;
+            dataDetail.AllowUserToAddRows = false;
 
             dataDetail.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataDetail.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;

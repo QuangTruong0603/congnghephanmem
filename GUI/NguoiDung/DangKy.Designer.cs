@@ -28,258 +28,298 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ch_showpass = new MaterialSkin.Controls.MaterialCheckbox();
-            this.txt_confirmpassword = new MaterialSkin.Controls.MaterialTextBox();
-            this.txt_password = new MaterialSkin.Controls.MaterialTextBox();
-            this.txt_username = new MaterialSkin.Controls.MaterialTextBox();
-            this.txt_email = new MaterialSkin.Controls.MaterialTextBox();
-            this.txt_tittleConfirm = new System.Windows.Forms.Label();
-            this.txt_titleMatkhau = new System.Windows.Forms.Label();
-            this.txt_titleTaiKhoan = new System.Windows.Forms.Label();
-            this.txt_titleEmail = new System.Windows.Forms.Label();
-            this.btn_create = new MetroSet_UI.Controls.MetroSetButton();
-            this.img_logo = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.guna2MessageDialog2 = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.txt_password2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_email = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // guna2Panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.Controls.Add(this.ch_showpass);
-            this.panel1.Controls.Add(this.txt_confirmpassword);
-            this.panel1.Controls.Add(this.txt_password);
-            this.panel1.Controls.Add(this.txt_username);
-            this.panel1.Controls.Add(this.txt_email);
-            this.panel1.Controls.Add(this.txt_tittleConfirm);
-            this.panel1.Controls.Add(this.txt_titleMatkhau);
-            this.panel1.Controls.Add(this.txt_titleTaiKhoan);
-            this.panel1.Controls.Add(this.txt_titleEmail);
-            this.panel1.Location = new System.Drawing.Point(199, 290);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(733, 410);
-            this.panel1.TabIndex = 3;
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel1.Location = new System.Drawing.Point(667, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(679, 700);
+            this.guna2Panel1.TabIndex = 4;
             // 
-            // ch_showpass
+            // guna2ControlBox2
             // 
-            this.ch_showpass.AutoSize = true;
-            this.ch_showpass.Depth = 0;
-            this.ch_showpass.Location = new System.Drawing.Point(262, 353);
-            this.ch_showpass.Margin = new System.Windows.Forms.Padding(0);
-            this.ch_showpass.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.ch_showpass.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ch_showpass.Name = "ch_showpass";
-            this.ch_showpass.ReadOnly = false;
-            this.ch_showpass.Ripple = true;
-            this.ch_showpass.Size = new System.Drawing.Size(138, 37);
-            this.ch_showpass.TabIndex = 8;
-            this.ch_showpass.Text = "Hiện mật khẩu";
-            this.ch_showpass.UseVisualStyleBackColor = true;
-            this.ch_showpass.CheckedChanged += new System.EventHandler(this.ch_showpass_CheckedChanged);
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(583, 0);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 2;
             // 
-            // txt_confirmpassword
+            // guna2ControlBox1
             // 
-            this.txt_confirmpassword.AnimateReadOnly = false;
-            this.txt_confirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_confirmpassword.Depth = 0;
-            this.txt_confirmpassword.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_confirmpassword.Hint = "Xác nhận lại mật khẩu";
-            this.txt_confirmpassword.LeadingIcon = global::GUI.Properties.Resources.padlock;
-            this.txt_confirmpassword.Location = new System.Drawing.Point(262, 291);
-            this.txt_confirmpassword.MaxLength = 50;
-            this.txt_confirmpassword.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_confirmpassword.Multiline = false;
-            this.txt_confirmpassword.Name = "txt_confirmpassword";
-            this.txt_confirmpassword.Password = true;
-            this.txt_confirmpassword.Size = new System.Drawing.Size(423, 50);
-            this.txt_confirmpassword.TabIndex = 7;
-            this.txt_confirmpassword.Text = "";
-            this.txt_confirmpassword.TrailingIcon = null;
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(634, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 1;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::GUI.Properties.Resources.brnad_711_021;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 68);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(687, 632);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(258, 155);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 25);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "ĐĂNG KÝ";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(226, 607);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(153, 53);
+            this.guna2Button1.TabIndex = 15;
+            this.guna2Button1.Text = "Tạo tài khoản";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2CheckBox1
+            // 
+            this.guna2CheckBox1.AutoSize = true;
+            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CheckBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox1.Location = new System.Drawing.Point(138, 551);
+            this.guna2CheckBox1.Name = "guna2CheckBox1";
+            this.guna2CheckBox1.Size = new System.Drawing.Size(128, 23);
+            this.guna2CheckBox1.TabIndex = 16;
+            this.guna2CheckBox1.Text = "Hiện mật khẩu";
+            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
+            // 
+            // guna2MessageDialog1
+            // 
+            this.guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.guna2MessageDialog1.Caption = null;
+            this.guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Error;
+            this.guna2MessageDialog1.Parent = this;
+            this.guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.guna2MessageDialog1.Text = null;
+            // 
+            // guna2MessageDialog2
+            // 
+            this.guna2MessageDialog2.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
+            this.guna2MessageDialog2.Caption = null;
+            this.guna2MessageDialog2.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
+            this.guna2MessageDialog2.Parent = this;
+            this.guna2MessageDialog2.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.guna2MessageDialog2.Text = null;
+            // 
+            // txt_password2
+            // 
+            this.txt_password2.BorderRadius = 8;
+            this.txt_password2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_password2.DefaultText = "";
+            this.txt_password2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_password2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_password2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_password2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_password2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_password2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_password2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_password2.IconLeft = global::GUI.Properties.Resources.padlock;
+            this.txt_password2.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txt_password2.Location = new System.Drawing.Point(127, 483);
+            this.txt_password2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_password2.Name = "txt_password2";
+            this.txt_password2.PasswordChar = '\0';
+            this.txt_password2.PlaceholderText = "Xác nhận lại mật khẩu";
+            this.txt_password2.SelectedText = "";
+            this.txt_password2.Size = new System.Drawing.Size(388, 48);
+            this.txt_password2.TabIndex = 14;
             // 
             // txt_password
             // 
-            this.txt_password.AnimateReadOnly = false;
-            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_password.Depth = 0;
-            this.txt_password.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_password.Hint = "Nhập mật khẩu";
-            this.txt_password.LeadingIcon = global::GUI.Properties.Resources.padlock;
-            this.txt_password.Location = new System.Drawing.Point(262, 209);
-            this.txt_password.MaxLength = 50;
-            this.txt_password.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_password.Multiline = false;
+            this.txt_password.BorderRadius = 8;
+            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_password.DefaultText = "";
+            this.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_password.IconLeft = global::GUI.Properties.Resources.padlock;
+            this.txt_password.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txt_password.Location = new System.Drawing.Point(127, 397);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Password = true;
-            this.txt_password.Size = new System.Drawing.Size(423, 50);
-            this.txt_password.TabIndex = 6;
-            this.txt_password.Text = "";
-            this.txt_password.TrailingIcon = null;
+            this.txt_password.PasswordChar = '\0';
+            this.txt_password.PlaceholderText = "Nhập mật khẩu";
+            this.txt_password.SelectedText = "";
+            this.txt_password.Size = new System.Drawing.Size(388, 48);
+            this.txt_password.TabIndex = 13;
             // 
             // txt_username
             // 
-            this.txt_username.AnimateReadOnly = false;
-            this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_username.Depth = 0;
-            this.txt_username.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_username.Hint = "Nhập tên tài khoản";
-            this.txt_username.LeadingIcon = global::GUI.Properties.Resources.user;
-            this.txt_username.Location = new System.Drawing.Point(262, 134);
-            this.txt_username.MaxLength = 50;
-            this.txt_username.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_username.Multiline = false;
+            this.txt_username.BorderRadius = 8;
+            this.txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_username.DefaultText = "";
+            this.txt_username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_username.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_username.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_username.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_username.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_username.IconLeft = global::GUI.Properties.Resources.user;
+            this.txt_username.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txt_username.Location = new System.Drawing.Point(127, 311);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(423, 50);
-            this.txt_username.TabIndex = 5;
-            this.txt_username.Text = "";
-            this.txt_username.TrailingIcon = null;
+            this.txt_username.PasswordChar = '\0';
+            this.txt_username.PlaceholderText = "Nhập tên tài khoản";
+            this.txt_username.SelectedText = "";
+            this.txt_username.Size = new System.Drawing.Size(388, 48);
+            this.txt_username.TabIndex = 12;
             // 
             // txt_email
             // 
-            this.txt_email.AnimateReadOnly = false;
-            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_email.Depth = 0;
-            this.txt_email.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_email.Hint = "Nhập email";
-            this.txt_email.LeadingIcon = global::GUI.Properties.Resources.email;
-            this.txt_email.Location = new System.Drawing.Point(262, 48);
-            this.txt_email.MaxLength = 50;
-            this.txt_email.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_email.Multiline = false;
+            this.txt_email.BorderRadius = 8;
+            this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_email.DefaultText = "";
+            this.txt_email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_email.IconLeft = global::GUI.Properties.Resources.email;
+            this.txt_email.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txt_email.Location = new System.Drawing.Point(127, 228);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(423, 50);
-            this.txt_email.TabIndex = 4;
-            this.txt_email.Text = "";
-            this.txt_email.TrailingIcon = null;
+            this.txt_email.PasswordChar = '\0';
+            this.txt_email.PlaceholderText = "Nhập email";
+            this.txt_email.SelectedText = "";
+            this.txt_email.Size = new System.Drawing.Size(388, 50);
+            this.txt_email.TabIndex = 11;
             // 
-            // txt_tittleConfirm
+            // guna2PictureBox2
             // 
-            this.txt_tittleConfirm.AutoSize = true;
-            this.txt_tittleConfirm.Location = new System.Drawing.Point(10, 302);
-            this.txt_tittleConfirm.Name = "txt_tittleConfirm";
-            this.txt_tittleConfirm.Size = new System.Drawing.Size(114, 16);
-            this.txt_tittleConfirm.TabIndex = 3;
-            this.txt_tittleConfirm.Text = "Nhập lại mật khẩu";
+            this.guna2PictureBox2.BorderRadius = 8;
+            this.guna2PictureBox2.Image = global::GUI.Properties.Resources._7_Eleven_logo_08AAB4F0FE_seeklogo_com;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(277, 29);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(91, 76);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 9;
+            this.guna2PictureBox2.TabStop = false;
             // 
-            // txt_titleMatkhau
+            // guna2CirclePictureBox1
             // 
-            this.txt_titleMatkhau.AutoSize = true;
-            this.txt_titleMatkhau.Location = new System.Drawing.Point(10, 225);
-            this.txt_titleMatkhau.Name = "txt_titleMatkhau";
-            this.txt_titleMatkhau.Size = new System.Drawing.Size(61, 16);
-            this.txt_titleMatkhau.TabIndex = 2;
-            this.txt_titleMatkhau.Text = "Mật khẩu";
-            // 
-            // txt_titleTaiKhoan
-            // 
-            this.txt_titleTaiKhoan.AutoSize = true;
-            this.txt_titleTaiKhoan.Location = new System.Drawing.Point(10, 147);
-            this.txt_titleTaiKhoan.Name = "txt_titleTaiKhoan";
-            this.txt_titleTaiKhoan.Size = new System.Drawing.Size(88, 16);
-            this.txt_titleTaiKhoan.TabIndex = 1;
-            this.txt_titleTaiKhoan.Text = "Tên tài khoản";
-            // 
-            // txt_titleEmail
-            // 
-            this.txt_titleEmail.AutoSize = true;
-            this.txt_titleEmail.Location = new System.Drawing.Point(10, 61);
-            this.txt_titleEmail.Name = "txt_titleEmail";
-            this.txt_titleEmail.Size = new System.Drawing.Size(41, 16);
-            this.txt_titleEmail.TabIndex = 0;
-            this.txt_titleEmail.Text = "Email";
-            // 
-            // btn_create
-            // 
-            this.btn_create.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_create.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btn_create.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btn_create.DisabledForeColor = System.Drawing.Color.Gray;
-            this.btn_create.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btn_create.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btn_create.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.btn_create.HoverTextColor = System.Drawing.Color.White;
-            this.btn_create.IsDerivedStyle = true;
-            this.btn_create.Location = new System.Drawing.Point(465, 725);
-            this.btn_create.Name = "btn_create";
-            this.btn_create.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btn_create.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.btn_create.NormalTextColor = System.Drawing.Color.White;
-            this.btn_create.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btn_create.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.btn_create.PressTextColor = System.Drawing.Color.White;
-            this.btn_create.Size = new System.Drawing.Size(160, 53);
-            this.btn_create.Style = MetroSet_UI.Enums.Style.Light;
-            this.btn_create.StyleManager = null;
-            this.btn_create.TabIndex = 4;
-            this.btn_create.Text = "Tạo tài khoản";
-            this.btn_create.ThemeAuthor = "Narwin";
-            this.btn_create.ThemeName = "MetroLite";
-            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
-            // 
-            // img_logo
-            // 
-            this.img_logo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.img_logo.BackColor = System.Drawing.Color.Transparent;
-            this.img_logo.Image = global::GUI.Properties.Resources._7_Eleven_Logo;
-            this.img_logo.Location = new System.Drawing.Point(396, 104);
-            this.img_logo.Name = "img_logo";
-            this.img_logo.Size = new System.Drawing.Size(307, 180);
-            this.img_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_logo.TabIndex = 2;
-            this.img_logo.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::GUI.Properties.Resources.arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 122);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.guna2CirclePictureBox1.Image = global::GUI.Properties.Resources.previous;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(44, 41);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 32;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1124, 800);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_create);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.img_logo);
+            this.ClientSize = new System.Drawing.Size(1346, 700);
+            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.txt_password2);
+            this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.txt_username);
+            this.Controls.Add(this.txt_email);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng ký tài khoản nhân viên";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
             this.Load += new System.EventHandler(this.Register_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox img_logo;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label txt_tittleConfirm;
-        private System.Windows.Forms.Label txt_titleMatkhau;
-        private System.Windows.Forms.Label txt_titleTaiKhoan;
-        private System.Windows.Forms.Label txt_titleEmail;
-        private MaterialSkin.Controls.MaterialTextBox txt_username;
-        private MaterialSkin.Controls.MaterialTextBox txt_email;
-        private MaterialSkin.Controls.MaterialTextBox txt_confirmpassword;
-        private MaterialSkin.Controls.MaterialTextBox txt_password;
-        private MetroSet_UI.Controls.MetroSetButton btn_create;
-        private MaterialSkin.Controls.MaterialCheckbox ch_showpass;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_email;
+        private Guna.UI2.WinForms.Guna2TextBox txt_username;
+        private Guna.UI2.WinForms.Guna2TextBox txt_password;
+        private Guna.UI2.WinForms.Guna2TextBox txt_password2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
+        private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog2;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }

@@ -188,7 +188,7 @@ VALUES
 select * from unit
 select * from Category
 
-delete from Product
+delete from Product where product_id = 15
 select * from product
 
 INSERT INTO Consignment (consi_date, consi_quantity_product, consi_mgfdate, consi_expdate, consi_price_one_product, consi_total, product_id, supplier_id, username)
@@ -239,12 +239,6 @@ insert into OrderDetail(order_id, product_id,quantity, size, price) values (8,9,
 insert into OrderDetail(order_id, product_id,quantity, size, price) values (9,8,6,'null',120000)
 
 
-select * from OrderOnline
-
-select * from OrderDetail
-
-select * from Product
-
 
 insert into OrderDetail(order_id, product_id,quantity, size, price) values (11,8,5,'null',100000)
 
@@ -252,5 +246,3 @@ insert into OrderDetail(order_id, product_id,quantity, size, price) values (11,8
 insert into OrderDetail(order_id, product_id,quantity, size, price) values (10,8,4,'null',80000)
 
 insert into OrderDetail(order_id, product_id,quantity, size, price) values (10,9,1,'null',20000)
-
-select * from Product

@@ -26,40 +26,13 @@ namespace GUI
             InitializeComponent();
 
 
-            dataAll.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataAll.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            data0.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            data0.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            data1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            data1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            data2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            data2.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            data3.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            data3.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-
-            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.btn_refresh, "Refresh");
-
+        
         }
 
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+       
         private void QuanLyGiaoHang_Load(object sender, EventArgs e)
         {
-            textb_search.Text = "Nhập mã đơn hàng để tìm kiếm";
-            textb_search.ForeColor = Color.Gray;
-
-
             dataAll.DataSource = bLL_Order.getAllOrder();
-
             dataAll.AllowUserToAddRows = false;
 
 
@@ -75,6 +48,7 @@ namespace GUI
             data3.DataSource = bLL_Order.getOrderByStatus("Đã giao thành công");
             data3.AllowUserToAddRows = false;
         }
+
 
         public void showMenu(MouseEventArgs e, DataGridView dataAll)
         {
@@ -102,30 +76,9 @@ namespace GUI
                 m.Show(dataAll, new Point(e.X, e.Y));
 
             }
-            catch(Exception ex) { }
-          
-        }
-
-        public void EditOrder()
-        {
-            ChinhSuaDonHang edit = new ChinhSuaDonHang(idOrder);
-            edit.ShowDialog();
-            refresh();
-        }
-
-
-        private void dataAll_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                showMenu(e,dataAll);
-            }
-
-
+            catch (Exception ex) { }
 
         }
-
-
         public void refresh()
         {
             dataAll.DataSource = bLL_Order.getAllOrder();
@@ -136,6 +89,50 @@ namespace GUI
         }
 
 
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataAll_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                showMenu(e, dataAll);
+            }
+        }
+
+        private void data0_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                showMenu(e, data0);
+            }
+        }
+
+        private void data1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                showMenu(e, data1);
+            }
+        }
+
+        private void data2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                showMenu(e, data2);
+            }
+        }
+
+        private void data3_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                showMenu(e, data3);
+            }
+        }
 
         public void ShowDetails()
         {
@@ -145,14 +142,14 @@ namespace GUI
 
         public void PrintOrder()
         {
-            Dictionary<string, string> dic  = new Dictionary<string, string>();
+            Dictionary<string, string> dic = new Dictionary<string, string>();
             dic = bLL_Order.getOrderById(idOrder);
 
             List<DTO_BillDetail> list = bLL_Order.getListProductOfOrder(idOrder);
 
-           // Console.WriteLine(list.Count());
+            // Console.WriteLine(list.Count());
 
-            PrintReview prt = new PrintReview(dic,idOrder,list);
+            PrintReview prt = new PrintReview(dic, idOrder, list);
 
             prt.ShowDialog();
 
@@ -160,108 +157,74 @@ namespace GUI
 
         public void DeleteOrder()
         {
-            if(status == "Chờ lấy hàng" || status == "Đang vận chuyển" || status == "Đang giao cho khách hàng")
+            if (status == "Chờ lấy hàng" || status == "Đang vận chuyển" || status == "Đang giao")
             {
-                var confirmResult = MessageBox.Show("Bạn có chắc muốn hủy đơn hàng ??",
-                                     "Xác nhận hủy đơn hàng",
-                                     MessageBoxButtons.YesNo);
+                var confirmResult = guna2MessageDialog2.Show("Bạn có chắc muốn hủy đơn hàng ??",
+                                     "Xác nhận hủy đơn hàng");
                 if (confirmResult == DialogResult.Yes)
                 {
                     bool check = bLL_Order.deleteOrder(idOrder);
 
                     if (check)
                     {
-                        MessageBox.Show("Hủy đơn hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       guna2MessageDialog3.Show("Hủy đơn hàng thành công", "Thông báo");
                         refresh();
                     }
                     else
                     {
-                        MessageBox.Show("Hủy đơn hàng thất bại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                      guna2MessageDialog1.Show("Hủy đơn hàng thất bại", "Lỗi");
                     }
                 }
                 else
                 {
-                    
+
                 }
             }
             else
             {
-                MessageBox.Show("Không thể hủy đơn hàng","Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                guna2MessageDialog1.Show("Không thể hủy đơn hàng", "Lỗi");
             }
         }
 
-       
-
-        private void data0_MouseClick(object sender, MouseEventArgs e)
+        public void EditOrder()
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                showMenu(e,data0);
-            }
+            ChinhSuaDonHang edit = new ChinhSuaDonHang(idOrder);
+            edit.ShowDialog();
+            refresh();
         }
 
-
-
-        private void label1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            refresh();
         }
-
-        private void textb_search_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textb_search_Enter(object sender, EventArgs e)
-        {
-            String str = textb_search.Text.ToString();
-
-            if (str == "Nhập mã đơn hàng để tìm kiếm")
-            {
-                textb_search.Text = "";
-            }
-        }
-
-        private void textb_search_Leave(object sender, EventArgs e)
-        {
-            String str = textb_search.Text.ToString();
-
-            if (str == "")
-            {
-                textb_search.Text = "Nhập mã đơn hàng để tìm kiếm";
-            }
-        }
-
-   
 
         private void textb_search_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                tabControl1.SelectedIndex = 0;
+                ddd.SelectedIndex = 0;
 
 
                 string s = textb_search.Text.ToString();
 
-                if(s == "")
+                if (s == "")
                 {
-                    MessageBox.Show("Vui lòng nhập mã đơn hàng để tìm kiếm","Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   guna2MessageDialog1.Show("Vui lòng nhập mã đơn hàng để tìm kiếm", "Lỗi");
                 }
                 else
                 {
                     int idSearch = int.Parse(s);
 
-                    
+
                     DataTable dt = new DataTable();
 
                     dt = bLL_Order.getOneOrderById(idSearch);
 
                     int count = dt.Rows.Count;
 
-                    if(count == 0)
+                    if (count == 0)
                     {
-                        MessageBox.Show("Không tìm thấy đơn hàng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        guna2MessageDialog1.Show("Không tìm thấy đơn hàng", "Lỗi");
                     }
                     else
                     {
@@ -272,49 +235,9 @@ namespace GUI
             }
         }
 
-        private void data1_MouseClick(object sender, MouseEventArgs e)
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                showMenu(e, data1);
-            }
-        }
-
-        private void data2_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-
-                showMenu(e, data2);
-            }
-        }
-
-        private void data3_MouseClick(object sender, MouseEventArgs e)
-        {
-
-            if (e.Button == MouseButtons.Right)
-            {
-
-                showMenu(e, data3);
-            }
-        }
-
-        private void btn_refresh_Click(object sender, EventArgs e)
-        {
-            refresh();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            ManHinhChinh main = new ManHinhChinh();
-            this.Hide();
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

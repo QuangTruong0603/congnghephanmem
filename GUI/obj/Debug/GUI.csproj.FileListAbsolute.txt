@@ -164,3 +164,14 @@ D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\G
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.PrintReview.resources
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.DonHang.ChinhSuaDonHang.resources
 D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\obj\Debug\GUI.ThemSanPhamOrder.resources
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\Guna.UI2.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.DirectShow.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.presentation.dll
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.xml
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.xml
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\AForge.Video.DirectShow.xml
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.xml
+D:\Tai lieu\hk1 23-24\cuoi ky CNPM\source code 2\congnghephanmem\GUI\bin\Debug\zxing.presentation.xml

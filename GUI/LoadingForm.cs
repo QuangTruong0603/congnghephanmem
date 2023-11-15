@@ -19,9 +19,6 @@ namespace GUI
 
         private void LoadingForm_Load(object sender, EventArgs e)
         {
-            title.BackColor = System.Drawing.Color.Transparent;
-            version.BackColor = System.Drawing.Color.Transparent;
-            pictureBox1.BackColor = System.Drawing.Color.Transparent;
             timer1.Start();
         }
 
@@ -32,10 +29,10 @@ namespace GUI
         {
            // progressBar.ForeColor = Color.White;
             start++;
-            progressBar.Value = start;
-            if(progressBar.Value == 100)
+           loading.Value = start;
+            if(loading.Value == 100)
             {
-                progressBar.Value = 0;
+                loading.Value = 0;
                 timer1.Stop();
                 Login lg = new Login();
                 this.Hide();

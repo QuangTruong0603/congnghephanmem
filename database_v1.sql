@@ -1,4 +1,4 @@
-
+﻿
 create database databasev1
 
 use databasev1
@@ -220,7 +220,7 @@ CREATE TABLE [Product]
     [product_name] [nvarchar] (150) NOT NULL,
     [product_barcode] [varchar] (20) NOT NULL,
     [product_price] [int] NOT NULL,
-	[product_status] [int] NOT NULL,
+	[product_status] [int]  NOT NULL,
 	[product_image] [varchar](100) NULL,
     [unit_id] [int] NOT NULL,
     [cate_id] [int] NOT NULL,
@@ -228,7 +228,6 @@ CREATE TABLE [Product]
     CONSTRAINT PK_Product PRIMARY KEY (product_id)  
 )
 GO
-
 
 -- Table Bill_detail --------------------------
 --
