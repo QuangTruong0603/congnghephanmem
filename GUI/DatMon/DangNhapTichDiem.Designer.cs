@@ -123,7 +123,6 @@
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DangNhapTichDiem";
             this.Text = "DangNhapTichDiem";
             this.Load += new System.EventHandler(this.DangNhapTichDiem_Load);

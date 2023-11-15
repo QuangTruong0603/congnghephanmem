@@ -18,7 +18,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLySanPham());
+            //Application.Run(new QuanLySanPham());
             //Application.Run(new GUI.QLGiamGia.TrangChuGiamGia());
             //Application.Run(new GUI.DatMon.DatMon());
         }

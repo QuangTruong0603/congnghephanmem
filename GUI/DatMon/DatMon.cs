@@ -53,7 +53,7 @@ namespace GUI.DatMon
                         itemProducts[i] = new product_item();
                         itemProducts[i].ProcName = dTO_Products[i].product_name;
                         itemProducts[i].ProcPrice = dTO_Products[i].product_price.ToString();
-                        itemProducts[i].procImage = Image.FromFile("D:\\coca.jpg");
+                        itemProducts[i].procImage = Image.FromFile(dTO_Products[i].product_image.ToString());
                         itemProducts[i].Margin = new Padding(7);
                         itemProducts[i].ItemClicked += ItemProduct_ItemClicked;
                         flowLayoutPanelItem.Controls.Add(itemProducts[i]);
@@ -90,7 +90,7 @@ namespace GUI.DatMon
                         itemProducts[i] = new product_item();
                         itemProducts[i].ProcName = dTO_Products[i].product_name;
                         itemProducts[i].ProcPrice = dTO_Products[i].product_price.ToString();
-                        itemProducts[i].procImage = Image.FromFile("D:\\coca.jpg");
+                        itemProducts[i].procImage = Image.FromFile(dTO_Products[i].product_image.ToString());
                         itemProducts[i].Margin = new Padding(7);
                         itemProducts[i].ItemClicked += ItemProduct_ItemClicked;
                         flowLayoutPanelItem.Controls.Add(itemProducts[i]);
@@ -227,7 +227,7 @@ namespace GUI.DatMon
                         itemProducts[i] = new product_item();
                         itemProducts[i].ProcName = dTO_Products[i].product_name;
                         itemProducts[i].ProcPrice = dTO_Products[i].product_price.ToString();
-                        itemProducts[i].procImage = Image.FromFile("D:\\coca.jpg");
+                        itemProducts[i].procImage = Image.FromFile(dTO_Products[i].product_image.ToString());
                         itemProducts[i].Margin = new Padding(7);
                         itemProducts[i].ItemClicked += ItemProduct_ItemClicked;
                         flowLayoutPanelItem.Controls.Add(itemProducts[i]);
@@ -263,7 +263,7 @@ namespace GUI.DatMon
                         itemProducts[i] = new product_item();
                         itemProducts[i].ProcName = dTO_Products[i].product_name;
                         itemProducts[i].ProcPrice = dTO_Products[i].product_price.ToString();
-                        itemProducts[i].procImage = Image.FromFile("D:\\coca.jpg");
+                        itemProducts[i].procImage = Image.FromFile(dTO_Products[i].product_image.ToString());
                         itemProducts[i].Margin = new Padding(7);
                         itemProducts[i].ItemClicked += ItemProduct_ItemClicked;
                         flowLayoutPanelItem.Controls.Add(itemProducts[i]);
@@ -299,7 +299,7 @@ namespace GUI.DatMon
                         itemProducts[i] = new product_item();
                         itemProducts[i].ProcName = dTO_Products[i].product_name;
                         itemProducts[i].ProcPrice = dTO_Products[i].product_price.ToString();
-                        itemProducts[i].procImage = Image.FromFile("D:\\coca.jpg");
+                        itemProducts[i].procImage = Image.FromFile(dTO_Products[i].product_image.ToString());
                         itemProducts[i].Margin = new Padding(7);
                         itemProducts[i].ItemClicked += ItemProduct_ItemClicked;
                         flowLayoutPanelItem.Controls.Add(itemProducts[i]);

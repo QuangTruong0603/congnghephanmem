@@ -62,6 +62,30 @@ namespace DAL
                
             }
         }
+        public void AddCustomer(String phone, String ten)
+        {
+            try
+            {
+                conn = database.getConnection();
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("Insert_Customer", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@customer_name", SqlDbType.NVarChar).Value = ten;
+                cmd.Parameters.Add("@customer_address", SqlDbType.NVarChar).Value = "0" ;
+                cmd.Parameters.Add("@customer_email", SqlDbType.NVarChar).Value = "0";
+                cmd.Parameters.Add("@customer_phone", SqlDbType.NVarChar).Value = phone;
+                cmd.Parameters.Add("@customer_tichdiem", SqlDbType.BigInt).Value = 1;
+                cmd.Parameters.Add("@customer_image", SqlDbType.NVarChar).Value = "0";
+                int aff = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                Console.WriteLine(ex.Message);
+
+            }
+        }
+
 
     }
 }

@@ -55,7 +55,7 @@ namespace GUI.DatMon
 
         private void label4_Click(object sender, EventArgs e)
         {
-            TichDiem tichDiem = new TichDiem();
+            TichDiem tichDiem = new TichDiem(TongTT);
 
             tichDiem.Show();
             this.Hide();

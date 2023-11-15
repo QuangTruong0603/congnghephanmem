@@ -65,7 +65,7 @@ namespace GUI.DatMon
 
         private void ThanhToanItem_Load(object sender, EventArgs e)
         {
-
+            textBoxSoluong.Text = "1";
         }
     }
 }
